@@ -10,6 +10,7 @@
     <modules>
         <module>luna-java-development-kit</module>
         <module>luna-sdk-examples</module>
+        <module>message-receive-example</module>
     </modules>
 
     <name>java-sdk-parent</name>

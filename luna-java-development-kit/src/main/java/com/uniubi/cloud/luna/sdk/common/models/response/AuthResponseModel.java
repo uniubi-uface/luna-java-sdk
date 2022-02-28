@@ -1,6 +1,6 @@
 package com.uniubi.cloud.luna.sdk.common.models.response;
 
-import com.uniubi.cloud.luna.sdk.common.models.SDKResult;
+import com.uniubi.cloud.luna.sdk.common.models.SdkResult;
 
 /**
  * 鉴权结果对象
@@ -8,6 +8,6 @@ import com.uniubi.cloud.luna.sdk.common.models.SDKResult;
  * @author jingmu
  * @since 2020/3/26
  */
-public class AuthResponseModel extends SDKResult<String> {
+public class AuthResponseModel extends SdkResult<String> {
 
 }

@@ -3,7 +3,7 @@ package com.uniubi.cloud.luna.sdk.common.interceptors;
 import com.uniubi.cloud.luna.sdk.common.RpcMethod;
 import com.uniubi.cloud.luna.sdk.common.RpcMethodInterceptor;
 import com.uniubi.cloud.luna.sdk.common.constants.SdkConstants;
-import com.uniubi.cloud.luna.sdk.common.models.SDKResult;
+import com.uniubi.cloud.luna.sdk.common.models.SdkResult;
 
 /**
  * 远程方法拦截器：重新授权 该拦截器作用就是当拦截到返回结果是token无效时，会进行一次重新授权（刷新token），再重试调用操
@@ -18,8 +18,8 @@ public class RpcMethodReAuthInterceptor implements RpcMethodInterceptor {
     public Object process(RpcMethod rpcMethod) {
         // 直接尝试调用
         Object result = rpcMethod.invoke();
-        if (result instanceof SDKResult) {
-            SDKResult sdkResult = (SDKResult) result;
+        if (result instanceof SdkResult) {
+            SdkResult sdkResult = (SdkResult) result;
             if (!sdkResult.isSuccess()) {
                 // 如果调用结果是失败的，并且错误原因是token过期
                 if (SdkConstants.TOKEN_FAILED_CODE.equals(sdkResult.getCode())) {

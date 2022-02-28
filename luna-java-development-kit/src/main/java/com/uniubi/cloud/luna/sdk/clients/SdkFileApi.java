@@ -2,7 +2,7 @@ package com.uniubi.cloud.luna.sdk.clients;
 
 import com.uniubi.cloud.luna.sdk.common.annotation.RequestMark;
 import com.uniubi.cloud.luna.sdk.common.annotation.RequestParam;
-import com.uniubi.cloud.luna.sdk.common.models.SDKResult;
+import com.uniubi.cloud.luna.sdk.common.models.SdkResult;
 import com.uniubi.cloud.luna.sdk.common.models.response.FileResponseModel;
 
 /**
@@ -14,9 +14,9 @@ import com.uniubi.cloud.luna.sdk.common.models.response.FileResponseModel;
 public interface SdkFileApi {
 
     @RequestMark(name = "getImage", desc = "获取图片")
-    SDKResult<FileResponseModel> getImage(@RequestParam("imageId") String imageId);
+    SdkResult<FileResponseModel> getImage(@RequestParam("imageId") String imageId);
 
     @RequestMark(name = "getPersonFace", desc = "获取人像")
-    SDKResult<FileResponseModel> getPersonFace(@RequestParam("faceId") String faceId);
+    SdkResult<FileResponseModel> getPersonFace(@RequestParam("faceId") String faceId);
 
 }

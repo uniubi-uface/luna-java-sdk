@@ -2,7 +2,7 @@ package com.uniubi.cloud.luna.sdk.clients;
 
 import com.uniubi.cloud.luna.sdk.common.annotation.RequestMark;
 import com.uniubi.cloud.luna.sdk.common.models.SDKPageInfo;
-import com.uniubi.cloud.luna.sdk.common.models.SDKResult;
+import com.uniubi.cloud.luna.sdk.common.models.SdkResult;
 import com.uniubi.cloud.luna.sdk.common.models.request.QueryRecognitionPageRequest;
 import com.uniubi.cloud.luna.sdk.common.models.response.RecognitionResponseModel;
 
@@ -15,7 +15,7 @@ import com.uniubi.cloud.luna.sdk.common.models.response.RecognitionResponseModel
 public interface SdkRecognitionApi {
 
     @RequestMark(name = "queryRecognitionPage", desc = "分页查询识别记录")
-    SDKResult<SDKPageInfo<RecognitionResponseModel>> queryRecognitionPage(
+    SdkResult<SDKPageInfo<RecognitionResponseModel>> queryRecognitionPage(
             QueryRecognitionPageRequest queryRecognitionPageRequest);
 
 }

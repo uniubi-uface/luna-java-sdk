@@ -9,7 +9,7 @@ import lombok.Data;
  * @since 2020/5/6
  */
 @Data
-public class SDKResult<T> {
+public class SdkResult<T> {
 
     /**
      * 是否成功

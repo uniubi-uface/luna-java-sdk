@@ -1,7 +1,7 @@
 package com.uniubi.cloud.luna.sdk.clients;
 
 import com.uniubi.cloud.luna.sdk.common.annotation.RequestMark;
-import com.uniubi.cloud.luna.sdk.common.models.SDKResult;
+import com.uniubi.cloud.luna.sdk.common.models.SdkResult;
 import com.uniubi.cloud.luna.sdk.common.models.request.AddPersonFaceRequest;
 import com.uniubi.cloud.luna.sdk.common.models.request.DeletePersonFaceRequest;
 
@@ -14,9 +14,9 @@ import com.uniubi.cloud.luna.sdk.common.models.request.DeletePersonFaceRequest;
 public interface SdkPersonFaceApi {
 
     @RequestMark(name = "addPersonFace", desc = "添加人员人像")
-    SDKResult<String> addPersonFace(AddPersonFaceRequest addPersonFaceRequest);
+    SdkResult<String> addPersonFace(AddPersonFaceRequest addPersonFaceRequest);
 
     @RequestMark(name = "deletePersonFace", desc = "删除人员人像")
-    SDKResult<Void> deletePersonFace(DeletePersonFaceRequest deletePersonFaceRequest);
+    SdkResult<Void> deletePersonFace(DeletePersonFaceRequest deletePersonFaceRequest);
 
 }

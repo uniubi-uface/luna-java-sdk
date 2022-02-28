@@ -3,7 +3,7 @@ package com.uniubi.cloud.luna.sdk.common.decrypt;
 import com.alibaba.fastjson.JSONObject;
 import com.uniubi.cloud.luna.sdk.common.encrypt.LunaDevelopEncrypt;
 import com.uniubi.cloud.luna.sdk.common.exceptioins.UniUbiLunaSdkException;
-import com.uniubi.cloud.luna.sdk.common.models.SDKResult;
+import com.uniubi.cloud.luna.sdk.common.models.SdkResult;
 import com.uniubi.cloud.luna.sdk.common.type.TypeHandlerRegistry;
 import com.uniubi.cloud.luna.sdk.http.defaults.DefaultResponseConverter;
 import lombok.Data;
@@ -62,7 +62,7 @@ public class DecryptResponseConverter extends DefaultResponseConverter {
     @EqualsAndHashCode(callSuper = true)
     @Data
     @ToString(callSuper = true)
-    public static class ContentResult extends SDKResult {
+    public static class ContentResult extends SdkResult {
 
         private String secret;
 

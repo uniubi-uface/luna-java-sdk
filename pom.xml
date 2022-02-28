@@ -9,6 +9,7 @@
 
     <modules>
         <module>luna-java-development-kit</module>
+        <module>luna-sdk-examples</module>
     </modules>
 
     <name>java-sdk-parent</name>
@@ -17,4 +18,42 @@
     <description>UStar cloud open api SDK</description>
     <url>https://github.com/uniubi-uface/athena-java-sdk</url>
 
+    <licenses>
+        <license>
+            <name>The Apache License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>JingMu</name>
+            <email>jingmu@uni-ubi.com</email>
+            <organization>Universal Ubiquitous Co., Ltd.</organization>
+            <organizationUrl>https://www.uniubi.com</organizationUrl>
+        </developer>
+        <developer>
+            <name>KaLong</name>
+            <email>zhangbin@uni-ubi.com</email>
+            <organization>Universal Ubiquitous Co., Ltd.</organization>
+            <organizationUrl>https://www.uniubi.com</organizationUrl>
+        </developer>
+    </developers>
+
+    <scm>
+        <url>https://github.com/uniubi-uface/luna-java-sdk</url>
+        <connection>scm:git:git://github.com/uniubi-uface/luna-java-sdk.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com/uniubi-uface/luna-java-sdk.git</developerConnection>
+    </scm>
+
+    <distributionManagement>
+        <snapshotRepository>
+            <id>ossrh</id>
+            <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+        <repository>
+            <id>ossrh</id>
+            <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
+    </distributionManagement>
 </project>

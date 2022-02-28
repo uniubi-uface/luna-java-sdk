@@ -1,7 +1,7 @@
 package com.uniubi.cloud.luna.sdk.clients;
 
 import com.uniubi.cloud.luna.sdk.common.annotation.RequestMark;
-import com.uniubi.cloud.luna.sdk.common.models.SDKResult;
+import com.uniubi.cloud.luna.sdk.common.models.SdkResult;
 
 /**
  * 测试api接口
@@ -12,6 +12,6 @@ import com.uniubi.cloud.luna.sdk.common.models.SDKResult;
 public interface SdkTestApi {
 
     @RequestMark(name = "test", desc = "测试接口")
-    SDKResult<String> test();
+    SdkResult<String> test();
 
 }

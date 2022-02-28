@@ -2,7 +2,7 @@ package com.uniubi.cloud.luna.sdk.clients;
 
 import com.uniubi.cloud.luna.sdk.common.annotation.RequestMark;
 import com.uniubi.cloud.luna.sdk.common.models.SDKPageInfo;
-import com.uniubi.cloud.luna.sdk.common.models.SDKResult;
+import com.uniubi.cloud.luna.sdk.common.models.SdkResult;
 import com.uniubi.cloud.luna.sdk.common.models.request.AtdReportQueryRequest;
 import com.uniubi.cloud.luna.sdk.common.models.response.AtdBreakTimeReportResponseModel;
 import com.uniubi.cloud.luna.sdk.common.models.response.AtdDetailReportResponseModel;
@@ -21,7 +21,7 @@ public interface SdkAtdReportApi {
      * @return 报表数据
      */
     @RequestMark(name = "atdDetailReport", desc = "考勤明细报表查询")
-    SDKResult<SDKPageInfo<AtdDetailReportResponseModel>> atdDetailReport(AtdReportQueryRequest queryRequest);
+    SdkResult<SDKPageInfo<AtdDetailReportResponseModel>> atdDetailReport(AtdReportQueryRequest queryRequest);
 
     /**
      * 考勤加班报表
@@ -29,7 +29,7 @@ public interface SdkAtdReportApi {
      * @return 报表数据
      */
     @RequestMark(name = "atdOverWorkReport", desc = "考勤加班报表")
-    SDKResult<SDKPageInfo<AtdOverWorkReportResponseModel>> atdOverWorkReport(AtdReportQueryRequest queryRequest);
+    SdkResult<SDKPageInfo<AtdOverWorkReportResponseModel>> atdOverWorkReport(AtdReportQueryRequest queryRequest);
 
     /**
      * 考勤休息报表
@@ -37,7 +37,7 @@ public interface SdkAtdReportApi {
      * @return 报表数据
      */
     @RequestMark(name = "atdBreakTimeReport", desc = "考勤休息报表")
-    SDKResult<SDKPageInfo<AtdBreakTimeReportResponseModel>> atdBreakTimeReport(AtdReportQueryRequest queryRequest);
+    SdkResult<SDKPageInfo<AtdBreakTimeReportResponseModel>> atdBreakTimeReport(AtdReportQueryRequest queryRequest);
 
     /**
      * 考勤异常打卡报表
@@ -45,6 +45,6 @@ public interface SdkAtdReportApi {
      * @return 报表数据
      */
     @RequestMark(name = "atdExceptionReport", desc = "考勤异常打卡报表")
-    SDKResult<SDKPageInfo<AtdExceptionReportResponseModel>> atdExceptionReport(AtdReportQueryRequest queryRequest);
+    SdkResult<SDKPageInfo<AtdExceptionReportResponseModel>> atdExceptionReport(AtdReportQueryRequest queryRequest);
 
 }

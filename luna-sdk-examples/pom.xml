@@ -13,6 +13,7 @@
 
     <modules>
         <module>api-simple-example</module>
+        <module>message-receive-example</module>
     </modules>
 
 

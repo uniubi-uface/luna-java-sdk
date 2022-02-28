@@ -15,4 +15,5 @@ public class LunaMsgReceiveExampleApplication {
     public static void main(String[] args) {
         SpringApplication.run(LunaMsgReceiveExampleApplication.class, args);
     }
+
 }

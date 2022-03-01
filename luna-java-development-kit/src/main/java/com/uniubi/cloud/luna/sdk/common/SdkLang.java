@@ -9,14 +9,25 @@ package com.uniubi.cloud.luna.sdk.common;
 public enum SdkLang {
 
     /**
-     * 中文
+     * 简体中文
      */
     CN("zh_CN"),
     /**
-     * 英文
+     * English
      */
     EN("en"),
-    // todo 语种已扩充
+    /**
+     * 俄罗斯
+     */
+    RU("ru"),
+    /**
+     * 法语
+     */
+    FR("fr"),
+    /**
+     * 西班牙
+     */
+    ES("es"),
     ;
 
     private final String value;

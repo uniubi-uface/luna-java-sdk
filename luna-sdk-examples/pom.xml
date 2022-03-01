@@ -37,7 +37,7 @@
             </dependency>
 
             <dependency>
-                <groupId>com.uniubi.cloud.luna</groupId>
+                <groupId>com.uniubi.cloud</groupId>
                 <artifactId>luna-java-development-kit</artifactId>
                 <version>${project.version}</version>
             </dependency>

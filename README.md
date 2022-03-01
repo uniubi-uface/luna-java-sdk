@@ -1,11 +1,11 @@
 ## luna-java-sdk
 
 UStar open api java SDK
-[中文文档](README-zh_CN.md)
+[中文文档](./README-zh_CN.md)
 
-## Version Description
+## Release Notes
 
-* [Version Description](./docs/VersionDesc.md)
+* [ReleaseNotes](./docs/ReleaseNotes.md)
 
 ### Open API Document
 

@@ -3,17 +3,17 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.uniubi.cloud.luna</groupId>
-    <artifactId>java-sdk-parent</artifactId>
+    <groupId>com.uniubi.cloud</groupId>
+    <artifactId>luna-java-sdk-parent</artifactId>
     <version>1.0.0.RELEASE</version>
+
+    <name>luna-java-sdk-parent</name>
+    <packaging>pom</packaging>
 
     <modules>
         <module>luna-java-development-kit</module>
         <module>luna-sdk-examples</module>
     </modules>
-
-    <name>java-sdk-parent</name>
-    <packaging>pom</packaging>
 
     <description>UStar cloud open api SDK</description>
     <url>https://github.com/uniubi-uface/athena-java-sdk</url>

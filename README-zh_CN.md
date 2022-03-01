@@ -3,9 +3,9 @@
 UStar open api java SDK
 [English Document](./README.md)
 
-## Version Description
+## 版本发布日志
 
-* [版本说明](./docs/VersionDesc-zh_CN.md)
+* [版本发布日志](./docs/ReleaseNotes-zh_CN.md)
 
 ### Open API Document
 

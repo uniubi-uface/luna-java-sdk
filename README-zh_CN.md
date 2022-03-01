@@ -9,7 +9,7 @@ UStar open api java SDK
 
 ### Open API Document
 
-* [UStar Open API Document](./docs/UStar%20SDK%20Open%20API%20接口文档.md)
+* [UStar Open API Document](./docs/UStar%20SDK%20Open%20API-zh_CN.md)
 
 ### UStar Java SDK Example
 

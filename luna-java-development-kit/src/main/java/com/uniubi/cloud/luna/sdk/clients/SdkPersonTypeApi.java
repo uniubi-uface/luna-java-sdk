@@ -26,7 +26,6 @@ public interface SdkPersonTypeApi {
      * </p>
      * @param addPersonTypeRequest :
      * @return sdk result
-     * @author huanghuizhou
      * @since 2020.10.14 09:50:53
      */
     @RequestMark(name = "addPersonType", desc = "添加人员类型")
@@ -38,7 +37,6 @@ public interface SdkPersonTypeApi {
      * </p>
      * @param personTypeId :
      * @return sdk result
-     * @author huanghuizhou
      * @since 2020.10.14 09:50:53
      */
     @RequestMark(name = "deletePersonType", desc = "删除人员类型")
@@ -50,7 +48,6 @@ public interface SdkPersonTypeApi {
      * </p>
      * @param updatePersonTypeRequest :
      * @return sdk result
-     * @author huanghuizhou
      * @since 2020.10.14 09:50:53
      */
     @RequestMark(name = "updatePersonType", desc = "更新人员类型")
@@ -61,7 +58,6 @@ public interface SdkPersonTypeApi {
      * 功能:
      * </p>
      * @return sdk result
-     * @author huanghuizhou
      * @since 2020.10.14 09:50:53
      */
     @RequestMark(name = "listAllPersonTypes", desc = "获取所有人员类型")

@@ -18,6 +18,8 @@ public class DeletePersonFaceRequest {
 
     /**
      * 人像id
+     * <p>
+     * photo id,not face id
      */
     private String photoId;
 

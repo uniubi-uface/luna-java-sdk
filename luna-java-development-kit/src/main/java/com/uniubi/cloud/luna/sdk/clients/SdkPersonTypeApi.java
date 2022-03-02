@@ -10,55 +10,41 @@ import com.uniubi.cloud.luna.sdk.common.models.response.PersonTypeResponseModel;
 import java.util.List;
 
 /**
- * <p class="detail">
- * 功能:
- * </p>
+ * Person Type API
  *
- * @author huangHuizhou ClassName Sdk person type api.
+ * @author jingmu
  * @version V1.0.
  * @since 2020.10.14 09:50:53
  */
 public interface SdkPersonTypeApi {
 
     /**
-     * <p class="detail">
-     * 功能:
-     * </p>
-     * @param addPersonTypeRequest :
-     * @return sdk result
-     * @since 2020.10.14 09:50:53
+     * add person type
+     * @param addPersonTypeRequest the request parameter
+     * @return the person id
      */
     @RequestMark(name = "addPersonType", desc = "添加人员类型")
     SdkResult<String> addPersonType(AddPersonTypeRequest addPersonTypeRequest);
 
     /**
-     * <p class="detail">
-     * 功能:
-     * </p>
-     * @param personTypeId :
+     * delete person type
+     * @param personTypeId the person type id
      * @return sdk result
-     * @since 2020.10.14 09:50:53
      */
     @RequestMark(name = "deletePersonType", desc = "删除人员类型")
     SdkResult<Void> deletePersonType(@RequestParam("personTypeId") String personTypeId);
 
     /**
-     * <p class="detail">
-     * 功能:
-     * </p>
-     * @param updatePersonTypeRequest :
+     * update person type
+     * @param updatePersonTypeRequest the request parameter
      * @return sdk result
-     * @since 2020.10.14 09:50:53
      */
     @RequestMark(name = "updatePersonType", desc = "更新人员类型")
     SdkResult<Void> updatePersonType(UpdatePersonTypeRequest updatePersonTypeRequest);
 
     /**
-     * <p class="detail">
-     * 功能:
-     * </p>
-     * @return sdk result
-     * @since 2020.10.14 09:50:53
+     * list all person type.
+     * @return the person type list.
      */
     @RequestMark(name = "listAllPersonTypes", desc = "获取所有人员类型")
     SdkResult<List<PersonTypeResponseModel>> listAllPersonTypes();

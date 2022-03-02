@@ -10,13 +10,17 @@ import com.uniubi.cloud.luna.sdk.common.models.response.AtdExceptionReportRespon
 import com.uniubi.cloud.luna.sdk.common.models.response.AtdOverWorkReportResponseModel;
 
 /**
+ * 考勤相关 API， 提供考勤报表查询方法
+ * <p>
+ * The attendance related API provides the query method of attendance report
+ *
  * @author 井木
  * @since 2021/10/20
  */
 public interface SdkAtdReportApi {
 
     /**
-     * 考勤明细报表查询
+     * Query of attendance details Report
      * @param queryRequest 请求参数
      * @return 报表数据
      */
@@ -24,7 +28,7 @@ public interface SdkAtdReportApi {
     SdkResult<SDKPageInfo<AtdDetailReportResponseModel>> atdDetailReport(AtdReportQueryRequest queryRequest);
 
     /**
-     * 考勤加班报表
+     * Query attendance overtime Report
      * @param queryRequest 请求参数
      * @return 报表数据
      */
@@ -32,7 +36,7 @@ public interface SdkAtdReportApi {
     SdkResult<SDKPageInfo<AtdOverWorkReportResponseModel>> atdOverWorkReport(AtdReportQueryRequest queryRequest);
 
     /**
-     * 考勤休息报表
+     * Query attendance rest Report
      * @param queryRequest 请求参数
      * @return 报表数据
      */
@@ -40,7 +44,7 @@ public interface SdkAtdReportApi {
     SdkResult<SDKPageInfo<AtdBreakTimeReportResponseModel>> atdBreakTimeReport(AtdReportQueryRequest queryRequest);
 
     /**
-     * 考勤异常打卡报表
+     * query abnormal clock list.
      * @param queryRequest 请求参数
      * @return 报表数据
      */

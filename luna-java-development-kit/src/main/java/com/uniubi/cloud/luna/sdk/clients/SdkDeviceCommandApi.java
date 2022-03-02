@@ -18,7 +18,9 @@ import java.util.List;
  *
  * @author jingmu
  * @since 2020/5/18
+ * @deprecated 不再维护这个API
  */
+@Deprecated
 public interface SdkDeviceCommandApi {
 
     @RequestMark(name = "restartDevice", desc = "重启设备")

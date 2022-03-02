@@ -7,13 +7,18 @@ import com.uniubi.cloud.luna.sdk.common.models.request.QueryRecognitionPageReque
 import com.uniubi.cloud.luna.sdk.common.models.response.RecognitionResponseModel;
 
 /**
- * com.uniubi.medusa.ares.develop.api.clients.SdkRecognitionApi
+ * Device Recognition API
  *
  * @author jingmu
  * @since 2020/5/18
  */
 public interface SdkRecognitionApi {
 
+    /**
+     * paging query device recognition
+     * @param queryRecognitionPageRequest the paging query parameter
+     * @return the page result
+     */
     @RequestMark(name = "queryRecognitionPage", desc = "分页查询识别记录")
     SdkResult<SDKPageInfo<RecognitionResponseModel>> queryRecognitionPage(
             QueryRecognitionPageRequest queryRecognitionPageRequest);

@@ -4,7 +4,9 @@ import com.uniubi.cloud.luna.sdk.common.RequestConfig;
 import com.uniubi.cloud.luna.sdk.common.UniUbiSdkClientProxyFactory;
 
 /**
- * com.uniubi.medusa.ares.develop.api.clients.LunaSdkApiClient
+ * UStar API 的客户端，动态代理创建API 客户端
+ * <p>
+ * UStar API client, dynamic proxy creates API client
  *
  * @author jingmu
  * @since 2020/5/7
@@ -69,6 +71,7 @@ public class LunaSdkApiClient {
         return uniUbiSdkClientProxyFactory.createProxy(SdkDeviceApi.class);
     }
 
+    @Deprecated
     public SdkDeviceCommandApi createSdkDeviceCommandApi() {
         return uniUbiSdkClientProxyFactory.createProxy(SdkDeviceCommandApi.class);
     }

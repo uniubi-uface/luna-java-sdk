@@ -18,7 +18,7 @@ import java.util.List;
  *
  * @author jingmu
  * @since 2020/5/18
- * @deprecated 不再维护这个API
+ * @deprecated No longer maintain this API
  */
 @Deprecated
 public interface SdkDeviceCommandApi {

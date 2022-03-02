@@ -15,17 +15,23 @@ public class AddPersonGroupRequest {
 
     /**
      * 部门名称
+     * <p>
+     * department name
      */
     private String personGroupName;
 
     /**
      * 父级部门id
+     * <p>
+     * parent department id
      */
     private String parentGroupId;
 
     /**
-     * 管理员person NO 集合
+     * 管理员 person id 集合
+     * <p>
+     * department manager id list
      */
-    private List<String> managerNos;
+    private List<String> managerIds;
 
 }

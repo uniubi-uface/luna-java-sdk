@@ -21,8 +21,9 @@ public interface SdkAtdReportApi {
 
     /**
      * Query of attendance details Report
+     *
      * @param queryRequest 请求参数
-     * @return 报表数据
+     * @return report list
      */
     @RequestMark(name = "atdDetailReport", desc = "考勤明细报表查询")
     SdkResult<SDKPageInfo<AtdDetailReportResponseModel>> atdDetailReport(AtdReportQueryRequest queryRequest);
@@ -30,7 +31,7 @@ public interface SdkAtdReportApi {
     /**
      * Query attendance overtime Report
      * @param queryRequest 请求参数
-     * @return 报表数据
+     * @return report list
      */
     @RequestMark(name = "atdOverWorkReport", desc = "考勤加班报表")
     SdkResult<SDKPageInfo<AtdOverWorkReportResponseModel>> atdOverWorkReport(AtdReportQueryRequest queryRequest);
@@ -38,7 +39,7 @@ public interface SdkAtdReportApi {
     /**
      * Query attendance rest Report
      * @param queryRequest 请求参数
-     * @return 报表数据
+     * @return report list
      */
     @RequestMark(name = "atdBreakTimeReport", desc = "考勤休息报表")
     SdkResult<SDKPageInfo<AtdBreakTimeReportResponseModel>> atdBreakTimeReport(AtdReportQueryRequest queryRequest);
@@ -46,7 +47,7 @@ public interface SdkAtdReportApi {
     /**
      * query abnormal clock list.
      * @param queryRequest 请求参数
-     * @return 报表数据
+     * @return report list
      */
     @RequestMark(name = "atdExceptionReport", desc = "考勤异常打卡报表")
     SdkResult<SDKPageInfo<AtdExceptionReportResponseModel>> atdExceptionReport(AtdReportQueryRequest queryRequest);

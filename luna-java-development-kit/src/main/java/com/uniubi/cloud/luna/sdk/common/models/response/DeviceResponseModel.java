@@ -16,6 +16,8 @@ public class DeviceResponseModel {
 
     /**
      * 设备序列号
+     * <p>
+     * Device Serial No
      */
     private String deviceKey;
 
@@ -26,36 +28,50 @@ public class DeviceResponseModel {
 
     /**
      * 设备状态
+     *
+     * device status
      */
     private Byte status;
 
     /**
      * 设备启用禁用状态
+     *
+     * Enable the Disable status
      */
     private Boolean enable;
 
     /**
      * 设备异常类型
+     *
+     * Device abnormality type
      */
     private Byte expType;
 
     /**
      * 设备团队id
+     *
+     * organization id
      */
     private String orgId;
 
     /**
      * 设备软件版本
+     *
+     * device software version
      */
     private String softwareVersion;
 
     /**
      * 设备算法版本
+     *
+     * Device  algorithm  version
      */
     private String sdkVersion;
 
     /**
      * 设备是否和系统兼容
+     *
+     * Whether device compatible with system
      */
     private Boolean versionCompatibility;
 
@@ -81,16 +97,22 @@ public class DeviceResponseModel {
 
     /**
      * 设备语言
+     *
+     * Device language
      */
     private String lang;
 
     /**
      * 设备创建时间
+     *
+     * Device creation time
      */
     private LocalDateTime createTime;
 
     /**
      * 设备修改时间
+     *
+     * Device modification time
      */
     private LocalDateTime modifyTime;
 
@@ -106,6 +128,8 @@ public class DeviceResponseModel {
 
     /**
      * 设备是否支持刷卡
+     *
+     * Whether device supports cards
      */
     private Boolean cardSupport;
 

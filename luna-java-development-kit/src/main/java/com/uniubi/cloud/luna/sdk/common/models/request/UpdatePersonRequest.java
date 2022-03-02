@@ -16,6 +16,8 @@ public class UpdatePersonRequest {
 
     /**
      * 人员编号
+     * <p>
+     * Employee No
      */
     private String empNo;
 
@@ -31,7 +33,10 @@ public class UpdatePersonRequest {
 
     /**
      * 工号
+     *
+     * @deprecated ignore
      */
+    @Deprecated
     private String workNo;
 
     /**
@@ -46,6 +51,8 @@ public class UpdatePersonRequest {
 
     /**
      * 卡号
+     * <p>
+     * card NO
      */
     private String cardNo;
 
@@ -66,6 +73,8 @@ public class UpdatePersonRequest {
 
     /**
      * 座机
+     * <p>
+     * telephone
      */
     private String tel;
 
@@ -76,6 +85,8 @@ public class UpdatePersonRequest {
 
     /**
      * 身份证
+     * <p>
+     * ID card
      */
     private String idCardNo;
 
@@ -86,6 +97,8 @@ public class UpdatePersonRequest {
 
     /**
      * 所属部门集合id
+     * <p>
+     * Department collection id
      */
     private List<String> deptIdList;
 

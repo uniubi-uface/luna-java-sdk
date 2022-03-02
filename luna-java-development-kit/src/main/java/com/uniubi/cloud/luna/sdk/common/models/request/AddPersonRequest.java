@@ -18,6 +18,8 @@ public class AddPersonRequest {
 
     /**
      * 人员编号
+     * <p>
+     * employee No.
      */
     private String empNo;
 
@@ -48,11 +50,15 @@ public class AddPersonRequest {
 
     /**
      * 卡号
+     *
+     * Card No
      */
     private String cardNo;
 
     /**
      * 入职时间
+     *
+     * entry Time
      */
     private LocalDateTime entryTime;
 
@@ -68,6 +74,8 @@ public class AddPersonRequest {
 
     /**
      * 座机
+     *
+     * telephone
      */
     private String tel;
 
@@ -78,6 +86,8 @@ public class AddPersonRequest {
 
     /**
      * 身份证
+     *
+     * ID Card
      */
     private String idCardNo;
 
@@ -88,6 +98,8 @@ public class AddPersonRequest {
 
     /**
      * 所属部门集合id
+     *
+     * Department Collection  id
      */
     private List<String> deptIdList;
 

@@ -13,6 +13,8 @@ public class AddPersonRoleRequest {
 
     /**
      * 角色名称
+     * <p>
+     * person role(position) name
      */
     private String roleName;
 

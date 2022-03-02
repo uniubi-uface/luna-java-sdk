@@ -17,11 +17,15 @@ public class PersonResponseModel {
 
     /**
      * 人员id，数据主键
+     * <p>
+     * Person ID, data primary key
      */
     private String empId;
 
     /**
      * 人员编号
+     * <p>
+     * Employee No
      */
     private String empNo;
 
@@ -37,11 +41,15 @@ public class PersonResponseModel {
 
     /**
      * 工号
+     * @deprecated ignore
      */
+    @Deprecated
     private String workNo;
 
     /**
      * 团队id
+     *
+     * organization id
      */
     private String orgId;
 
@@ -80,6 +88,8 @@ public class PersonResponseModel {
 
     /**
      * 座机
+     *
+     * telephone
      */
     private String tel;
 
@@ -99,12 +109,14 @@ public class PersonResponseModel {
     private String roleId;
 
     /**
-     * 人像集合id
+     * 人像照片id集合
      */
     private List<String> photoIdList;
 
     /**
      * 所属部门集合id
+     *
+     * Department Collection id
      */
     private List<String> depIdList;
 

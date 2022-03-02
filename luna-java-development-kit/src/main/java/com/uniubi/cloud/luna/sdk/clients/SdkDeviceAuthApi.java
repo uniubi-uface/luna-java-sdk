@@ -16,7 +16,9 @@ import com.uniubi.cloud.luna.sdk.common.models.response.DeviceAuthResponseModel;
  *
  * @author jingmu
  * @since 2020/5/18
+ * @deprecated The equipment authorization method has been changed, which will lead to the loss of traffic time plan
  */
+@Deprecated
 public interface SdkDeviceAuthApi {
 
     /**

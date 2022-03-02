@@ -16,22 +16,25 @@ import java.util.List;
 public class AddDeviceAuthRequest {
 
     /**
-     * 员工编号
+     * Employee No
      */
     private String empNo;
 
     /**
-     * 设备序列号
+     * Device SN
      */
     private String deviceKey;
 
     /**
-     * 是否存储原图
+     * Whether to store the original drawing. If yes, the original drawing will be sent to the device.
+     * If not, the sectional drawing will be sent to the device
      */
     private Boolean imgStoreDevice;
 
     /**
      * 权限有效期开始时间
+     * <p>
+     * Start time of the Permission validity period
      */
     @JSONField(format = "yyyy-MM-dd HH:mm:ss")
     private LocalDateTime permissionStartTime;

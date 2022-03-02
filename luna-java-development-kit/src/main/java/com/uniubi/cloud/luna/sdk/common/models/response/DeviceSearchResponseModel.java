@@ -21,7 +21,9 @@ public class DeviceSearchResponseModel {
     private String softwareVersion;
 
     private String ip;
-
+    /**
+     * Has it been added to ustar
+     */
     private Boolean alreadyExist;
 
     private Boolean hasPassword;

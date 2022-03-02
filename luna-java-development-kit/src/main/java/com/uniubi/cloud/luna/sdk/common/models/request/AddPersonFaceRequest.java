@@ -18,6 +18,8 @@ public class AddPersonFaceRequest {
 
     /**
      * 文件数据
+     * <p>
+     * face file data
      */
     private byte[] faceData;
 

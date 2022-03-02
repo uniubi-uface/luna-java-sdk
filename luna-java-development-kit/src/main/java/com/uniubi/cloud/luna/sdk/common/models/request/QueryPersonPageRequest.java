@@ -18,6 +18,8 @@ public class QueryPersonPageRequest extends SDKBasePageRequest {
 
     /**
      * 人员编号
+     * <p>
+     * employee no
      */
     private String empNo;
 
@@ -28,6 +30,8 @@ public class QueryPersonPageRequest extends SDKBasePageRequest {
 
     /**
      * 部门id集合
+     *
+     * Department id collection
      */
     private List<String> deptIdList;
 

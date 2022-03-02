@@ -15,21 +15,29 @@ public class PersonGroupResponseModel {
 
     /**
      * 部门id
+     * <p>
+     * department id
      */
     private String personGroupId;
 
     /**
      * 部门名称
+     *
+     * department name
      */
     private String personGroupName;
 
     /**
      * 父级部门id
+     *
+     * parent department id
      */
     private String parentGroupId;
 
     /**
-     * 管理员personNo集合
+     * 管理员person id集合
+     *
+     * manager id list
      */
     private List<String> managerNos;
 

@@ -8,8 +8,9 @@
 
 | SDK版本 | 修改时间 | 修改人 | 修改内容                                                     |
 | ------- | -------- | ------ | ------------------------------------------------------------ |
-| 2.5.0   | 2021/10/20  | 井木   | 1.原java版本文档整理为通用版本<br />2. 添加人像返回人像ID<br />3.增加考勤报表接口相关<br />4. 接口优化 |
+| 2.5.0   | 2021/10/20  | 井木   | 1.原java版本文档整理为通用版本<br /> 2. 添加人像返回人像ID<br /> 3.增加考勤报表接口相关<br /> 4. 接口优化 |
 | 2.7.0   | 2022/01/25  | 井木   | 1. 增加 https 说明(#1.1) |
+| 3.0.0.0   | 2022/03/02  | 井木   | 1. 识别记录回调增加字段<br/> 2.休息报表查询返回字段修改 #4.14.3<br/>3.请求头改为小驼峰 |
 
 <br/><br/>
 
@@ -1009,7 +1010,7 @@ RSA的公钥和私钥由UStar生成，再UStar的对接平台页面获取RSA公�
   | roleNames             | String array | 职位名称集合                       |
   | atDate                | date         | 日期 yyyy-MM-dd                    |
   | timeIntervalName      | String       | 时间段名称                         |
-  | breatimeName          | String       | 时间段的休息时段名称               |
+  | breaktimeName          | String       | 时间段的休息时段名称               |
   | planBreakTimeDuration | long number  | 计划休息时长，单位秒               |
   | realBreakTimeStart    | Date         | 实际开始休息时间 yyyy-MM-dd        |
   | realBreakTimeEnd      | Date         | 实际结束休息时间 yyyy-MM-dd        |
@@ -1104,6 +1105,8 @@ RSA的公钥和私钥由UStar生成，再UStar的对接平台页面获取RSA公�
   | aliveBody          | number        | 活体判断 <br />1：活体<br />2：非活体<br />3：未进行活体判断 |
   | permissionTimeType | number        | 有效时间段判断 <br />1:准入时间内<br />2:未在准入时间内<br />3:未设置 |
   | passTimeType       | number        | 有效日期判断 <br />1:有效期内<br />2:未在有效期内<br />3:未设置 |
+  | identifyType       | number        | 人员比对结果 1：比对成功 2：比对失败 3：未进行比对 |
+  | aliveBody          | number        | 活体判断结果 1：活体判断成功 2：活体判断失败 3：未进行活体判断 |
 
 ### 5.2.2 员工添加事件
 

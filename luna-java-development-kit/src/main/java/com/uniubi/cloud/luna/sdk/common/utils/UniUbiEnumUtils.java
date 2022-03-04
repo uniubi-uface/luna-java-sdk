@@ -9,6 +9,7 @@ import java.util.Map;
 
 /**
  * 枚举初始化工具
+ *
  * @author Niancheng
  * @since 2019/6/29
  */

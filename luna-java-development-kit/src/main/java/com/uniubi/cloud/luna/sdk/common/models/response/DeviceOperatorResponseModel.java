@@ -4,6 +4,7 @@ import lombok.Data;
 
 /**
  * com.uniubi.medusa.ares.develop.models.response.DeviceOperatorResponseModel
+ *
  * @author jingmu
  * @since 2020/5/19
  */

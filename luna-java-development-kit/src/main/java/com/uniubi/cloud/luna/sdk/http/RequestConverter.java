@@ -4,6 +4,7 @@ import com.uniubi.cloud.luna.sdk.http.defaults.DefaultRequestConverter;
 
 /**
  * 请求转换器 UniUbiHttpClient 使用该类对请求体进行序列化操作
+ *
  * @author jingmu
  * @see UniUbiHttpClient 宇泛httpClient，用于发送sdk请求到服务端的http实现
  * @see DefaultRequestConverter

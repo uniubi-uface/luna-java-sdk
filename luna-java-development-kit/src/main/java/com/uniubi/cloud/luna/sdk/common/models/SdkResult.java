@@ -4,6 +4,7 @@ import lombok.Data;
 
 /**
  * sdk统一返回结果对象
+ *
  * @author jingmu
  * @since 2020/5/6
  */

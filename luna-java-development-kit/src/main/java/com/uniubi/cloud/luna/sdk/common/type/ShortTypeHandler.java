@@ -2,6 +2,7 @@ package com.uniubi.cloud.luna.sdk.common.type;
 
 /**
  * com.uniubi.cloud.funx.type.ShortTypeHandler
+ *
  * @author jingmu
  * @since 2020/3/20
  */

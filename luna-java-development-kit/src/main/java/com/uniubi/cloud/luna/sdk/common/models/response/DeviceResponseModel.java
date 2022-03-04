@@ -7,6 +7,7 @@ import java.util.List;
 
 /**
  * com.uniubi.medusa.ares.develop.models.response.DeviceResponseModel
+ *
  * @author jingmu
  * @since 2020/5/18
  */
@@ -63,7 +64,7 @@ public class DeviceResponseModel {
     /**
      * 设备算法版本
      * <p>
-     * Device  algorithm  version
+     * Device algorithm version
      */
     private String sdkVersion;
 

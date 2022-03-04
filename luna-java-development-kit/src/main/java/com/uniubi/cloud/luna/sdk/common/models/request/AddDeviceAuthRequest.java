@@ -8,6 +8,7 @@ import java.util.List;
 
 /**
  * AddDeviceAuthRequest
+ *
  * @author 阿秋@niancheng
  * @since 2020/6/19
  */
@@ -25,8 +26,8 @@ public class AddDeviceAuthRequest {
     private String deviceKey;
 
     /**
-     * Whether to store the original drawing. If yes, the original drawing will be sent to the device.
-     * If not, the sectional drawing will be sent to the device
+     * Whether to store the original drawing. If yes, the original drawing will be sent to
+     * the device. If not, the sectional drawing will be sent to the device
      */
     private Boolean imgStoreDevice;
 

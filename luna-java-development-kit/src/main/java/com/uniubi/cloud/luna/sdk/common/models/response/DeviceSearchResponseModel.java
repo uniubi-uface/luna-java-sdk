@@ -4,6 +4,7 @@ import lombok.Data;
 
 /**
  * com.uniubi.medusa.ares.develop.models.response.DeviceSearchResponseModel
+ *
  * @author jingmu
  * @since 2020/5/18
  */
@@ -20,6 +21,7 @@ public class DeviceSearchResponseModel {
     private String softwareVersion;
 
     private String ip;
+
     /**
      * Has it been added to ustar
      */

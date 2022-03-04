@@ -8,6 +8,7 @@ import java.util.List;
 
 /**
  * 添加员工请求
+ *
  * @author jingmu
  * @since 2020/5/7
  */
@@ -98,7 +99,7 @@ public class AddPersonRequest {
     /**
      * 所属部门集合id
      * <p>
-     * Department Collection  id
+     * Department Collection id
      */
     private List<String> deptIdList;
 

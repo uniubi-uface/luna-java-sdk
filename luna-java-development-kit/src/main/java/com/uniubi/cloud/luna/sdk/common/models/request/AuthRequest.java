@@ -4,6 +4,7 @@ import lombok.Data;
 
 /**
  * 鉴权请求对象
+ *
  * @author jingmu
  * @since 2020/3/26
  */

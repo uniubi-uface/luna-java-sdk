@@ -14,6 +14,7 @@ import java.util.List;
 
 /**
  * 考勤异常打卡数据展示对象
+ *
  * @author jingmu
  */
 @Setter
@@ -44,14 +45,12 @@ public class AtdExceptionReportResponseModel {
     private String name;
 
     /**
-     * 部门
-     * department names.
+     * 部门 department names.
      */
     private List<String> depNames;
 
     /**
-     * 职位
-     * role(position) names
+     * 职位 role(position) names
      */
     private List<String> roleNames;
 

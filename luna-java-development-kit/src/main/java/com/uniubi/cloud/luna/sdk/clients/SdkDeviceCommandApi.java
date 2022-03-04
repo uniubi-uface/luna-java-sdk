@@ -15,6 +15,7 @@ import java.util.List;
 
 /**
  * com.uniubi.medusa.ares.develop.api.clients.SdkDeviceCommandApi
+ *
  * @author jingmu
  * @since 2020/5/18
  * @deprecated No longer maintain this API

@@ -11,6 +11,7 @@ import java.util.Map;
 
 /**
  * com.uniubi.medusa.ares.develop.api.common.RpcMethod
+ *
  * @author jingmu
  * @since 2020/5/7
  */

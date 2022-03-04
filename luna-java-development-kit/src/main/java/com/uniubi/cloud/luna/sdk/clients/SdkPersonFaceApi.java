@@ -7,6 +7,7 @@ import com.uniubi.cloud.luna.sdk.common.models.request.DeletePersonFaceRequest;
 
 /**
  * Person Face API
+ *
  * @author jingmu
  * @since 2020/6/18
  */

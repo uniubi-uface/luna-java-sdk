@@ -6,6 +6,7 @@ import java.time.LocalDateTime;
 
 /**
  * com.uniubi.medusa.ares.develop.models.response.RecognitionResponseModel
+ *
  * @author jingmu
  * @since 2020/5/18
  */

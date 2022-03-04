@@ -5,6 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
  * LunaMsgReceiveApplication
+ *
  * @author 井木
  * @since 2022/02/28
  */

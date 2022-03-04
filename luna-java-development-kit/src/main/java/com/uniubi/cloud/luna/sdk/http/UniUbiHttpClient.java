@@ -5,6 +5,7 @@ import java.util.Map;
 
 /**
  * 宇泛httpClient 用来发送http请求
+ *
  * @author jingmu
  * @see RequestConverter 请求体转换器，用于将请求体序列化为字符串
  * @see ResponseConverter 响应体转换器，用于将服务端返回的字符串转为响应对象

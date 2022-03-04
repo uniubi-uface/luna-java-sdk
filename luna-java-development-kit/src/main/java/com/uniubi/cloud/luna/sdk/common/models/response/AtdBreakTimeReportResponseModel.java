@@ -32,8 +32,7 @@ public class AtdBreakTimeReportResponseModel {
     private String personId;
 
     /**
-     * 员工编号
-     * person NO.
+     * 员工编号 person NO.
      */
     private String personNo;
 

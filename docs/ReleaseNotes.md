@@ -18,7 +18,7 @@ convenient for developers to connect and communicate.
 
 | SDK Version | UStar Version | Modified Time |
 | ---- | ---- | ---- |
-| UStar v2.7.1 | 2.7.1.0 | 03/04/2022 |
+| UStar v2.7.1 | 2.7.1.0.RELEASE | 03/04/2022 |
 | UStar v3.0.0 | 3.0.0.0 | 03/02/2022 |
 
 > Version number description: The first three parts correspond to the USstar version number, and the fourth paragraph is the SDK version number
@@ -33,7 +33,7 @@ convenient for developers to connect and communicate.
     2. Rest report query returns field modification (4.14.3)
     3. Change the request header key to small camel case
 
-#### 2.7.1.0
+#### 2.7.1.0.RELEASE
 
 * Release time: 03/01/2022-
 * feature:

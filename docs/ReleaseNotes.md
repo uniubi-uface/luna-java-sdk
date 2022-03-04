@@ -1,41 +1,46 @@
-## 版本发布日志
+## Release Notes
 
-### 版本关系对照
+### Version relationship mapping
 
-#### web页面下载的SDK版本对照关系
+#### SDK version mapping relationship downloaded from the web page
 
-| SDK版本 | UStar版本 | 修改时间 |
+| SDK Version | UStar Version | Modified Time |
 | ---- | ---- | ---- |
-| ustar-2.5.0 |ustar-2.5.0| 2021-10-19 |
-| ustar-2.7.0 |ustar-2.7.0| 2022-01-25 |
+| ustar-2.5.0 |ustar-2.5.0| 10/19/2021 |
+| ustar-2.7.0 |ustar-2.7.0| 01/25/2022 |
 
-代码已迁移到github仓库，后续我们将在github上维护，方便开发者对接与交流。
+The code has been migrated to the GitHub repository, and we will maintain it on GitHub in the future, which is
+convenient for developers to connect and communicate.
 
-> UStar v2.7.0 以前的版本的使用者请继续从web页面下载SDK。
+> Users of versions earlier than UStar v2.7.0 should continue to download the SDK from the web page.
 
-#### Maven版本对照
+#### Maven dependency version mapping
 
-| UStar版本  | SDK版本 | 修改时间 |
+| SDK Version | UStar Version | Modified Time |
 | ---- | ---- | ---- |
-| UStar v2.7.0 | 2.7.0.1 | 2022-03-01 |
-| UStar v3.0.0 | 3.0.0.0 | 2022-03-02 |
+| UStar v2.7.1 | 2.7.1.0 | 03/04/2022 |
+| UStar v3.0.0 | 3.0.0.0 | 03/02/2022 |
 
-> 版本号说明：前3段与UStar版本号对应，第4段版本号为SDK版本号
+> Version number description: The first three parts correspond to the USstar version number, and the fourth paragraph is the SDK version number
 
-### 发布日志
+### Notes
 
-#### 3.0.0.0
+#### 3.0.0.0 (in development)
 
-* 发布时间：2022-03-02
-* 内容：
-    1. 识别记录回调增加字段
-    2. 休息报表查询返回字段修改 (4.14.3)
-    3. 请求头key改为小驼峰
+* Release time: 03/02/2022
+* feature:
+    1. Identify record callback add field
+    2. Rest report query returns field modification (4.14.3)
+    3. Change the request header key to small camel case
 
-#### 2.7.0.1 (grey)
+#### 2.7.1.0
 
-* 发布时间：2022-03-01
-* 内容：
-    1. 请求头key转小驼峰形式，兼容旧的大写下划线形式
+* Release time: 03/01/2022-
+* feature:
+    1. The request header key converted to a small camel case, which is compatible with the old capital and underscore
+       form
+
+
+
 
 

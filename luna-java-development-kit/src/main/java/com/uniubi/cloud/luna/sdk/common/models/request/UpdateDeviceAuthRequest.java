@@ -7,7 +7,6 @@ import java.util.List;
 
 /**
  * UpdateDeviceAuthRequest
- *
  * @author 阿秋@niancheng
  * @since 2020/6/19
  */

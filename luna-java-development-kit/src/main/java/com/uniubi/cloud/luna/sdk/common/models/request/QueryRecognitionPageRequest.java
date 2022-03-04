@@ -8,7 +8,6 @@ import java.util.List;
 
 /**
  * com.uniubi.medusa.ares.develop.models.request.QueryRecognitionPageRequest
- *
  * @author jingmu
  * @since 2020/5/18
  */

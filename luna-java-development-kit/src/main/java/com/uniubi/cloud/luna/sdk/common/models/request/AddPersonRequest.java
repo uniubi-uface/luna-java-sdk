@@ -8,7 +8,6 @@ import java.util.List;
 
 /**
  * 添加员工请求
- *
  * @author jingmu
  * @since 2020/5/7
  */
@@ -50,14 +49,14 @@ public class AddPersonRequest {
 
     /**
      * 卡号
-     *
+     * <p>
      * Card No
      */
     private String cardNo;
 
     /**
      * 入职时间
-     *
+     * <p>
      * entry Time
      */
     private LocalDateTime entryTime;
@@ -74,7 +73,7 @@ public class AddPersonRequest {
 
     /**
      * 座机
-     *
+     * <p>
      * telephone
      */
     private String tel;
@@ -86,7 +85,7 @@ public class AddPersonRequest {
 
     /**
      * 身份证
-     *
+     * <p>
      * ID Card
      */
     private String idCardNo;
@@ -98,7 +97,7 @@ public class AddPersonRequest {
 
     /**
      * 所属部门集合id
-     *
+     * <p>
      * Department Collection  id
      */
     private List<String> deptIdList;

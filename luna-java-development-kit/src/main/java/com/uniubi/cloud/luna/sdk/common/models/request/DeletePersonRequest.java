@@ -4,7 +4,6 @@ import lombok.Data;
 
 /**
  * 删除人员请求
- *
  * @author jingmu
  * @since 2020/5/7
  */

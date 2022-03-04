@@ -8,7 +8,6 @@ import java.util.List;
 
 /**
  * Search Device API
- *
  * @author jingmu
  * @since 2020/5/18
  */

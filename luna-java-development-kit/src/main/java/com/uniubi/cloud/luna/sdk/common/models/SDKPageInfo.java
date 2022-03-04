@@ -7,7 +7,6 @@ import java.util.List;
 
 /**
  * com.uniubi.medusa.ares.develop.models.SDKPageInfo
- *
  * @author jingmu
  * @since 2020/5/7
  */

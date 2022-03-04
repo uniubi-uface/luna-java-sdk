@@ -14,7 +14,6 @@ import java.util.Map;
 
 /**
  * 抽象tokenLoader实现
- *
  * @author jingmu
  * @since 2020/4/2
  */
@@ -31,7 +30,7 @@ public abstract class AbstractTokenLoader implements TokenLoader {
     private SdkLang sdkLang;
 
     public AbstractTokenLoader(UniUbiHttpClient uniUbiHttpClient, String accessKey, String accessSecret,
-            String requestUrl, SdkLang sdkLang) {
+                               String requestUrl, SdkLang sdkLang) {
         this.uniUbiHttpClient = uniUbiHttpClient;
         this.accessKey = accessKey;
         this.accessSecret = accessSecret;

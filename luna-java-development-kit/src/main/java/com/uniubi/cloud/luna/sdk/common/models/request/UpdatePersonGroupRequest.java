@@ -6,7 +6,6 @@ import java.util.List;
 
 /**
  * 更新人员分组（部门）请求
- *
  * @author jingmu
  * @since 2020/5/15
  */

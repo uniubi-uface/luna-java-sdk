@@ -5,7 +5,6 @@ import com.uniubi.cloud.luna.sdk.common.utils.UniUbiEnumUtils;
 
 /**
  * 消息状态
- *
  * @author huanghuizhou ClassName Http error code enum.
  * @version V1.0.
  * @since 2020.07.10 09:51:53

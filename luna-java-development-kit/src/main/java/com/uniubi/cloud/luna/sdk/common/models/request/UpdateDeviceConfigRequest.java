@@ -5,7 +5,6 @@ import lombok.EqualsAndHashCode;
 
 /**
  * com.uniubi.medusa.ares.develop.models.request.UpdateDeviceConfigRequest
- *
  * @author jingmu
  * @since 2020/5/19
  */

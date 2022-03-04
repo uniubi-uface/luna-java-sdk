@@ -8,7 +8,6 @@ import java.util.List;
 
 /**
  * 员工返回对象
- *
  * @author jingmu
  * @since 2020/5/7
  */
@@ -48,7 +47,7 @@ public class PersonResponseModel {
 
     /**
      * 团队id
-     *
+     * <p>
      * organization id
      */
     private String orgId;
@@ -88,7 +87,7 @@ public class PersonResponseModel {
 
     /**
      * 座机
-     *
+     * <p>
      * telephone
      */
     private String tel;
@@ -115,7 +114,7 @@ public class PersonResponseModel {
 
     /**
      * 所属部门集合id
-     *
+     * <p>
      * Department Collection id
      */
     private List<String> depIdList;

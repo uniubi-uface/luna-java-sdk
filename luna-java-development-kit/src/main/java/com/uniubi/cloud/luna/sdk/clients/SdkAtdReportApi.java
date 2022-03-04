@@ -13,7 +13,6 @@ import com.uniubi.cloud.luna.sdk.common.models.response.AtdOverWorkReportRespons
  * 考勤相关 API， 提供考勤报表查询方法
  * <p>
  * The attendance related API provides the query method of attendance report
- *
  * @author 井木
  * @since 2021/10/20
  */
@@ -21,7 +20,6 @@ public interface SdkAtdReportApi {
 
     /**
      * Query of attendance details Report
-     *
      * @param queryRequest 请求参数
      * @return report list
      */

@@ -6,7 +6,6 @@ import java.util.List;
 
 /**
  * com.uniubi.medusa.ares.develop.models.request.StartDeviceAuthTaskRequest
- *
  * @author jingmu
  * @since 2020/5/18
  */

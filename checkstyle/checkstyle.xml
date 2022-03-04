@@ -5,11 +5,11 @@
 
 <module name="Checker">
     <!--字符集编码-->
-    <property name="charset" value="UTF-8" />
+    <property name="charset" value="UTF-8"/>
     <!--违规级别-->
-    <property name="severity" value="error" />
+    <property name="severity" value="error"/>
     <!--可接受的文件扩展名-->
-    <property name="fileExtensions" value="java, properties, xml" />
+    <property name="fileExtensions" value="java, properties, xml"/>
     <!--检查文件是否包含制表符-->
     <!-- <module name="FileTabCharacter">
         <property name="eachLine" value="true" />
@@ -92,10 +92,10 @@
         <module name="AvoidStarImport"/>
         <!-- 检查是否导入了指定的非法包。默认情况下，这项检查会拒绝所有的sun.*包，因为直接使用sun.*包的程序肯定不是100%的纯Java程序。想要拒绝其他的包，将illegalPkgs属性设置为你指定的非法包列表即可。-->
         <!-- <module name="IllegalImport"/> -->
-         <!-- 检查是否存在多余的导入语句。如果一条导入语句满足以下条件，那么就是多余的：
-         1. 它是另一条导入语句的重复。也就是，一个类被导入了多次。
-         2. 从java.lang包中导入类，例如，导入java.lang.String。
-         3. 从当前包中导入类。-->
+        <!-- 检查是否存在多余的导入语句。如果一条导入语句满足以下条件，那么就是多余的：
+        1. 它是另一条导入语句的重复。也就是，一个类被导入了多次。
+        2. 从java.lang包中导入类，例如，导入java.lang.String。
+        3. 从当前包中导入类。-->
         <module name="RedundantImport"/>
         <!-- 检查未使用的导入语句。CheckStyle使用一种简单可靠的算法来报告未使用的导入语句。如果一条导入语句满足以下条件，那么就是未使用的：
           1. 没有在文件中引用。这种算法不支持通配符导入，例如，java.io.*；。大多数IDE检查带有通配符的导入语句时，使用的算法非常复杂。
@@ -106,10 +106,10 @@
         <module name="UnusedImports"/>
         <!--检查行长度-->
         <module name="LineLength">
-            <property name="max" value="200" /><!--mine-->
+            <property name="max" value="200"/><!--mine-->
             <!--可以忽略检查的行-->
             <property name="ignorePattern"
-                      value="^package.*|^import.*|a href|href|http://|https://|ftp://" />
+                      value="^package.*|^import.*|a href|href|http://|https://|ftp://"/>
         </module>
         <!-- 检查一个方法或构造器的参数的数量。默认10-->
         <module name="ParameterNumber">
@@ -119,7 +119,8 @@
         </module>
         <!--检查方法定义、构造器定义、方法调用、构造器调用的标识符和参数列表的左圆括号之间的填充符。也就是，如果标识符和左圆括号位于同一行，那么就检查标识符之后是否需要紧跟一个空格。如果标识符和左圆括号不在同一行，那么就报错，除非将规则配置为允许使用换行符。想要在标识符之后使用换行符，将allowLineBreaks属性设置为true即可。-->
         <module name="MethodParamPad">
-            <property name="tokens" value="CTOR_DEF,ENUM_CONSTANT_DEF,METHOD_CALL,METHOD_DEF,LITERAL_NEW,SUPER_CTOR_CALL"/>
+            <property name="tokens"
+                      value="CTOR_DEF,ENUM_CONSTANT_DEF,METHOD_CALL,METHOD_DEF,LITERAL_NEW,SUPER_CTOR_CALL"/>
         </module>
         <!-- 检查指定标记之后没有空格。若要禁用指定标记之后的换行符，将allowLineBreaks属性设为false即可。-->
         <module name="NoWhitespaceAfter">
@@ -131,7 +132,8 @@
         </module>
         <!-- 检查代码自动换行时，运算符所处位置的策略。nl表示运算符必须在新行中，eol表示运算符必须在当前行的行末。默认是nl-->
         <module name="OperatorWrap">
-            <property name="tokens" value="QUESTION,COLON,EQUAL,NOT_EQUAL,DIV,PLUS,MINUS,STAR,MOD,SR,BSR,GE,GT,SL,LE,LT,BXOR,BOR,LOR,BAND,LAND,LITERAL_INSTANCEOF,TYPE_EXTENSION_AND,ASSIGN,DIV_ASSIGN,PLUS_ASSIGN,MINUS_ASSIGN,STAR_ASSIGN,MOD_ASSIGN,SR_ASSIGN,BSR_ASSIGN,SL_ASSIGN,BXOR_ASSIGN,BOR_ASSIGN,BAND_ASSIGN,METHOD_REF"/>
+            <property name="tokens"
+                      value="QUESTION,COLON,EQUAL,NOT_EQUAL,DIV,PLUS,MINUS,STAR,MOD,SR,BSR,GE,GT,SL,LE,LT,BXOR,BOR,LOR,BAND,LAND,LITERAL_INSTANCEOF,TYPE_EXTENSION_AND,ASSIGN,DIV_ASSIGN,PLUS_ASSIGN,MINUS_ASSIGN,STAR_ASSIGN,MOD_ASSIGN,SR_ASSIGN,BSR_ASSIGN,SL_ASSIGN,BXOR_ASSIGN,BOR_ASSIGN,BAND_ASSIGN,METHOD_REF"/>
         </module>
         <!-- 检查指定标记之后是否紧跟了空格。只保留了do-->
         <module name="WhitespaceAfter">
@@ -139,7 +141,8 @@
         </module>
         <!-- 检查指定标记的周围是否有空格 do,do while return  switch, synchronized-->
         <module name="WhitespaceAround">
-            <property name="tokens" value="LITERAL_ASSERT,LITERAL_DO,DO_WHILE,LITERAL_RETURN,LITERAL_SWITCH,LITERAL_SYNCHRONIZED"/>
+            <property name="tokens"
+                      value="LITERAL_ASSERT,LITERAL_DO,DO_WHILE,LITERAL_RETURN,LITERAL_SWITCH,LITERAL_SYNCHRONIZED"/>
         </module>
         <!--检查修饰符是否符合Java建议-->
         <module name="ModifierOrder"/>
@@ -150,12 +153,14 @@
         <!-- 检查空代码块-->
         <module name="EmptyBlock">
             <property name="option" value="text"/>
-            <property name="tokens" value="LITERAL_CASE,LITERAL_CATCH,LITERAL_DO,LITERAL_ELSE,LITERAL_FINALLY,LITERAL_FOR,LITERAL_IF,INSTANCE_INIT,STATIC_INIT,LITERAL_SWITCH,LITERAL_SYNCHRONIZED,LITERAL_TRY,LITERAL_WHILE"/>
+            <property name="tokens"
+                      value="LITERAL_CASE,LITERAL_CATCH,LITERAL_DO,LITERAL_ELSE,LITERAL_FINALLY,LITERAL_FOR,LITERAL_IF,INSTANCE_INIT,STATIC_INIT,LITERAL_SWITCH,LITERAL_SYNCHRONIZED,LITERAL_TRY,LITERAL_WHILE"/>
         </module>
         <!-- 检查代码块的左花括号的放置位置。当前行-->
         <module name="LeftCurly">
             <property name="option" value="eol"/>
-            <property name="tokens" value="ANNOTATION_DEF,LITERAL_CASE,LITERAL_CATCH,CLASS_DEF,CTOR_DEF,LITERAL_DEFAULT,LITERAL_DO,LITERAL_ELSE,ENUM_CONSTANT_DEF,ENUM_DEF,LITERAL_FINALLY,LITERAL_FOR,LITERAL_IF,INTERFACE_DEF,LAMBDA,METHOD_DEF,OBJBLOCK,STATIC_INIT,LITERAL_SWITCH,LITERAL_SYNCHRONIZED,LITERAL_TRY,LITERAL_WHILE"/>
+            <property name="tokens"
+                      value="ANNOTATION_DEF,LITERAL_CASE,LITERAL_CATCH,CLASS_DEF,CTOR_DEF,LITERAL_DEFAULT,LITERAL_DO,LITERAL_ELSE,ENUM_CONSTANT_DEF,ENUM_DEF,LITERAL_FINALLY,LITERAL_FOR,LITERAL_IF,INTERFACE_DEF,LAMBDA,METHOD_DEF,OBJBLOCK,STATIC_INIT,LITERAL_SWITCH,LITERAL_SYNCHRONIZED,LITERAL_TRY,LITERAL_WHILE"/>
         </module>
         <!-- 检查代码块周围是否有大括号，可以检查do、else、if、for、while等关键字所控制的代码块。-->
         <module name="NeedBraces">

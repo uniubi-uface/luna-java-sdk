@@ -9,7 +9,6 @@ import java.util.Map;
 
 /**
  * com.uniubi.cloud.funx.type.TypeHandlerRegistry
- *
  * @author jingmu
  * @since 2020/3/20
  */

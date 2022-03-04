@@ -7,7 +7,6 @@ import java.util.List;
 
 /**
  * com.uniubi.medusa.ares.develop.models.response.DeviceResponseModel
- *
  * @author jingmu
  * @since 2020/5/18
  */
@@ -28,49 +27,49 @@ public class DeviceResponseModel {
 
     /**
      * 设备状态
-     *
+     * <p>
      * device status
      */
     private Byte status;
 
     /**
      * 设备启用禁用状态
-     *
+     * <p>
      * Enable the Disable status
      */
     private Boolean enable;
 
     /**
      * 设备异常类型
-     *
+     * <p>
      * Device abnormality type
      */
     private Byte expType;
 
     /**
      * 设备团队id
-     *
+     * <p>
      * organization id
      */
     private String orgId;
 
     /**
      * 设备软件版本
-     *
+     * <p>
      * device software version
      */
     private String softwareVersion;
 
     /**
      * 设备算法版本
-     *
+     * <p>
      * Device  algorithm  version
      */
     private String sdkVersion;
 
     /**
      * 设备是否和系统兼容
-     *
+     * <p>
      * Whether device compatible with system
      */
     private Boolean versionCompatibility;
@@ -97,21 +96,21 @@ public class DeviceResponseModel {
 
     /**
      * 设备语言
-     *
+     * <p>
      * Device language
      */
     private String lang;
 
     /**
      * 设备创建时间
-     *
+     * <p>
      * Device creation time
      */
     private LocalDateTime createTime;
 
     /**
      * 设备修改时间
-     *
+     * <p>
      * Device modification time
      */
     private LocalDateTime modifyTime;
@@ -128,7 +127,7 @@ public class DeviceResponseModel {
 
     /**
      * 设备是否支持刷卡
-     *
+     * <p>
      * Whether device supports cards
      */
     private Boolean cardSupport;

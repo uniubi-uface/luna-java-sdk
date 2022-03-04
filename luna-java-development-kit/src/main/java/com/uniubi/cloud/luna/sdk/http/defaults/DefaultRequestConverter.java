@@ -8,7 +8,6 @@ import java.util.Map;
 
 /**
  * 默认请求转换器 使用fastJson直接将对象转为字符串
- *
  * @author jingmu
  * @since 2020/3/26
  */

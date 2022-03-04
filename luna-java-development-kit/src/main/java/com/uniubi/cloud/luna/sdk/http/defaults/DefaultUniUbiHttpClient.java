@@ -22,7 +22,6 @@ import java.util.concurrent.TimeUnit;
  * 宇泛httpClient的默认实现 用来发送http请求 约定： 1.sdk请求统一使用 POST 方法 2.请求ContentType统一使用
  * application/json 请求使用OkHttp实现发送http请求 请求发送前会将请求体交给 requestConverter 做请求体序列化过程 请求响应结果会交给
  * responseConverter 进行响应结果的反序列化过程处理 通过 clientConfig 可以对请求进行超时配置
- *
  * @author jingmu
  * @see RequestConverter 请求体转换器，用于将请求体序列化为字符串
  * @see ResponseConverter 响应体转换器，用于将服务端返回的字符串转为响应对象
@@ -48,7 +47,7 @@ public class DefaultUniUbiHttpClient implements UniUbiHttpClient {
     private OkHttpClient client;
 
     public DefaultUniUbiHttpClient(RequestConverter requestConverter, ResponseConverter responseConverter,
-            ClientConfig clientConfig) {
+                                   ClientConfig clientConfig) {
         this.requestConverter = requestConverter;
         this.responseConverter = responseConverter;
         this.clientConfig = clientConfig;

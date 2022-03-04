@@ -8,7 +8,6 @@ import java.util.List;
 
 /**
  * AddDeviceAuthRequest
- *
  * @author 阿秋@niancheng
  * @since 2020/6/19
  */

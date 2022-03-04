@@ -4,7 +4,6 @@ import lombok.Data;
 
 /**
  * DeleteDeviceAuthRequest
- *
  * @author 阿秋@niancheng description default
  * @since 2020/6/19
  */

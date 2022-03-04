@@ -23,11 +23,10 @@ import java.util.Map;
 
 /**
  * sdk客户端代理工厂 用来创建接口的动态代理对象 该类的createProxy()方法会将传入的接口进行处理： 把该接口标注有RequestMark注解的方法代理处理
- *
  * @author jingmu
- * @since 2020/3/26
  * @see RequestMark 请求方法标注
  * @see RequestParam 请求方法简单参数标注
+ * @since 2020/3/26
  */
 public class UniUbiSdkClientProxyFactory {
 
@@ -39,7 +38,7 @@ public class UniUbiSdkClientProxyFactory {
     }
 
     private ClientProxyConfig createClientProxyConfig(String accessKey, String accessSecret,
-            RequestConfig requestConfig) {
+                                                      RequestConfig requestConfig) {
         ClientProxyConfig clientProxyConfig = new ClientProxyConfig();
         // 解析requestUrl
         if (requestConfig.getEndPoint().startsWith(SdkConstants.HTTP_PROTO_PREFIX)) {
@@ -85,7 +84,7 @@ public class UniUbiSdkClientProxyFactory {
     public <T> T createProxy(Class<T> sdkClientType) {
         ClientProxy clientProxy = new ClientProxy(clientProxyConfig);
         return (T) Proxy.newProxyInstance(UniUbiSdkClientProxyFactory.class.getClassLoader(),
-                new Class[] { sdkClientType }, clientProxy);
+                new Class[]{sdkClientType}, clientProxy);
     }
 
     private ClientConfig getClientConfig(RequestConfig requestConfig) {

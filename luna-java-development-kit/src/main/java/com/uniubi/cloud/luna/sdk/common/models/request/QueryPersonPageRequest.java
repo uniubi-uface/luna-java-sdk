@@ -8,7 +8,6 @@ import java.util.List;
 
 /**
  * 查询员工分页请求
- *
  * @author jingmu
  * @since 2020/5/7
  */
@@ -30,7 +29,7 @@ public class QueryPersonPageRequest extends SDKBasePageRequest {
 
     /**
      * 部门id集合
-     *
+     * <p>
      * Department id collection
      */
     private List<String> deptIdList;

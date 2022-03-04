@@ -4,7 +4,6 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 
 /**
  * athena config properties
- *
  * @author 井木
  * @since 2022/02/24
  */

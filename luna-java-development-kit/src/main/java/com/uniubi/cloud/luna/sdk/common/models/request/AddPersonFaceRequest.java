@@ -4,7 +4,6 @@ import lombok.Data;
 
 /**
  * com.uniubi.medusa.ares.develop.common.models.request.AddPersonFaceRequest
- *
  * @author jingmu
  * @since 2020/6/18
  */

@@ -2,7 +2,6 @@ package com.uniubi.cloud.luna.sdk.common;
 
 /**
  * sdk语言
- *
  * @author jingmu
  * @since 2020/5/8
  */
@@ -27,7 +26,8 @@ public enum SdkLang {
     /**
      * 西班牙
      */
-    ES("es"),;
+    ES("es"),
+    ;
 
     private final String value;
 

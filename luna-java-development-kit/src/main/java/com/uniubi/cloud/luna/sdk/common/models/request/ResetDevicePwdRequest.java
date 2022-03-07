@@ -1,16 +1,11 @@
 package com.uniubi.cloud.luna.sdk.common.models.request;
 
-import lombok.Data;
-import lombok.EqualsAndHashCode;
-
 /**
  * com.uniubi.medusa.ares.develop.models.request.ResetDevicePwdRequest
  *
  * @author jingmu
  * @since 2020/5/19
  */
-@EqualsAndHashCode(callSuper = true)
-@Data
 public class ResetDevicePwdRequest extends DeviceOperatorBaseRequest {
 
     /**
@@ -23,4 +18,27 @@ public class ResetDevicePwdRequest extends DeviceOperatorBaseRequest {
      */
     private String newPass;
 
+    public String getAdminPass() {
+        return adminPass;
+    }
+
+    public void setAdminPass(String adminPass) {
+        this.adminPass = adminPass;
+    }
+
+    public String getNewPass() {
+        return newPass;
+    }
+
+    public void setNewPass(String newPass) {
+        this.newPass = newPass;
+    }
+
+    @Override
+    public String toString() {
+        return "ResetDevicePwdRequest{" +
+                "adminPass='" + adminPass + '\'' +
+                ", newPass='" + newPass + '\'' +
+                '}';
+    }
 }

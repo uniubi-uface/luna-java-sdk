@@ -1,15 +1,11 @@
 package com.uniubi.cloud.luna.sdk.common.models.response;
 
-import lombok.Data;
-
 /**
  * com.uniubi.medusa.ares.develop.models.response.FinishTaskResponseModel
  *
  * @author jingmu
  * @since 2020/5/18
  */
-@Data
-
 public class FinishTaskResponseModel {
 
     private Boolean success;
@@ -18,4 +14,36 @@ public class FinishTaskResponseModel {
 
     private DeviceTaskInfoResponseModel taskInfo;
 
+    public Boolean getSuccess() {
+        return success;
+    }
+
+    public void setSuccess(Boolean success) {
+        this.success = success;
+    }
+
+    public String getFailedReason() {
+        return failedReason;
+    }
+
+    public void setFailedReason(String failedReason) {
+        this.failedReason = failedReason;
+    }
+
+    public DeviceTaskInfoResponseModel getTaskInfo() {
+        return taskInfo;
+    }
+
+    public void setTaskInfo(DeviceTaskInfoResponseModel taskInfo) {
+        this.taskInfo = taskInfo;
+    }
+
+    @Override
+    public String toString() {
+        return "FinishTaskResponseModel{" +
+                "success=" + success +
+                ", failedReason='" + failedReason + '\'' +
+                ", taskInfo=" + taskInfo +
+                '}';
+    }
 }

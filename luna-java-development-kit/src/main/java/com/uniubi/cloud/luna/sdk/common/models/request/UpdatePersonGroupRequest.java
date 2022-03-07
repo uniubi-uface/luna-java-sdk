@@ -1,7 +1,5 @@
 package com.uniubi.cloud.luna.sdk.common.models.request;
 
-import lombok.Data;
-
 import java.util.List;
 
 /**
@@ -10,7 +8,6 @@ import java.util.List;
  * @author jingmu
  * @since 2020/5/15
  */
-@Data
 public class UpdatePersonGroupRequest {
 
     /**
@@ -41,4 +38,46 @@ public class UpdatePersonGroupRequest {
      */
     private List<String> managerNos;
 
+
+    public String getPersonGroupId() {
+        return personGroupId;
+    }
+
+    public void setPersonGroupId(String personGroupId) {
+        this.personGroupId = personGroupId;
+    }
+
+    public String getPersonGroupName() {
+        return personGroupName;
+    }
+
+    public void setPersonGroupName(String personGroupName) {
+        this.personGroupName = personGroupName;
+    }
+
+    public String getParentGroupId() {
+        return parentGroupId;
+    }
+
+    public void setParentGroupId(String parentGroupId) {
+        this.parentGroupId = parentGroupId;
+    }
+
+    public List<String> getManagerNos() {
+        return managerNos;
+    }
+
+    public void setManagerNos(List<String> managerNos) {
+        this.managerNos = managerNos;
+    }
+
+    @Override
+    public String toString() {
+        return "UpdatePersonGroupRequest{" +
+                "personGroupId='" + personGroupId + '\'' +
+                ", personGroupName='" + personGroupName + '\'' +
+                ", parentGroupId='" + parentGroupId + '\'' +
+                ", managerNos=" + managerNos +
+                '}';
+    }
 }

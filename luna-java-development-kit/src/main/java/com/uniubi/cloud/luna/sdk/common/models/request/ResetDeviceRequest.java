@@ -1,16 +1,11 @@
 package com.uniubi.cloud.luna.sdk.common.models.request;
 
-import lombok.Data;
-import lombok.EqualsAndHashCode;
-
 /**
  * com.uniubi.medusa.ares.develop.models.request.ResetDeviceRequest
  *
  * @author jingmu
  * @since 2020/5/19
  */
-@EqualsAndHashCode(callSuper = true)
-@Data
 public class ResetDeviceRequest extends DeviceOperatorBaseRequest {
 
     /**
@@ -18,4 +13,18 @@ public class ResetDeviceRequest extends DeviceOperatorBaseRequest {
      */
     private Boolean factoryDataReset;
 
+    public Boolean getFactoryDataReset() {
+        return factoryDataReset;
+    }
+
+    public void setFactoryDataReset(Boolean factoryDataReset) {
+        this.factoryDataReset = factoryDataReset;
+    }
+
+    @Override
+    public String toString() {
+        return "ResetDeviceRequest{" +
+                "factoryDataReset=" + factoryDataReset +
+                '}';
+    }
 }

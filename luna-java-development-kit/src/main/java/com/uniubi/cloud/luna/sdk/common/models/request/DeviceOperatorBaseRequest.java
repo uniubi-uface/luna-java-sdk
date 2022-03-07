@@ -1,7 +1,5 @@
 package com.uniubi.cloud.luna.sdk.common.models.request;
 
-import lombok.Data;
-
 import java.util.List;
 
 /**
@@ -10,7 +8,6 @@ import java.util.List;
  * @author jingmu
  * @since 2020/5/19
  */
-@Data
 public class DeviceOperatorBaseRequest {
 
     /**
@@ -18,4 +15,18 @@ public class DeviceOperatorBaseRequest {
      */
     private List<String> deviceKeyList;
 
+    public List<String> getDeviceKeyList() {
+        return deviceKeyList;
+    }
+
+    public void setDeviceKeyList(List<String> deviceKeyList) {
+        this.deviceKeyList = deviceKeyList;
+    }
+
+    @Override
+    public String toString() {
+        return "DeviceOperatorBaseRequest{" +
+                "deviceKeyList=" + deviceKeyList +
+                '}';
+    }
 }

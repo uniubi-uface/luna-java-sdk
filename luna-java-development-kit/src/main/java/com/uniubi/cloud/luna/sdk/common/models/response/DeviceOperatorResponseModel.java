@@ -1,14 +1,11 @@
 package com.uniubi.cloud.luna.sdk.common.models.response;
 
-import lombok.Data;
-
 /**
  * com.uniubi.medusa.ares.develop.models.response.DeviceOperatorResponseModel
  *
  * @author jingmu
  * @since 2020/5/19
  */
-@Data
 public class DeviceOperatorResponseModel {
 
     /**
@@ -31,4 +28,45 @@ public class DeviceOperatorResponseModel {
      */
     private String reason;
 
+    public String getDeviceKey() {
+        return deviceKey;
+    }
+
+    public void setDeviceKey(String deviceKey) {
+        this.deviceKey = deviceKey;
+    }
+
+    public String getDeviceName() {
+        return deviceName;
+    }
+
+    public void setDeviceName(String deviceName) {
+        this.deviceName = deviceName;
+    }
+
+    public Boolean getSuccess() {
+        return success;
+    }
+
+    public void setSuccess(Boolean success) {
+        this.success = success;
+    }
+
+    public String getReason() {
+        return reason;
+    }
+
+    public void setReason(String reason) {
+        this.reason = reason;
+    }
+
+    @Override
+    public String toString() {
+        return "DeviceOperatorResponseModel{" +
+                "deviceKey='" + deviceKey + '\'' +
+                ", deviceName='" + deviceName + '\'' +
+                ", success=" + success +
+                ", reason='" + reason + '\'' +
+                '}';
+    }
 }

@@ -1,7 +1,6 @@
 package com.uniubi.cloud.luna.sdk.common.models.request;
 
 import com.alibaba.fastjson.annotation.JSONField;
-import lombok.Data;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -12,7 +11,6 @@ import java.util.List;
  * @author jingmu
  * @since 2020/5/18
  */
-@Data
 public class DeviceAuthPermissionTime {
 
     /**
@@ -32,4 +30,36 @@ public class DeviceAuthPermissionTime {
      */
     private List<DeviceAuthPermissionTimeEntry> permissionTimeEntries;
 
+    public LocalDateTime getPermissionStartTime() {
+        return permissionStartTime;
+    }
+
+    public void setPermissionStartTime(LocalDateTime permissionStartTime) {
+        this.permissionStartTime = permissionStartTime;
+    }
+
+    public LocalDateTime getPermissionEndTime() {
+        return permissionEndTime;
+    }
+
+    public void setPermissionEndTime(LocalDateTime permissionEndTime) {
+        this.permissionEndTime = permissionEndTime;
+    }
+
+    public List<DeviceAuthPermissionTimeEntry> getPermissionTimeEntries() {
+        return permissionTimeEntries;
+    }
+
+    public void setPermissionTimeEntries(List<DeviceAuthPermissionTimeEntry> permissionTimeEntries) {
+        this.permissionTimeEntries = permissionTimeEntries;
+    }
+
+    @Override
+    public String toString() {
+        return "DeviceAuthPermissionTime{" +
+                "permissionStartTime=" + permissionStartTime +
+                ", permissionEndTime=" + permissionEndTime +
+                ", permissionTimeEntries=" + permissionTimeEntries +
+                '}';
+    }
 }

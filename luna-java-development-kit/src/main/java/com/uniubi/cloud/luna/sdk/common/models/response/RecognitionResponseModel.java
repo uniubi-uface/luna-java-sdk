@@ -1,7 +1,5 @@
 package com.uniubi.cloud.luna.sdk.common.models.response;
 
-import lombok.Data;
-
 import java.time.LocalDateTime;
 
 /**
@@ -10,7 +8,6 @@ import java.time.LocalDateTime;
  * @author jingmu
  * @since 2020/5/18
  */
-@Data
 public class RecognitionResponseModel {
 
     /**
@@ -123,4 +120,135 @@ public class RecognitionResponseModel {
      */
     private Byte passTimeType;
 
+    public String getEmpNo() {
+        return empNo;
+    }
+
+    public void setEmpNo(String empNo) {
+        this.empNo = empNo;
+    }
+
+    public Byte getRecMode() {
+        return recMode;
+    }
+
+    public void setRecMode(Byte recMode) {
+        this.recMode = recMode;
+    }
+
+    public String getDeviceKey() {
+        return deviceKey;
+    }
+
+    public void setDeviceKey(String deviceKey) {
+        this.deviceKey = deviceKey;
+    }
+
+    public String getDeviceName() {
+        return deviceName;
+    }
+
+    public void setDeviceName(String deviceName) {
+        this.deviceName = deviceName;
+    }
+
+    public LocalDateTime getRecTime() {
+        return recTime;
+    }
+
+    public void setRecTime(LocalDateTime recTime) {
+        this.recTime = recTime;
+    }
+
+    public String getOrgId() {
+        return orgId;
+    }
+
+    public void setOrgId(String orgId) {
+        this.orgId = orgId;
+    }
+
+    public String getImageId() {
+        return imageId;
+    }
+
+    public void setImageId(String imageId) {
+        this.imageId = imageId;
+    }
+
+    public Byte getIdentifyType() {
+        return identifyType;
+    }
+
+    public void setIdentifyType(Byte identifyType) {
+        this.identifyType = identifyType;
+    }
+
+    public Double getTemperature() {
+        return temperature;
+    }
+
+    public void setTemperature(Double temperature) {
+        this.temperature = temperature;
+    }
+
+    public Byte getTemperatureState() {
+        return temperatureState;
+    }
+
+    public void setTemperatureState(Byte temperatureState) {
+        this.temperatureState = temperatureState;
+    }
+
+    public Byte getTemperatureUnit() {
+        return temperatureUnit;
+    }
+
+    public void setTemperatureUnit(Byte temperatureUnit) {
+        this.temperatureUnit = temperatureUnit;
+    }
+
+    public Byte getAliveBody() {
+        return aliveBody;
+    }
+
+    public void setAliveBody(Byte aliveBody) {
+        this.aliveBody = aliveBody;
+    }
+
+    public Byte getPermissionTimeType() {
+        return permissionTimeType;
+    }
+
+    public void setPermissionTimeType(Byte permissionTimeType) {
+        this.permissionTimeType = permissionTimeType;
+    }
+
+    public Byte getPassTimeType() {
+        return passTimeType;
+    }
+
+    public void setPassTimeType(Byte passTimeType) {
+        this.passTimeType = passTimeType;
+    }
+
+    @Override
+    public String toString() {
+        return "RecognitionResponseModel{" +
+                "empNo='" + empNo + '\'' +
+                ", recMode=" + recMode +
+                ", deviceKey='" + deviceKey + '\'' +
+                ", deviceName='" + deviceName + '\'' +
+                ", recTime=" + recTime +
+                ", orgId='" + orgId + '\'' +
+                ", imageId='" + imageId + '\'' +
+                ", identifyType=" + identifyType +
+                ", temperature=" + temperature +
+                ", temperatureState=" + temperatureState +
+                ", temperatureUnit=" + temperatureUnit +
+                ", aliveBody=" + aliveBody +
+                ", permissionTimeType=" + permissionTimeType +
+                ", passTimeType=" + passTimeType +
+                '}';
+    }
 }

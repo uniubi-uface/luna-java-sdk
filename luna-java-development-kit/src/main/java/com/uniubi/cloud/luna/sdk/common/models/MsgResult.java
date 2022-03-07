@@ -1,6 +1,5 @@
 package com.uniubi.cloud.luna.sdk.common.models;
 
-import lombok.Data;
 
 /**
  * com.uniubi.medusa.ares.develop.common.models.MsgResult
@@ -8,9 +7,23 @@ import lombok.Data;
  * @author jingmu
  * @since 2020/5/26
  */
-@Data
 public class MsgResult {
 
     private Boolean success;
 
+
+    public Boolean getSuccess() {
+        return success;
+    }
+
+    public void setSuccess(Boolean success) {
+        this.success = success;
+    }
+
+    @Override
+    public String toString() {
+        return "MsgResult{" +
+                "success=" + success +
+                '}';
+    }
 }

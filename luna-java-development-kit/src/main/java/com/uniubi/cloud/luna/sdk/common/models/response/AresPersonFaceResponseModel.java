@@ -1,6 +1,6 @@
 package com.uniubi.cloud.luna.sdk.common.models.response;
 
-import lombok.Data;
+import java.io.Serializable;
 
 /**
  * com.uniubi.medusa.ares.develop.models.response.AresPersonFaceResponseModel
@@ -8,8 +8,9 @@ import lombok.Data;
  * @author jingmu
  * @since 2020/5/18
  */
-@Data
-public class AresPersonFaceResponseModel {
+public class AresPersonFaceResponseModel implements Serializable {
+
+    private static final long serialVersionUID = 500246048168639602L;
 
     /**
      * 人像id
@@ -36,4 +37,55 @@ public class AresPersonFaceResponseModel {
      */
     private String failedReason;
 
+
+    public String getFaceId() {
+        return faceId;
+    }
+
+    public void setFaceId(String faceId) {
+        this.faceId = faceId;
+    }
+
+    public String getPhotoId() {
+        return photoId;
+    }
+
+    public void setPhotoId(String photoId) {
+        this.photoId = photoId;
+    }
+
+    public Byte getStatus() {
+        return status;
+    }
+
+    public void setStatus(Byte status) {
+        this.status = status;
+    }
+
+    public String getPhotoUrl() {
+        return photoUrl;
+    }
+
+    public void setPhotoUrl(String photoUrl) {
+        this.photoUrl = photoUrl;
+    }
+
+    public String getFailedReason() {
+        return failedReason;
+    }
+
+    public void setFailedReason(String failedReason) {
+        this.failedReason = failedReason;
+    }
+
+    @Override
+    public String toString() {
+        return "AresPersonFaceResponseModel{" +
+                "faceId='" + faceId + '\'' +
+                ", photoId='" + photoId + '\'' +
+                ", status=" + status +
+                ", photoUrl='" + photoUrl + '\'' +
+                ", failedReason='" + failedReason + '\'' +
+                '}';
+    }
 }

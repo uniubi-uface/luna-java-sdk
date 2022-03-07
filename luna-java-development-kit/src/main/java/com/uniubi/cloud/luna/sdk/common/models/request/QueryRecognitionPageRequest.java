@@ -1,8 +1,6 @@
 package com.uniubi.cloud.luna.sdk.common.models.request;
 
 import com.uniubi.cloud.luna.sdk.common.models.SDKBasePageRequest;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
 
 import java.util.List;
 
@@ -12,8 +10,6 @@ import java.util.List;
  * @author jingmu
  * @since 2020/5/18
  */
-@EqualsAndHashCode(callSuper = true)
-@Data
 public class QueryRecognitionPageRequest extends SDKBasePageRequest {
 
     /**
@@ -58,4 +54,63 @@ public class QueryRecognitionPageRequest extends SDKBasePageRequest {
      */
     private String statDate;
 
+    public List<String> getEmpNos() {
+        return empNos;
+    }
+
+    public void setEmpNos(List<String> empNos) {
+        this.empNos = empNos;
+    }
+
+    public String getOrgId() {
+        return orgId;
+    }
+
+    public void setOrgId(String orgId) {
+        this.orgId = orgId;
+    }
+
+    public Byte getRecMode() {
+        return recMode;
+    }
+
+    public void setRecMode(Byte recMode) {
+        this.recMode = recMode;
+    }
+
+    public Long getStartTime() {
+        return startTime;
+    }
+
+    public void setStartTime(Long startTime) {
+        this.startTime = startTime;
+    }
+
+    public Long getEndTime() {
+        return endTime;
+    }
+
+    public void setEndTime(Long endTime) {
+        this.endTime = endTime;
+    }
+
+    public String getStatDate() {
+        return statDate;
+    }
+
+    public void setStatDate(String statDate) {
+        this.statDate = statDate;
+    }
+
+    @Override
+    public String toString() {
+        return "QueryRecognitionPageRequest{" +
+                "empNos=" + empNos +
+                ", orgId='" + orgId + '\'' +
+                ", recMode=" + recMode +
+                ", startTime=" + startTime +
+                ", endTime=" + endTime +
+                ", statDate='" + statDate + '\'' +
+                '}';
+    }
 }

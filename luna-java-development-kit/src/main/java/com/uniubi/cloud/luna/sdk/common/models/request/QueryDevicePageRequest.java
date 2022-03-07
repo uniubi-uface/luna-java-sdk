@@ -1,8 +1,6 @@
 package com.uniubi.cloud.luna.sdk.common.models.request;
 
 import com.uniubi.cloud.luna.sdk.common.models.SDKBasePageRequest;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
 
 import java.util.List;
 
@@ -12,8 +10,6 @@ import java.util.List;
  * @author jingmu
  * @since 2020/5/18
  */
-@EqualsAndHashCode(callSuper = true)
-@Data
 public class QueryDevicePageRequest extends SDKBasePageRequest {
 
     /**
@@ -52,4 +48,72 @@ public class QueryDevicePageRequest extends SDKBasePageRequest {
      */
     private Boolean cardSupport;
 
+    public String getDeviceKey() {
+        return deviceKey;
+    }
+
+    public void setDeviceKey(String deviceKey) {
+        this.deviceKey = deviceKey;
+    }
+
+    public String getDeviceName() {
+        return deviceName;
+    }
+
+    public void setDeviceName(String deviceName) {
+        this.deviceName = deviceName;
+    }
+
+    public String getDeviceIp() {
+        return deviceIp;
+    }
+
+    public void setDeviceIp(String deviceIp) {
+        this.deviceIp = deviceIp;
+    }
+
+    public String getDeviceGroupId() {
+        return deviceGroupId;
+    }
+
+    public void setDeviceGroupId(String deviceGroupId) {
+        this.deviceGroupId = deviceGroupId;
+    }
+
+    public Byte getStatus() {
+        return status;
+    }
+
+    public void setStatus(Byte status) {
+        this.status = status;
+    }
+
+    public List<Byte> getRecognitionModes() {
+        return recognitionModes;
+    }
+
+    public void setRecognitionModes(List<Byte> recognitionModes) {
+        this.recognitionModes = recognitionModes;
+    }
+
+    public Boolean getCardSupport() {
+        return cardSupport;
+    }
+
+    public void setCardSupport(Boolean cardSupport) {
+        this.cardSupport = cardSupport;
+    }
+
+    @Override
+    public String toString() {
+        return "QueryDevicePageRequest{" +
+                "deviceKey='" + deviceKey + '\'' +
+                ", deviceName='" + deviceName + '\'' +
+                ", deviceIp='" + deviceIp + '\'' +
+                ", deviceGroupId='" + deviceGroupId + '\'' +
+                ", status=" + status +
+                ", recognitionModes=" + recognitionModes +
+                ", cardSupport=" + cardSupport +
+                '}';
+    }
 }

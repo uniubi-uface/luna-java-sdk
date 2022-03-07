@@ -1,14 +1,11 @@
 package com.uniubi.cloud.luna.sdk.common.models.request;
 
-import lombok.Data;
-
 /**
  * com.uniubi.medusa.ares.develop.common.models.request.DeletePersonFaceRequest
  *
  * @author jingmu
  * @since 2020/6/18
  */
-@Data
 public class DeletePersonFaceRequest {
 
     /**
@@ -23,4 +20,27 @@ public class DeletePersonFaceRequest {
      */
     private String photoId;
 
+    public String getEmpNo() {
+        return empNo;
+    }
+
+    public void setEmpNo(String empNo) {
+        this.empNo = empNo;
+    }
+
+    public String getPhotoId() {
+        return photoId;
+    }
+
+    public void setPhotoId(String photoId) {
+        this.photoId = photoId;
+    }
+
+    @Override
+    public String toString() {
+        return "DeletePersonFaceRequest{" +
+                "empNo='" + empNo + '\'' +
+                ", photoId='" + photoId + '\'' +
+                '}';
+    }
 }

@@ -1,7 +1,5 @@
 package com.uniubi.cloud.luna.sdk.common.models.response;
 
-import lombok.Data;
-
 import java.util.List;
 
 /**
@@ -10,7 +8,6 @@ import java.util.List;
  * @author jingmu
  * @since 2020/5/18
  */
-@Data
 public class DeviceGroupResponseModel {
 
     /**
@@ -38,4 +35,54 @@ public class DeviceGroupResponseModel {
      */
     private List<String> deviceKeyList;
 
+    public String getDeviceGroupId() {
+        return deviceGroupId;
+    }
+
+    public void setDeviceGroupId(String deviceGroupId) {
+        this.deviceGroupId = deviceGroupId;
+    }
+
+    public String getDeviceGroupName() {
+        return deviceGroupName;
+    }
+
+    public void setDeviceGroupName(String deviceGroupName) {
+        this.deviceGroupName = deviceGroupName;
+    }
+
+    public Integer getDeviceNum() {
+        return deviceNum;
+    }
+
+    public void setDeviceNum(Integer deviceNum) {
+        this.deviceNum = deviceNum;
+    }
+
+    public String getRemark() {
+        return remark;
+    }
+
+    public void setRemark(String remark) {
+        this.remark = remark;
+    }
+
+    public List<String> getDeviceKeyList() {
+        return deviceKeyList;
+    }
+
+    public void setDeviceKeyList(List<String> deviceKeyList) {
+        this.deviceKeyList = deviceKeyList;
+    }
+
+    @Override
+    public String toString() {
+        return "DeviceGroupResponseModel{" +
+                "deviceGroupId='" + deviceGroupId + '\'' +
+                ", deviceGroupName='" + deviceGroupName + '\'' +
+                ", deviceNum=" + deviceNum +
+                ", remark='" + remark + '\'' +
+                ", deviceKeyList=" + deviceKeyList +
+                '}';
+    }
 }

@@ -1,7 +1,5 @@
 package com.uniubi.cloud.luna.sdk.common.models.request;
 
-import lombok.Data;
-
 /**
  * <p class="detail">
  * 功能:
@@ -11,7 +9,6 @@ import lombok.Data;
  * @version V1.0.
  * @since 2020.10.14 09:47:17
  */
-@Data
 public class AddPersonTypeRequest {
 
     /**
@@ -19,4 +16,18 @@ public class AddPersonTypeRequest {
      */
     private String typeName;
 
+    public String getTypeName() {
+        return typeName;
+    }
+
+    public void setTypeName(String typeName) {
+        this.typeName = typeName;
+    }
+
+    @Override
+    public String toString() {
+        return "AddPersonTypeRequest{" +
+                "typeName='" + typeName + '\'' +
+                '}';
+    }
 }

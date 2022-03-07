@@ -1,7 +1,6 @@
 package com.uniubi.cloud.luna.sdk.common.models.response;
 
 import com.alibaba.fastjson.annotation.JSONField;
-import lombok.Data;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -12,7 +11,6 @@ import java.util.List;
  * @author jingmu
  * @since 2020/5/7
  */
-@Data
 public class PersonResponseModel {
 
     /**
@@ -120,4 +118,172 @@ public class PersonResponseModel {
      */
     private List<String> depIdList;
 
+
+    public String getEmpId() {
+        return empId;
+    }
+
+    public void setEmpId(String empId) {
+        this.empId = empId;
+    }
+
+    public String getEmpNo() {
+        return empNo;
+    }
+
+    public void setEmpNo(String empNo) {
+        this.empNo = empNo;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    public String getWorkNo() {
+        return workNo;
+    }
+
+    public void setWorkNo(String workNo) {
+        this.workNo = workNo;
+    }
+
+    public String getOrgId() {
+        return orgId;
+    }
+
+    public void setOrgId(String orgId) {
+        this.orgId = orgId;
+    }
+
+    public String getMail() {
+        return mail;
+    }
+
+    public void setMail(String mail) {
+        this.mail = mail;
+    }
+
+    public String getStageName() {
+        return stageName;
+    }
+
+    public void setStageName(String stageName) {
+        this.stageName = stageName;
+    }
+
+    public String getCardNo() {
+        return cardNo;
+    }
+
+    public void setCardNo(String cardNo) {
+        this.cardNo = cardNo;
+    }
+
+    public LocalDateTime getEntryTime() {
+        return entryTime;
+    }
+
+    public void setEntryTime(LocalDateTime entryTime) {
+        this.entryTime = entryTime;
+    }
+
+    public String getWorkPlace() {
+        return workPlace;
+    }
+
+    public void setWorkPlace(String workPlace) {
+        this.workPlace = workPlace;
+    }
+
+    public String getPersonTypeId() {
+        return personTypeId;
+    }
+
+    public void setPersonTypeId(String personTypeId) {
+        this.personTypeId = personTypeId;
+    }
+
+    public String getTel() {
+        return tel;
+    }
+
+    public void setTel(String tel) {
+        this.tel = tel;
+    }
+
+    public Byte getGender() {
+        return gender;
+    }
+
+    public void setGender(Byte gender) {
+        this.gender = gender;
+    }
+
+    public String getIdCardNo() {
+        return idCardNo;
+    }
+
+    public void setIdCardNo(String idCardNo) {
+        this.idCardNo = idCardNo;
+    }
+
+    public String getRoleId() {
+        return roleId;
+    }
+
+    public void setRoleId(String roleId) {
+        this.roleId = roleId;
+    }
+
+    public List<String> getPhotoIdList() {
+        return photoIdList;
+    }
+
+    public void setPhotoIdList(List<String> photoIdList) {
+        this.photoIdList = photoIdList;
+    }
+
+    public List<String> getDepIdList() {
+        return depIdList;
+    }
+
+    public void setDepIdList(List<String> depIdList) {
+        this.depIdList = depIdList;
+    }
+
+    @Override
+    public String toString() {
+        return "PersonResponseModel{" +
+                "empId='" + empId + '\'' +
+                ", empNo='" + empNo + '\'' +
+                ", name='" + name + '\'' +
+                ", phone='" + phone + '\'' +
+                ", workNo='" + workNo + '\'' +
+                ", orgId='" + orgId + '\'' +
+                ", mail='" + mail + '\'' +
+                ", stageName='" + stageName + '\'' +
+                ", cardNo='" + cardNo + '\'' +
+                ", entryTime=" + entryTime +
+                ", workPlace='" + workPlace + '\'' +
+                ", personTypeId='" + personTypeId + '\'' +
+                ", tel='" + tel + '\'' +
+                ", gender=" + gender +
+                ", idCardNo='" + idCardNo + '\'' +
+                ", roleId='" + roleId + '\'' +
+                ", photoIdList=" + photoIdList +
+                ", depIdList=" + depIdList +
+                '}';
+    }
 }

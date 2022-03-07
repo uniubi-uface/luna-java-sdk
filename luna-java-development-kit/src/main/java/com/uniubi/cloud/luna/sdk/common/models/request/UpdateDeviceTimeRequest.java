@@ -1,8 +1,5 @@
 package com.uniubi.cloud.luna.sdk.common.models.request;
 
-import lombok.Data;
-import lombok.EqualsAndHashCode;
-
 import java.time.LocalDateTime;
 
 /**
@@ -11,8 +8,6 @@ import java.time.LocalDateTime;
  * @author jingmu
  * @since 2020/5/19
  */
-@EqualsAndHashCode(callSuper = true)
-@Data
 public class UpdateDeviceTimeRequest extends DeviceOperatorBaseRequest {
 
     /**
@@ -25,4 +20,28 @@ public class UpdateDeviceTimeRequest extends DeviceOperatorBaseRequest {
      */
     private String timezone;
 
+
+    public LocalDateTime getTime() {
+        return time;
+    }
+
+    public void setTime(LocalDateTime time) {
+        this.time = time;
+    }
+
+    public String getTimezone() {
+        return timezone;
+    }
+
+    public void setTimezone(String timezone) {
+        this.timezone = timezone;
+    }
+
+    @Override
+    public String toString() {
+        return "UpdateDeviceTimeRequest{" +
+                "time=" + time +
+                ", timezone='" + timezone + '\'' +
+                '}';
+    }
 }

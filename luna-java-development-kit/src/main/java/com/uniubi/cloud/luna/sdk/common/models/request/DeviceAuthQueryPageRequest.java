@@ -1,8 +1,6 @@
 package com.uniubi.cloud.luna.sdk.common.models.request;
 
 import com.uniubi.cloud.luna.sdk.common.models.SDKBasePageRequest;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
 
 /**
  * com.uniubi.medusa.ares.develop.models.request.DeviceAuthQueryPageRequest
@@ -10,8 +8,6 @@ import lombok.EqualsAndHashCode;
  * @author jingmu
  * @since 2020/5/18
  */
-@EqualsAndHashCode(callSuper = true)
-@Data
 public class DeviceAuthQueryPageRequest extends SDKBasePageRequest {
 
     /**
@@ -64,4 +60,99 @@ public class DeviceAuthQueryPageRequest extends SDKBasePageRequest {
      */
     private String deviceName;
 
+    public String getDepartmentId() {
+        return departmentId;
+    }
+
+    public void setDepartmentId(String departmentId) {
+        this.departmentId = departmentId;
+    }
+
+    public String getEmpId() {
+        return empId;
+    }
+
+    public void setEmpId(String empId) {
+        this.empId = empId;
+    }
+
+    public String getIdNo() {
+        return idNo;
+    }
+
+    public void setIdNo(String idNo) {
+        this.idNo = idNo;
+    }
+
+    public String getEmpTypeId() {
+        return empTypeId;
+    }
+
+    public void setEmpTypeId(String empTypeId) {
+        this.empTypeId = empTypeId;
+    }
+
+    public String getEmpNo() {
+        return empNo;
+    }
+
+    public void setEmpNo(String empNo) {
+        this.empNo = empNo;
+    }
+
+    public String getEmpName() {
+        return empName;
+    }
+
+    public void setEmpName(String empName) {
+        this.empName = empName;
+    }
+
+    public String getCardNum() {
+        return cardNum;
+    }
+
+    public void setCardNum(String cardNum) {
+        this.cardNum = cardNum;
+    }
+
+    public String getDeviceGroupId() {
+        return deviceGroupId;
+    }
+
+    public void setDeviceGroupId(String deviceGroupId) {
+        this.deviceGroupId = deviceGroupId;
+    }
+
+    public String getDeviceKey() {
+        return deviceKey;
+    }
+
+    public void setDeviceKey(String deviceKey) {
+        this.deviceKey = deviceKey;
+    }
+
+    public String getDeviceName() {
+        return deviceName;
+    }
+
+    public void setDeviceName(String deviceName) {
+        this.deviceName = deviceName;
+    }
+
+    @Override
+    public String toString() {
+        return "DeviceAuthQueryPageRequest{" +
+                "departmentId='" + departmentId + '\'' +
+                ", empId='" + empId + '\'' +
+                ", idNo='" + idNo + '\'' +
+                ", empTypeId='" + empTypeId + '\'' +
+                ", empNo='" + empNo + '\'' +
+                ", empName='" + empName + '\'' +
+                ", cardNum='" + cardNum + '\'' +
+                ", deviceGroupId='" + deviceGroupId + '\'' +
+                ", deviceKey='" + deviceKey + '\'' +
+                ", deviceName='" + deviceName + '\'' +
+                '}';
+    }
 }

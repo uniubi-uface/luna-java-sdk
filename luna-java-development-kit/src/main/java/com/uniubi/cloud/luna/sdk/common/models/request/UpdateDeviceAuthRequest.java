@@ -1,7 +1,5 @@
 package com.uniubi.cloud.luna.sdk.common.models.request;
 
-import lombok.Data;
-
 import java.time.LocalDateTime;
 import java.util.List;
 
@@ -11,7 +9,6 @@ import java.util.List;
  * @author 阿秋@niancheng
  * @since 2020/6/19
  */
-@Data
 public class UpdateDeviceAuthRequest {
 
     /**
@@ -44,4 +41,63 @@ public class UpdateDeviceAuthRequest {
      */
     private List<Byte> recognitionTypes;
 
+    public String getEmpNo() {
+        return empNo;
+    }
+
+    public void setEmpNo(String empNo) {
+        this.empNo = empNo;
+    }
+
+    public String getDeviceKey() {
+        return deviceKey;
+    }
+
+    public void setDeviceKey(String deviceKey) {
+        this.deviceKey = deviceKey;
+    }
+
+    public LocalDateTime getPermissionStartTime() {
+        return permissionStartTime;
+    }
+
+    public void setPermissionStartTime(LocalDateTime permissionStartTime) {
+        this.permissionStartTime = permissionStartTime;
+    }
+
+    public LocalDateTime getPermissionEndTime() {
+        return permissionEndTime;
+    }
+
+    public void setPermissionEndTime(LocalDateTime permissionEndTime) {
+        this.permissionEndTime = permissionEndTime;
+    }
+
+    public List<DeviceAuthPermissionTimeEntry> getPermissionTimeEntries() {
+        return permissionTimeEntries;
+    }
+
+    public void setPermissionTimeEntries(List<DeviceAuthPermissionTimeEntry> permissionTimeEntries) {
+        this.permissionTimeEntries = permissionTimeEntries;
+    }
+
+    public List<Byte> getRecognitionTypes() {
+        return recognitionTypes;
+    }
+
+    public void setRecognitionTypes(List<Byte> recognitionTypes) {
+        this.recognitionTypes = recognitionTypes;
+    }
+
+    @Override
+    public String toString() {
+        return "UpdateDeviceAuthRequest{" +
+                "empNo='" + empNo + '\'' +
+                ", deviceKey='" + deviceKey + '\'' +
+                ", permissionStartTime=" + permissionStartTime +
+                ", permissionEndTime=" + permissionEndTime +
+                ", permissionTimeEntries=" + permissionTimeEntries +
+                ", recognitionTypes=" + recognitionTypes +
+                '}';
+    }
 }

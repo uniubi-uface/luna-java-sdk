@@ -1,16 +1,11 @@
 package com.uniubi.cloud.luna.sdk.common.models.request;
 
-import lombok.Data;
-import lombok.EqualsAndHashCode;
-
 /**
  * com.uniubi.medusa.ares.develop.models.request.UpdateDeviceLanguageRequest
  *
  * @author jingmu
  * @since 2020/5/19
  */
-@EqualsAndHashCode(callSuper = true)
-@Data
 public class UpdateDeviceLanguageRequest extends DeviceOperatorBaseRequest {
 
     /**
@@ -18,4 +13,18 @@ public class UpdateDeviceLanguageRequest extends DeviceOperatorBaseRequest {
      */
     private String lang;
 
+    public String getLang() {
+        return lang;
+    }
+
+    public void setLang(String lang) {
+        this.lang = lang;
+    }
+
+    @Override
+    public String toString() {
+        return "UpdateDeviceLanguageRequest{" +
+                "lang='" + lang + '\'' +
+                '}';
+    }
 }

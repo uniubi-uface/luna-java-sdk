@@ -1,14 +1,11 @@
 package com.uniubi.cloud.luna.sdk.common.models.response;
 
-import lombok.Data;
-
 /**
  * com.uniubi.medusa.ares.develop.models.response.PersonRoleResponseModel
  *
  * @author jingmu
  * @since 2020/5/18
  */
-@Data
 public class PersonTypeResponseModel {
 
     /**
@@ -21,4 +18,27 @@ public class PersonTypeResponseModel {
      */
     private String typeName;
 
+    public String getTypeId() {
+        return typeId;
+    }
+
+    public void setTypeId(String typeId) {
+        this.typeId = typeId;
+    }
+
+    public String getTypeName() {
+        return typeName;
+    }
+
+    public void setTypeName(String typeName) {
+        this.typeName = typeName;
+    }
+
+    @Override
+    public String toString() {
+        return "PersonTypeResponseModel{" +
+                "typeId='" + typeId + '\'' +
+                ", typeName='" + typeName + '\'' +
+                '}';
+    }
 }

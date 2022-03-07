@@ -13,7 +13,6 @@ public class DeletePersonTypeRequest {
 
     private String typeId;
 
-
     public String getTypeId() {
         return typeId;
     }
@@ -24,8 +23,7 @@ public class DeletePersonTypeRequest {
 
     @Override
     public String toString() {
-        return "DeletePersonTypeRequest{" +
-                "typeId='" + typeId + '\'' +
-                '}';
+        return "DeletePersonTypeRequest{" + "typeId='" + typeId + '\'' + '}';
     }
+
 }

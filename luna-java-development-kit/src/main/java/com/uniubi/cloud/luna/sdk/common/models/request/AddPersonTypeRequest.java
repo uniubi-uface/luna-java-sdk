@@ -26,8 +26,7 @@ public class AddPersonTypeRequest {
 
     @Override
     public String toString() {
-        return "AddPersonTypeRequest{" +
-                "typeName='" + typeName + '\'' +
-                '}';
+        return "AddPersonTypeRequest{" + "typeName='" + typeName + '\'' + '}';
     }
+
 }

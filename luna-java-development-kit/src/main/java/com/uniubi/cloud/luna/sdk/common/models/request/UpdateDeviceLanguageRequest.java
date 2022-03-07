@@ -23,8 +23,7 @@ public class UpdateDeviceLanguageRequest extends DeviceOperatorBaseRequest {
 
     @Override
     public String toString() {
-        return "UpdateDeviceLanguageRequest{" +
-                "lang='" + lang + '\'' +
-                '}';
+        return "UpdateDeviceLanguageRequest{" + "lang='" + lang + '\'' + '}';
     }
+
 }

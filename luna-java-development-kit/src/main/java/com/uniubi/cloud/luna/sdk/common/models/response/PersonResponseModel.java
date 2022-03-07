@@ -118,7 +118,6 @@ public class PersonResponseModel {
      */
     private List<String> depIdList;
 
-
     public String getEmpId() {
         return empId;
     }
@@ -265,25 +264,12 @@ public class PersonResponseModel {
 
     @Override
     public String toString() {
-        return "PersonResponseModel{" +
-                "empId='" + empId + '\'' +
-                ", empNo='" + empNo + '\'' +
-                ", name='" + name + '\'' +
-                ", phone='" + phone + '\'' +
-                ", workNo='" + workNo + '\'' +
-                ", orgId='" + orgId + '\'' +
-                ", mail='" + mail + '\'' +
-                ", stageName='" + stageName + '\'' +
-                ", cardNo='" + cardNo + '\'' +
-                ", entryTime=" + entryTime +
-                ", workPlace='" + workPlace + '\'' +
-                ", personTypeId='" + personTypeId + '\'' +
-                ", tel='" + tel + '\'' +
-                ", gender=" + gender +
-                ", idCardNo='" + idCardNo + '\'' +
-                ", roleId='" + roleId + '\'' +
-                ", photoIdList=" + photoIdList +
-                ", depIdList=" + depIdList +
-                '}';
+        return "PersonResponseModel{" + "empId='" + empId + '\'' + ", empNo='" + empNo + '\'' + ", name='" + name + '\''
+                + ", phone='" + phone + '\'' + ", workNo='" + workNo + '\'' + ", orgId='" + orgId + '\'' + ", mail='"
+                + mail + '\'' + ", stageName='" + stageName + '\'' + ", cardNo='" + cardNo + '\'' + ", entryTime="
+                + entryTime + ", workPlace='" + workPlace + '\'' + ", personTypeId='" + personTypeId + '\'' + ", tel='"
+                + tel + '\'' + ", gender=" + gender + ", idCardNo='" + idCardNo + '\'' + ", roleId='" + roleId + '\''
+                + ", photoIdList=" + photoIdList + ", depIdList=" + depIdList + '}';
     }
+
 }

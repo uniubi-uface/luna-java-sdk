@@ -62,11 +62,8 @@ public class DeviceOperatorResponseModel {
 
     @Override
     public String toString() {
-        return "DeviceOperatorResponseModel{" +
-                "deviceKey='" + deviceKey + '\'' +
-                ", deviceName='" + deviceName + '\'' +
-                ", success=" + success +
-                ", reason='" + reason + '\'' +
-                '}';
+        return "DeviceOperatorResponseModel{" + "deviceKey='" + deviceKey + '\'' + ", deviceName='" + deviceName + '\''
+                + ", success=" + success + ", reason='" + reason + '\'' + '}';
     }
+
 }

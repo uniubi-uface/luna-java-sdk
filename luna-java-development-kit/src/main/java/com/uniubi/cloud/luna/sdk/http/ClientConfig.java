@@ -1,6 +1,5 @@
 package com.uniubi.cloud.luna.sdk.http;
 
-
 /**
  * 请求配置
  *
@@ -41,10 +40,8 @@ public class ClientConfig {
 
     @Override
     public String toString() {
-        return "ClientConfig{" +
-                "connectionTimeoutMills=" + connectionTimeoutMills +
-                ", readTimeoutMills=" + readTimeoutMills +
-                ", writeTimeoutMills=" + writeTimeoutMills +
-                '}';
+        return "ClientConfig{" + "connectionTimeoutMills=" + connectionTimeoutMills + ", readTimeoutMills="
+                + readTimeoutMills + ", writeTimeoutMills=" + writeTimeoutMills + '}';
     }
+
 }

@@ -20,8 +20,7 @@ public class DeletePersonGroupRequest {
 
     @Override
     public String toString() {
-        return "DeletePersonGroupRequest{" +
-                "personGroupId='" + personGroupId + '\'' +
-                '}';
+        return "DeletePersonGroupRequest{" + "personGroupId='" + personGroupId + '\'' + '}';
     }
+
 }

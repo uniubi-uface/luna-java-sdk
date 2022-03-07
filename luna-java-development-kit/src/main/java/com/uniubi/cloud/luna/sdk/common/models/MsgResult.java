@@ -1,6 +1,5 @@
 package com.uniubi.cloud.luna.sdk.common.models;
 
-
 /**
  * com.uniubi.medusa.ares.develop.common.models.MsgResult
  *
@@ -10,7 +9,6 @@ package com.uniubi.cloud.luna.sdk.common.models;
 public class MsgResult {
 
     private Boolean success;
-
 
     public Boolean getSuccess() {
         return success;
@@ -22,8 +20,7 @@ public class MsgResult {
 
     @Override
     public String toString() {
-        return "MsgResult{" +
-                "success=" + success +
-                '}';
+        return "MsgResult{" + "success=" + success + '}';
     }
+
 }

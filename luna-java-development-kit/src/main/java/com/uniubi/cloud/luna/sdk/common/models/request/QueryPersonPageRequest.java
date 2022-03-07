@@ -57,10 +57,8 @@ public class QueryPersonPageRequest extends SDKBasePageRequest {
 
     @Override
     public String toString() {
-        return "QueryPersonPageRequest{" +
-                "empNo='" + empNo + '\'' +
-                ", name='" + name + '\'' +
-                ", deptIdList=" + deptIdList +
-                '}';
+        return "QueryPersonPageRequest{" + "empNo='" + empNo + '\'' + ", name='" + name + '\'' + ", deptIdList="
+                + deptIdList + '}';
     }
+
 }

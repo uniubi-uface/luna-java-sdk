@@ -106,14 +106,9 @@ public class QueryDevicePageRequest extends SDKBasePageRequest {
 
     @Override
     public String toString() {
-        return "QueryDevicePageRequest{" +
-                "deviceKey='" + deviceKey + '\'' +
-                ", deviceName='" + deviceName + '\'' +
-                ", deviceIp='" + deviceIp + '\'' +
-                ", deviceGroupId='" + deviceGroupId + '\'' +
-                ", status=" + status +
-                ", recognitionModes=" + recognitionModes +
-                ", cardSupport=" + cardSupport +
-                '}';
+        return "QueryDevicePageRequest{" + "deviceKey='" + deviceKey + '\'' + ", deviceName='" + deviceName + '\''
+                + ", deviceIp='" + deviceIp + '\'' + ", deviceGroupId='" + deviceGroupId + '\'' + ", status=" + status
+                + ", recognitionModes=" + recognitionModes + ", cardSupport=" + cardSupport + '}';
     }
+
 }

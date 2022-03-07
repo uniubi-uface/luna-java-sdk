@@ -40,10 +40,8 @@ public class FinishTaskResponseModel {
 
     @Override
     public String toString() {
-        return "FinishTaskResponseModel{" +
-                "success=" + success +
-                ", failedReason='" + failedReason + '\'' +
-                ", taskInfo=" + taskInfo +
-                '}';
+        return "FinishTaskResponseModel{" + "success=" + success + ", failedReason='" + failedReason + '\''
+                + ", taskInfo=" + taskInfo + '}';
     }
+
 }

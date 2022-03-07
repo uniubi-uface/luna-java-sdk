@@ -22,7 +22,6 @@ public class AddPersonFaceRequest {
      */
     private byte[] faceData;
 
-
     public String getEmpNo() {
         return empNo;
     }
@@ -39,12 +38,9 @@ public class AddPersonFaceRequest {
         this.faceData = faceData;
     }
 
-
     @Override
     public String toString() {
-        return "AddPersonFaceRequest{" +
-                "empNo='" + empNo + '\'' +
-                ", faceData=" + Arrays.toString(faceData) +
-                '}';
+        return "AddPersonFaceRequest{" + "empNo='" + empNo + '\'' + ", faceData=" + Arrays.toString(faceData) + '}';
     }
+
 }

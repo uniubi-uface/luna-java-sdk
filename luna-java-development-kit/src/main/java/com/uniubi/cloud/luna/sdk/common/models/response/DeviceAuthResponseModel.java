@@ -95,13 +95,9 @@ public class DeviceAuthResponseModel {
 
     @Override
     public String toString() {
-        return "DeviceAuthResponseModel{" +
-                "empNo='" + empNo + '\'' +
-                ", deviceKey='" + deviceKey + '\'' +
-                ", recModeTypes=" + recModeTypes +
-                ", faces=" + faces +
-                ", permissionTime=" + permissionTime +
-                ", createTime=" + createTime +
-                '}';
+        return "DeviceAuthResponseModel{" + "empNo='" + empNo + '\'' + ", deviceKey='" + deviceKey + '\''
+                + ", recModeTypes=" + recModeTypes + ", faces=" + faces + ", permissionTime=" + permissionTime
+                + ", createTime=" + createTime + '}';
     }
+
 }

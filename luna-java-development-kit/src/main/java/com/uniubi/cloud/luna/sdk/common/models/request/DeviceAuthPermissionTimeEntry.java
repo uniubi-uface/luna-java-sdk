@@ -36,9 +36,8 @@ public class DeviceAuthPermissionTimeEntry {
 
     @Override
     public String toString() {
-        return "DeviceAuthPermissionTimeEntry{" +
-                "startTime='" + startTime + '\'' +
-                ", endTime='" + endTime + '\'' +
-                '}';
+        return "DeviceAuthPermissionTimeEntry{" + "startTime='" + startTime + '\'' + ", endTime='" + endTime + '\''
+                + '}';
     }
+
 }

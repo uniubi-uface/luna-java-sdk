@@ -77,12 +77,9 @@ public class DeviceGroupResponseModel {
 
     @Override
     public String toString() {
-        return "DeviceGroupResponseModel{" +
-                "deviceGroupId='" + deviceGroupId + '\'' +
-                ", deviceGroupName='" + deviceGroupName + '\'' +
-                ", deviceNum=" + deviceNum +
-                ", remark='" + remark + '\'' +
-                ", deviceKeyList=" + deviceKeyList +
-                '}';
+        return "DeviceGroupResponseModel{" + "deviceGroupId='" + deviceGroupId + '\'' + ", deviceGroupName='"
+                + deviceGroupName + '\'' + ", deviceNum=" + deviceNum + ", remark='" + remark + '\''
+                + ", deviceKeyList=" + deviceKeyList + '}';
     }
+
 }

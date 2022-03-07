@@ -30,9 +30,7 @@ public class AuthRequest {
 
     @Override
     public String toString() {
-        return "AuthRequest{" +
-                "accessKey='" + accessKey + '\'' +
-                ", accessSecret='" + accessSecret + '\'' +
-                '}';
+        return "AuthRequest{" + "accessKey='" + accessKey + '\'' + ", accessSecret='" + accessSecret + '\'' + '}';
     }
+
 }

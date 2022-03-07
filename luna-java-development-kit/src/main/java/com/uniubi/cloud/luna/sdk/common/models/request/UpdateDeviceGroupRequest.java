@@ -64,11 +64,8 @@ public class UpdateDeviceGroupRequest {
 
     @Override
     public String toString() {
-        return "UpdateDeviceGroupRequest{" +
-                "deviceGroupId='" + deviceGroupId + '\'' +
-                ", deviceGroupName='" + deviceGroupName + '\'' +
-                ", deviceKeyList=" + deviceKeyList +
-                ", remark='" + remark + '\'' +
-                '}';
+        return "UpdateDeviceGroupRequest{" + "deviceGroupId='" + deviceGroupId + '\'' + ", deviceGroupName='"
+                + deviceGroupName + '\'' + ", deviceKeyList=" + deviceKeyList + ", remark='" + remark + '\'' + '}';
     }
+
 }

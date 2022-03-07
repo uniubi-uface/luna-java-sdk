@@ -20,8 +20,7 @@ public class DeleteDeviceGroupRequest {
 
     @Override
     public String toString() {
-        return "DeleteDeviceGroupRequest{" +
-                "deviceGroupId='" + deviceGroupId + '\'' +
-                '}';
+        return "DeleteDeviceGroupRequest{" + "deviceGroupId='" + deviceGroupId + '\'' + '}';
     }
+
 }

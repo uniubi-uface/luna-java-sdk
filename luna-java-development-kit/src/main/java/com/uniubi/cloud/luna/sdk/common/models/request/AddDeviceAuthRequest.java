@@ -111,14 +111,10 @@ public class AddDeviceAuthRequest {
 
     @Override
     public String toString() {
-        return "AddDeviceAuthRequest{" +
-                "empNo='" + empNo + '\'' +
-                ", deviceKey='" + deviceKey + '\'' +
-                ", imgStoreDevice=" + imgStoreDevice +
-                ", permissionStartTime=" + permissionStartTime +
-                ", permissionEndTime=" + permissionEndTime +
-                ", permissionTimeEntries=" + permissionTimeEntries +
-                ", recognitionTypes=" + recognitionTypes +
-                '}';
+        return "AddDeviceAuthRequest{" + "empNo='" + empNo + '\'' + ", deviceKey='" + deviceKey + '\''
+                + ", imgStoreDevice=" + imgStoreDevice + ", permissionStartTime=" + permissionStartTime
+                + ", permissionEndTime=" + permissionEndTime + ", permissionTimeEntries=" + permissionTimeEntries
+                + ", recognitionTypes=" + recognitionTypes + '}';
     }
+
 }

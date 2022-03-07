@@ -85,7 +85,6 @@ public class AtdOverWorkReportResponseModel {
      */
     private Byte dateType;
 
-
     public String getPersonId() {
         return personId;
     }
@@ -168,17 +167,11 @@ public class AtdOverWorkReportResponseModel {
 
     @Override
     public String toString() {
-        return "AtdOverWorkReportResponseModel{" +
-                "personId='" + personId + '\'' +
-                ", personNo='" + personNo + '\'' +
-                ", name='" + name + '\'' +
-                ", depNames=" + depNames +
-                ", roleNames=" + roleNames +
-                ", atDate=" + atDate +
-                ", workDayOverWorkSecond=" + workDayOverWorkSecond +
-                ", restDayOverWorkSecond=" + restDayOverWorkSecond +
-                ", holidayOverWorkSecond=" + holidayOverWorkSecond +
-                ", dateType=" + dateType +
-                '}';
+        return "AtdOverWorkReportResponseModel{" + "personId='" + personId + '\'' + ", personNo='" + personNo + '\''
+                + ", name='" + name + '\'' + ", depNames=" + depNames + ", roleNames=" + roleNames + ", atDate="
+                + atDate + ", workDayOverWorkSecond=" + workDayOverWorkSecond + ", restDayOverWorkSecond="
+                + restDayOverWorkSecond + ", holidayOverWorkSecond=" + holidayOverWorkSecond + ", dateType=" + dateType
+                + '}';
     }
+
 }

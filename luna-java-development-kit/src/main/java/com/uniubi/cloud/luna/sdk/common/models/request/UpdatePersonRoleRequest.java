@@ -18,7 +18,6 @@ public class UpdatePersonRoleRequest {
      */
     private String roleName;
 
-
     public String getRoleId() {
         return roleId;
     }
@@ -37,9 +36,7 @@ public class UpdatePersonRoleRequest {
 
     @Override
     public String toString() {
-        return "UpdatePersonRoleRequest{" +
-                "roleId='" + roleId + '\'' +
-                ", roleName='" + roleName + '\'' +
-                '}';
+        return "UpdatePersonRoleRequest{" + "roleId='" + roleId + '\'' + ", roleName='" + roleName + '\'' + '}';
     }
+
 }

@@ -38,7 +38,6 @@ public class UpdatePersonGroupRequest {
      */
     private List<String> managerNos;
 
-
     public String getPersonGroupId() {
         return personGroupId;
     }
@@ -73,11 +72,9 @@ public class UpdatePersonGroupRequest {
 
     @Override
     public String toString() {
-        return "UpdatePersonGroupRequest{" +
-                "personGroupId='" + personGroupId + '\'' +
-                ", personGroupName='" + personGroupName + '\'' +
-                ", parentGroupId='" + parentGroupId + '\'' +
-                ", managerNos=" + managerNos +
-                '}';
+        return "UpdatePersonGroupRequest{" + "personGroupId='" + personGroupId + '\'' + ", personGroupName='"
+                + personGroupName + '\'' + ", parentGroupId='" + parentGroupId + '\'' + ", managerNos=" + managerNos
+                + '}';
     }
+
 }

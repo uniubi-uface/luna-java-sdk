@@ -22,8 +22,7 @@ public class FileResponseModel {
 
     @Override
     public String toString() {
-        return "FileResponseModel{" +
-                "content=" + Arrays.toString(content) +
-                '}';
+        return "FileResponseModel{" + "content=" + Arrays.toString(content) + '}';
     }
+
 }

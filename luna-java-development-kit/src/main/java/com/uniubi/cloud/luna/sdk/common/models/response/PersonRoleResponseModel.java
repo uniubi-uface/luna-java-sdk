@@ -36,9 +36,7 @@ public class PersonRoleResponseModel {
 
     @Override
     public String toString() {
-        return "PersonRoleResponseModel{" +
-                "roleId='" + roleId + '\'' +
-                ", roleName='" + roleName + '\'' +
-                '}';
+        return "PersonRoleResponseModel{" + "roleId='" + roleId + '\'' + ", roleName='" + roleName + '\'' + '}';
     }
+
 }

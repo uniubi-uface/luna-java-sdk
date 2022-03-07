@@ -91,13 +91,9 @@ public class UpdateDeviceAuthRequest {
 
     @Override
     public String toString() {
-        return "UpdateDeviceAuthRequest{" +
-                "empNo='" + empNo + '\'' +
-                ", deviceKey='" + deviceKey + '\'' +
-                ", permissionStartTime=" + permissionStartTime +
-                ", permissionEndTime=" + permissionEndTime +
-                ", permissionTimeEntries=" + permissionTimeEntries +
-                ", recognitionTypes=" + recognitionTypes +
-                '}';
+        return "UpdateDeviceAuthRequest{" + "empNo='" + empNo + '\'' + ", deviceKey='" + deviceKey + '\''
+                + ", permissionStartTime=" + permissionStartTime + ", permissionEndTime=" + permissionEndTime
+                + ", permissionTimeEntries=" + permissionTimeEntries + ", recognitionTypes=" + recognitionTypes + '}';
     }
+
 }

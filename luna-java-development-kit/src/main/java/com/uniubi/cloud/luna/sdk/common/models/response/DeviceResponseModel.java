@@ -130,7 +130,6 @@ public class DeviceResponseModel {
      */
     private Boolean cardSupport;
 
-
     public String getDeviceKey() {
         return deviceKey;
     }
@@ -285,26 +284,14 @@ public class DeviceResponseModel {
 
     @Override
     public String toString() {
-        return "DeviceResponseModel{" +
-                "deviceKey='" + deviceKey + '\'' +
-                ", deviceName='" + deviceName + '\'' +
-                ", status=" + status +
-                ", enable=" + enable +
-                ", expType=" + expType +
-                ", orgId='" + orgId + '\'' +
-                ", softwareVersion='" + softwareVersion + '\'' +
-                ", sdkVersion='" + sdkVersion + '\'' +
-                ", versionCompatibility=" + versionCompatibility +
-                ", deviceIp='" + deviceIp + '\'' +
-                ", recognitionMode=" + recognitionMode +
-                ", deviceGroupId='" + deviceGroupId + '\'' +
-                ", deviceGroupName='" + deviceGroupName + '\'' +
-                ", lang='" + lang + '\'' +
-                ", createTime=" + createTime +
-                ", modifyTime=" + modifyTime +
-                ", faceNum=" + faceNum +
-                ", personNum=" + personNum +
-                ", cardSupport=" + cardSupport +
-                '}';
+        return "DeviceResponseModel{" + "deviceKey='" + deviceKey + '\'' + ", deviceName='" + deviceName + '\''
+                + ", status=" + status + ", enable=" + enable + ", expType=" + expType + ", orgId='" + orgId + '\''
+                + ", softwareVersion='" + softwareVersion + '\'' + ", sdkVersion='" + sdkVersion + '\''
+                + ", versionCompatibility=" + versionCompatibility + ", deviceIp='" + deviceIp + '\''
+                + ", recognitionMode=" + recognitionMode + ", deviceGroupId='" + deviceGroupId + '\''
+                + ", deviceGroupName='" + deviceGroupName + '\'' + ", lang='" + lang + '\'' + ", createTime="
+                + createTime + ", modifyTime=" + modifyTime + ", faceNum=" + faceNum + ", personNum=" + personNum
+                + ", cardSupport=" + cardSupport + '}';
     }
+
 }

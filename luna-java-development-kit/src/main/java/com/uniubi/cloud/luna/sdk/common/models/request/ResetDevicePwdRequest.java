@@ -36,9 +36,7 @@ public class ResetDevicePwdRequest extends DeviceOperatorBaseRequest {
 
     @Override
     public String toString() {
-        return "ResetDevicePwdRequest{" +
-                "adminPass='" + adminPass + '\'' +
-                ", newPass='" + newPass + '\'' +
-                '}';
+        return "ResetDevicePwdRequest{" + "adminPass='" + adminPass + '\'' + ", newPass='" + newPass + '\'' + '}';
     }
+
 }

@@ -93,15 +93,10 @@ public class RequestConfig {
 
     @Override
     public String toString() {
-        return "RequestConfig{" +
-                "endPoint='" + endPoint + '\'' +
-                ", publicKey='" + publicKey + '\'' +
-                ", connectionTimeoutMills=" + connectionTimeoutMills +
-                ", readTimeoutMills=" + readTimeoutMills +
-                ", writeTimeoutMills=" + writeTimeoutMills +
-                ", tokenLoader=" + tokenLoader +
-                ", rpcMethodInterceptor=" + rpcMethodInterceptor +
-                ", sdkLang=" + sdkLang +
-                '}';
+        return "RequestConfig{" + "endPoint='" + endPoint + '\'' + ", publicKey='" + publicKey + '\''
+                + ", connectionTimeoutMills=" + connectionTimeoutMills + ", readTimeoutMills=" + readTimeoutMills
+                + ", writeTimeoutMills=" + writeTimeoutMills + ", tokenLoader=" + tokenLoader
+                + ", rpcMethodInterceptor=" + rpcMethodInterceptor + ", sdkLang=" + sdkLang + '}';
     }
+
 }

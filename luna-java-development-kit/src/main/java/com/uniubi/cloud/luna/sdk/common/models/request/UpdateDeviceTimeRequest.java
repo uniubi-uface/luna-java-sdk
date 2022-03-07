@@ -20,7 +20,6 @@ public class UpdateDeviceTimeRequest extends DeviceOperatorBaseRequest {
      */
     private String timezone;
 
-
     public LocalDateTime getTime() {
         return time;
     }
@@ -39,9 +38,7 @@ public class UpdateDeviceTimeRequest extends DeviceOperatorBaseRequest {
 
     @Override
     public String toString() {
-        return "UpdateDeviceTimeRequest{" +
-                "time=" + time +
-                ", timezone='" + timezone + '\'' +
-                '}';
+        return "UpdateDeviceTimeRequest{" + "time=" + time + ", timezone='" + timezone + '\'' + '}';
     }
+
 }

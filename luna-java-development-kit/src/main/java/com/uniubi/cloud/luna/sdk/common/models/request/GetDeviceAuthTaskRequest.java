@@ -20,8 +20,7 @@ public class GetDeviceAuthTaskRequest {
 
     @Override
     public String toString() {
-        return "GetDeviceAuthTaskRequest{" +
-                "taskId='" + taskId + '\'' +
-                '}';
+        return "GetDeviceAuthTaskRequest{" + "taskId='" + taskId + '\'' + '}';
     }
+
 }

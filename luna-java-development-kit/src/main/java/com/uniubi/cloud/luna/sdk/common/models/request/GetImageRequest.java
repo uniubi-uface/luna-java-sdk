@@ -30,9 +30,7 @@ public class GetImageRequest {
 
     @Override
     public String toString() {
-        return "GetImageRequest{" +
-                "imageId='" + imageId + '\'' +
-                ", faceId='" + faceId + '\'' +
-                '}';
+        return "GetImageRequest{" + "imageId='" + imageId + '\'' + ", faceId='" + faceId + '\'' + '}';
     }
+
 }

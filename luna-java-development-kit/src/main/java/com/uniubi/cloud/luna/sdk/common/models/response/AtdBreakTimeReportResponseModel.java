@@ -14,6 +14,7 @@ import java.util.List;
 public class AtdBreakTimeReportResponseModel implements Serializable {
 
     private static final long serialVersionUID = 3004689206042738144L;
+
     /**
      * 人员id
      * <p>
@@ -104,7 +105,6 @@ public class AtdBreakTimeReportResponseModel implements Serializable {
      * <li>2 - abnormal</li>
      */
     private Byte breakStatus;
-
 
     public String getPersonId() {
         return personId;
@@ -212,20 +212,12 @@ public class AtdBreakTimeReportResponseModel implements Serializable {
 
     @Override
     public String toString() {
-        return "AtdBreakTimeReportResponseModel{" +
-                "personId='" + personId + '\'' +
-                ", personNo='" + personNo + '\'' +
-                ", name='" + name + '\'' +
-                ", depNames=" + depNames +
-                ", roleNames=" + roleNames +
-                ", atDate=" + atDate +
-                ", timeIntervalName='" + timeIntervalName + '\'' +
-                ", breaktimeName='" + breaktimeName + '\'' +
-                ", planBreakTimeDuration=" + planBreakTimeDuration +
-                ", realBreakTimeStart=" + realBreakTimeStart +
-                ", realBreakTimeEnd=" + realBreakTimeEnd +
-                ", realBreakTimeDuration=" + realBreakTimeDuration +
-                ", breakStatus=" + breakStatus +
-                '}';
+        return "AtdBreakTimeReportResponseModel{" + "personId='" + personId + '\'' + ", personNo='" + personNo + '\''
+                + ", name='" + name + '\'' + ", depNames=" + depNames + ", roleNames=" + roleNames + ", atDate="
+                + atDate + ", timeIntervalName='" + timeIntervalName + '\'' + ", breaktimeName='" + breaktimeName + '\''
+                + ", planBreakTimeDuration=" + planBreakTimeDuration + ", realBreakTimeStart=" + realBreakTimeStart
+                + ", realBreakTimeEnd=" + realBreakTimeEnd + ", realBreakTimeDuration=" + realBreakTimeDuration
+                + ", breakStatus=" + breakStatus + '}';
     }
+
 }

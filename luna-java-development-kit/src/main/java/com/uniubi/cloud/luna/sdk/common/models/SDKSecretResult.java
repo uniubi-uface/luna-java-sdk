@@ -1,6 +1,5 @@
 package com.uniubi.cloud.luna.sdk.common.models;
 
-
 /**
  * com.uniubi.medusa.ares.develop.common.models.SDKSecretResult
  *
@@ -66,7 +65,6 @@ public class SDKSecretResult {
         this.data = data;
     }
 
-
     public String getSecret() {
         return secret;
     }
@@ -77,12 +75,8 @@ public class SDKSecretResult {
 
     @Override
     public String toString() {
-        return "SDKSecretResult{" +
-                "success=" + success +
-                ", code='" + code + '\'' +
-                ", msg='" + msg + '\'' +
-                ", data='" + data + '\'' +
-                ", secret='" + secret + '\'' +
-                '}';
+        return "SDKSecretResult{" + "success=" + success + ", code='" + code + '\'' + ", msg='" + msg + '\''
+                + ", data='" + data + '\'' + ", secret='" + secret + '\'' + '}';
     }
+
 }

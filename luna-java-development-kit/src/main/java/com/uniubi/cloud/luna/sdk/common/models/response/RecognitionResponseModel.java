@@ -234,21 +234,12 @@ public class RecognitionResponseModel {
 
     @Override
     public String toString() {
-        return "RecognitionResponseModel{" +
-                "empNo='" + empNo + '\'' +
-                ", recMode=" + recMode +
-                ", deviceKey='" + deviceKey + '\'' +
-                ", deviceName='" + deviceName + '\'' +
-                ", recTime=" + recTime +
-                ", orgId='" + orgId + '\'' +
-                ", imageId='" + imageId + '\'' +
-                ", identifyType=" + identifyType +
-                ", temperature=" + temperature +
-                ", temperatureState=" + temperatureState +
-                ", temperatureUnit=" + temperatureUnit +
-                ", aliveBody=" + aliveBody +
-                ", permissionTimeType=" + permissionTimeType +
-                ", passTimeType=" + passTimeType +
-                '}';
+        return "RecognitionResponseModel{" + "empNo='" + empNo + '\'' + ", recMode=" + recMode + ", deviceKey='"
+                + deviceKey + '\'' + ", deviceName='" + deviceName + '\'' + ", recTime=" + recTime + ", orgId='" + orgId
+                + '\'' + ", imageId='" + imageId + '\'' + ", identifyType=" + identifyType + ", temperature="
+                + temperature + ", temperatureState=" + temperatureState + ", temperatureUnit=" + temperatureUnit
+                + ", aliveBody=" + aliveBody + ", permissionTimeType=" + permissionTimeType + ", passTimeType="
+                + passTimeType + '}';
     }
+
 }

@@ -20,8 +20,7 @@ public class DeleteDeviceRequest {
 
     @Override
     public String toString() {
-        return "DeleteDeviceRequest{" +
-                "deviceKey='" + deviceKey + '\'' +
-                '}';
+        return "DeleteDeviceRequest{" + "deviceKey='" + deviceKey + '\'' + '}';
     }
+
 }

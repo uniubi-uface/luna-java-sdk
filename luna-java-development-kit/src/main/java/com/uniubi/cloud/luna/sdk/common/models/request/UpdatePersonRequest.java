@@ -220,22 +220,11 @@ public class UpdatePersonRequest {
 
     @Override
     public String toString() {
-        return "UpdatePersonRequest{" +
-                "empNo='" + empNo + '\'' +
-                ", name='" + name + '\'' +
-                ", phone='" + phone + '\'' +
-                ", workNo='" + workNo + '\'' +
-                ", mail='" + mail + '\'' +
-                ", stageName='" + stageName + '\'' +
-                ", cardNo='" + cardNo + '\'' +
-                ", entryTime=" + entryTime +
-                ", workPlace='" + workPlace + '\'' +
-                ", personTypeId='" + personTypeId + '\'' +
-                ", tel='" + tel + '\'' +
-                ", gender=" + gender +
-                ", idCardNo='" + idCardNo + '\'' +
-                ", roleId='" + roleId + '\'' +
-                ", deptIdList=" + deptIdList +
-                '}';
+        return "UpdatePersonRequest{" + "empNo='" + empNo + '\'' + ", name='" + name + '\'' + ", phone='" + phone + '\''
+                + ", workNo='" + workNo + '\'' + ", mail='" + mail + '\'' + ", stageName='" + stageName + '\''
+                + ", cardNo='" + cardNo + '\'' + ", entryTime=" + entryTime + ", workPlace='" + workPlace + '\''
+                + ", personTypeId='" + personTypeId + '\'' + ", tel='" + tel + '\'' + ", gender=" + gender
+                + ", idCardNo='" + idCardNo + '\'' + ", roleId='" + roleId + '\'' + ", deptIdList=" + deptIdList + '}';
     }
+
 }

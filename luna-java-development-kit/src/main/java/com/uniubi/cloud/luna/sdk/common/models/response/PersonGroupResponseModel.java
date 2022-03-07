@@ -38,7 +38,6 @@ public class PersonGroupResponseModel {
      */
     private List<String> managerNos;
 
-
     public String getPersonGroupId() {
         return personGroupId;
     }
@@ -73,11 +72,9 @@ public class PersonGroupResponseModel {
 
     @Override
     public String toString() {
-        return "PersonGroupResponseModel{" +
-                "personGroupId='" + personGroupId + '\'' +
-                ", personGroupName='" + personGroupName + '\'' +
-                ", parentGroupId='" + parentGroupId + '\'' +
-                ", managerNos=" + managerNos +
-                '}';
+        return "PersonGroupResponseModel{" + "personGroupId='" + personGroupId + '\'' + ", personGroupName='"
+                + personGroupName + '\'' + ", parentGroupId='" + parentGroupId + '\'' + ", managerNos=" + managerNos
+                + '}';
     }
+
 }

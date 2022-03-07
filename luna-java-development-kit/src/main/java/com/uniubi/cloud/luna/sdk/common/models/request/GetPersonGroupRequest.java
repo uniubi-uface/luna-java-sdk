@@ -20,8 +20,7 @@ public class GetPersonGroupRequest {
 
     @Override
     public String toString() {
-        return "GetPersonGroupRequest{" +
-                "personGroupId='" + personGroupId + '\'' +
-                '}';
+        return "GetPersonGroupRequest{" + "personGroupId='" + personGroupId + '\'' + '}';
     }
+
 }

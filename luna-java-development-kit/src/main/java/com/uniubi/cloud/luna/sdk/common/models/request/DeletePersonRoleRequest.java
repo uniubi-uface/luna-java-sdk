@@ -20,8 +20,7 @@ public class DeletePersonRoleRequest {
 
     @Override
     public String toString() {
-        return "DeletePersonRoleRequest{" +
-                "roleId='" + roleId + '\'' +
-                '}';
+        return "DeletePersonRoleRequest{" + "roleId='" + roleId + '\'' + '}';
     }
+
 }

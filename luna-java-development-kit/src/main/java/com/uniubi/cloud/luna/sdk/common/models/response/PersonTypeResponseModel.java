@@ -36,9 +36,7 @@ public class PersonTypeResponseModel {
 
     @Override
     public String toString() {
-        return "PersonTypeResponseModel{" +
-                "typeId='" + typeId + '\'' +
-                ", typeName='" + typeName + '\'' +
-                '}';
+        return "PersonTypeResponseModel{" + "typeId='" + typeId + '\'' + ", typeName='" + typeName + '\'' + '}';
     }
+
 }

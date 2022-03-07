@@ -102,16 +102,11 @@ public class StartDeviceAuthTaskRequest {
 
     @Override
     public String toString() {
-        return "StartDeviceAuthTaskRequest{" +
-                "empNoList=" + empNoList +
-                ", depIdList=" + depIdList +
-                ", deviceKeyList=" + deviceKeyList +
-                ", enablePassTime=" + enablePassTime +
-                ", permissionTime=" + permissionTime +
-                ", imgStoreDevice=" + imgStoreDevice +
-                ", stopAuthWhenNotCompatibility=" + stopAuthWhenNotCompatibility +
-                ", recognitionTypes=" + recognitionTypes +
-                ", orgId='" + orgId + '\'' +
-                '}';
+        return "StartDeviceAuthTaskRequest{" + "empNoList=" + empNoList + ", depIdList=" + depIdList
+                + ", deviceKeyList=" + deviceKeyList + ", enablePassTime=" + enablePassTime + ", permissionTime="
+                + permissionTime + ", imgStoreDevice=" + imgStoreDevice + ", stopAuthWhenNotCompatibility="
+                + stopAuthWhenNotCompatibility + ", recognitionTypes=" + recognitionTypes + ", orgId='" + orgId + '\''
+                + '}';
     }
+
 }

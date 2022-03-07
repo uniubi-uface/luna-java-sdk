@@ -83,14 +83,10 @@ public class DeviceAuthTaskResponseModel {
 
     @Override
     public String toString() {
-        return "DeviceAuthTaskResponseModel{" +
-                "finished=" + finished +
-                ", totalSubTaskNum=" + totalSubTaskNum +
-                ", finishedSubTaskNum=" + finishedSubTaskNum +
-                ", taskState=" + taskState +
-                ", taskResult=" + taskResult +
-                ", taskStartDate=" + taskStartDate +
-                ", finishedTaskInfoList=" + finishedTaskInfoList +
-                '}';
+        return "DeviceAuthTaskResponseModel{" + "finished=" + finished + ", totalSubTaskNum=" + totalSubTaskNum
+                + ", finishedSubTaskNum=" + finishedSubTaskNum + ", taskState=" + taskState + ", taskResult="
+                + taskResult + ", taskStartDate=" + taskStartDate + ", finishedTaskInfoList=" + finishedTaskInfoList
+                + '}';
     }
+
 }

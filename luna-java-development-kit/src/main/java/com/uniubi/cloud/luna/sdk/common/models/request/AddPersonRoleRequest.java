@@ -25,8 +25,7 @@ public class AddPersonRoleRequest {
 
     @Override
     public String toString() {
-        return "AddPersonRoleRequest{" +
-                "roleName='" + roleName + '\'' +
-                '}';
+        return "AddPersonRoleRequest{" + "roleName='" + roleName + '\'' + '}';
     }
+
 }

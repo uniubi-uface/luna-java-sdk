@@ -38,9 +38,7 @@ public class DeletePersonFaceRequest {
 
     @Override
     public String toString() {
-        return "DeletePersonFaceRequest{" +
-                "empNo='" + empNo + '\'' +
-                ", photoId='" + photoId + '\'' +
-                '}';
+        return "DeletePersonFaceRequest{" + "empNo='" + empNo + '\'' + ", photoId='" + photoId + '\'' + '}';
     }
+
 }

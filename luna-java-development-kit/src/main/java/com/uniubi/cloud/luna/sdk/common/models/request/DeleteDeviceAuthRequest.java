@@ -36,9 +36,7 @@ public class DeleteDeviceAuthRequest {
 
     @Override
     public String toString() {
-        return "DeleteDeviceAuthRequest{" +
-                "empNo='" + empNo + '\'' +
-                ", deviceKey='" + deviceKey + '\'' +
-                '}';
+        return "DeleteDeviceAuthRequest{" + "empNo='" + empNo + '\'' + ", deviceKey='" + deviceKey + '\'' + '}';
     }
+
 }

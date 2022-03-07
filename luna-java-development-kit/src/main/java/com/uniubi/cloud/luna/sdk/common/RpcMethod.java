@@ -107,15 +107,9 @@ public class RpcMethod {
 
     @Override
     public String toString() {
-        return "RpcMethod{" +
-                "uniUbiHttpClient=" + uniUbiHttpClient +
-                ", requestUrl='" + requestUrl + '\'' +
-                ", requestBody=" + requestBody +
-                ", headers=" + headers +
-                ", returnType=" + returnType +
-                ", method=" + method +
-                ", args=" + Arrays.toString(args) +
-                ", tokenLoader=" + tokenLoader +
-                '}';
+        return "RpcMethod{" + "uniUbiHttpClient=" + uniUbiHttpClient + ", requestUrl='" + requestUrl + '\''
+                + ", requestBody=" + requestBody + ", headers=" + headers + ", returnType=" + returnType + ", method="
+                + method + ", args=" + Arrays.toString(args) + ", tokenLoader=" + tokenLoader + '}';
     }
+
 }

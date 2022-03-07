@@ -80,14 +80,9 @@ public class PersonTaskInfoResponseModel {
 
     @Override
     public String toString() {
-        return "PersonTaskInfoResponseModel{" +
-                "empNo='" + empNo + '\'' +
-                ", empName='" + empName + '\'' +
-                ", faceId='" + faceId + '\'' +
-                ", deviceName='" + deviceName + '\'' +
-                ", deviceKey='" + deviceKey + '\'' +
-                ", success=" + success +
-                ", failedReason='" + failedReason + '\'' +
-                '}';
+        return "PersonTaskInfoResponseModel{" + "empNo='" + empNo + '\'' + ", empName='" + empName + '\'' + ", faceId='"
+                + faceId + '\'' + ", deviceName='" + deviceName + '\'' + ", deviceKey='" + deviceKey + '\''
+                + ", success=" + success + ", failedReason='" + failedReason + '\'' + '}';
     }
+
 }

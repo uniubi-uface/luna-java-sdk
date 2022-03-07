@@ -23,8 +23,7 @@ public class DeletePersonRequest {
 
     @Override
     public String toString() {
-        return "DeletePersonRequest{" +
-                "empId='" + empId + '\'' +
-                '}';
+        return "DeletePersonRequest{" + "empId='" + empId + '\'' + '}';
     }
+
 }

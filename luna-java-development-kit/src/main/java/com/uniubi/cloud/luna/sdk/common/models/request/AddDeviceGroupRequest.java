@@ -51,10 +51,8 @@ public class AddDeviceGroupRequest {
 
     @Override
     public String toString() {
-        return "AddDeviceGroupRequest{" +
-                "deviceGroupName='" + deviceGroupName + '\'' +
-                ", remark='" + remark + '\'' +
-                ", deviceKeyList=" + deviceKeyList +
-                '}';
+        return "AddDeviceGroupRequest{" + "deviceGroupName='" + deviceGroupName + '\'' + ", remark='" + remark + '\''
+                + ", deviceKeyList=" + deviceKeyList + '}';
     }
+
 }

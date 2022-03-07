@@ -142,17 +142,10 @@ public class DeviceAuthQueryPageRequest extends SDKBasePageRequest {
 
     @Override
     public String toString() {
-        return "DeviceAuthQueryPageRequest{" +
-                "departmentId='" + departmentId + '\'' +
-                ", empId='" + empId + '\'' +
-                ", idNo='" + idNo + '\'' +
-                ", empTypeId='" + empTypeId + '\'' +
-                ", empNo='" + empNo + '\'' +
-                ", empName='" + empName + '\'' +
-                ", cardNum='" + cardNum + '\'' +
-                ", deviceGroupId='" + deviceGroupId + '\'' +
-                ", deviceKey='" + deviceKey + '\'' +
-                ", deviceName='" + deviceName + '\'' +
-                '}';
+        return "DeviceAuthQueryPageRequest{" + "departmentId='" + departmentId + '\'' + ", empId='" + empId + '\''
+                + ", idNo='" + idNo + '\'' + ", empTypeId='" + empTypeId + '\'' + ", empNo='" + empNo + '\''
+                + ", empName='" + empName + '\'' + ", cardNum='" + cardNum + '\'' + ", deviceGroupId='" + deviceGroupId
+                + '\'' + ", deviceKey='" + deviceKey + '\'' + ", deviceName='" + deviceName + '\'' + '}';
     }
+
 }

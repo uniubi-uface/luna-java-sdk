@@ -14,6 +14,7 @@ import java.util.List;
 public class AtdDetailReportResponseModel implements Serializable {
 
     private static final long serialVersionUID = -3990452299731420438L;
+
     /**
      * 人员id
      * <p>
@@ -208,7 +209,6 @@ public class AtdDetailReportResponseModel implements Serializable {
      */
     @JSONField(format = "yyyy-MM-dd HH:mm:ss")
     private LocalDateTime signInEnd;
-
 
     public String getPersonId() {
         return personId;
@@ -412,32 +412,17 @@ public class AtdDetailReportResponseModel implements Serializable {
 
     @Override
     public String toString() {
-        return "AtdDetailReportResponseModel{" +
-                "personId='" + personId + '\'' +
-                ", personNo='" + personNo + '\'' +
-                ", name='" + name + '\'' +
-                ", depNames=" + depNames +
-                ", roleNames=" + roleNames +
-                ", atDate=" + atDate +
-                ", timeIntervalName='" + timeIntervalName + '\'' +
-                ", planSignInDatetime=" + planSignInDatetime +
-                ", planSignOutDatetime=" + planSignOutDatetime +
-                ", planTimeIntervalSecond=" + planTimeIntervalSecond +
-                ", realSignInTime=" + realSignInTime +
-                ", signInStatus=" + signInStatus +
-                ", realSignOutTime=" + realSignOutTime +
-                ", signOutStatus=" + signOutStatus +
-                ", realWorkTimeSecond=" + realWorkTimeSecond +
-                ", normalWorkSecond=" + normalWorkSecond +
-                ", realLateSecond=" + realLateSecond +
-                ", realLeaveEarlySecond=" + realLeaveEarlySecond +
-                ", realAbsenteeismSecond=" + realAbsenteeismSecond +
-                ", workDayOverWorkSecond=" + workDayOverWorkSecond +
-                ", restDayOverWorkSecond=" + restDayOverWorkSecond +
-                ", holidayOverWorkSecond=" + holidayOverWorkSecond +
-                ", dateType=" + dateType +
-                ", signInStart=" + signInStart +
-                ", signInEnd=" + signInEnd +
-                '}';
+        return "AtdDetailReportResponseModel{" + "personId='" + personId + '\'' + ", personNo='" + personNo + '\''
+                + ", name='" + name + '\'' + ", depNames=" + depNames + ", roleNames=" + roleNames + ", atDate="
+                + atDate + ", timeIntervalName='" + timeIntervalName + '\'' + ", planSignInDatetime="
+                + planSignInDatetime + ", planSignOutDatetime=" + planSignOutDatetime + ", planTimeIntervalSecond="
+                + planTimeIntervalSecond + ", realSignInTime=" + realSignInTime + ", signInStatus=" + signInStatus
+                + ", realSignOutTime=" + realSignOutTime + ", signOutStatus=" + signOutStatus + ", realWorkTimeSecond="
+                + realWorkTimeSecond + ", normalWorkSecond=" + normalWorkSecond + ", realLateSecond=" + realLateSecond
+                + ", realLeaveEarlySecond=" + realLeaveEarlySecond + ", realAbsenteeismSecond=" + realAbsenteeismSecond
+                + ", workDayOverWorkSecond=" + workDayOverWorkSecond + ", restDayOverWorkSecond="
+                + restDayOverWorkSecond + ", holidayOverWorkSecond=" + holidayOverWorkSecond + ", dateType=" + dateType
+                + ", signInStart=" + signInStart + ", signInEnd=" + signInEnd + '}';
     }
+
 }

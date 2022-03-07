@@ -62,12 +62,9 @@ public class DeviceTaskInfoResponseModel {
 
     @Override
     public String toString() {
-        return "DeviceTaskInfoResponseModel{" +
-                "deviceKey='" + deviceKey + '\'' +
-                ", deviceName='" + deviceName + '\'' +
-                ", taskStatus=" + taskStatus +
-                ", authStatus=" + authStatus +
-                ", personSubTaskInfoList=" + personSubTaskInfoList +
-                '}';
+        return "DeviceTaskInfoResponseModel{" + "deviceKey='" + deviceKey + '\'' + ", deviceName='" + deviceName + '\''
+                + ", taskStatus=" + taskStatus + ", authStatus=" + authStatus + ", personSubTaskInfoList="
+                + personSubTaskInfoList + '}';
     }
+
 }

@@ -157,17 +157,10 @@ public class AtdExceptionReportResponseModel {
 
     @Override
     public String toString() {
-        return "AtdExceptionReportResponseModel{" +
-                "personId='" + personId + '\'' +
-                ", personNo='" + personNo + '\'' +
-                ", name='" + name + '\'' +
-                ", depNames=" + depNames +
-                ", roleNames=" + roleNames +
-                ", atDate=" + atDate +
-                ", recognitionTime=" + recognitionTime +
-                ", clockPhotoId='" + clockPhotoId + '\'' +
-                ", deviceKey='" + deviceKey + '\'' +
-                ", deviceName='" + deviceName + '\'' +
-                '}';
+        return "AtdExceptionReportResponseModel{" + "personId='" + personId + '\'' + ", personNo='" + personNo + '\''
+                + ", name='" + name + '\'' + ", depNames=" + depNames + ", roleNames=" + roleNames + ", atDate="
+                + atDate + ", recognitionTime=" + recognitionTime + ", clockPhotoId='" + clockPhotoId + '\''
+                + ", deviceKey='" + deviceKey + '\'' + ", deviceName='" + deviceName + '\'' + '}';
     }
+
 }

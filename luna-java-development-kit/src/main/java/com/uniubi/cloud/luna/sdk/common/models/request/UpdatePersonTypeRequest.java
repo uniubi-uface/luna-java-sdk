@@ -18,7 +18,6 @@ public class UpdatePersonTypeRequest {
      */
     private String typeName;
 
-
     public String getTypeId() {
         return typeId;
     }
@@ -37,9 +36,7 @@ public class UpdatePersonTypeRequest {
 
     @Override
     public String toString() {
-        return "UpdatePersonTypeRequest{" +
-                "typeId='" + typeId + '\'' +
-                ", typeName='" + typeName + '\'' +
-                '}';
+        return "UpdatePersonTypeRequest{" + "typeId='" + typeId + '\'' + ", typeName='" + typeName + '\'' + '}';
     }
+
 }

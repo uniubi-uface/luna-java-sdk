@@ -34,7 +34,6 @@ public class DeviceSearchResponseModel {
      */
     private Integer deviceType;
 
-
     public String getDeviceKey() {
         return deviceKey;
     }
@@ -117,17 +116,10 @@ public class DeviceSearchResponseModel {
 
     @Override
     public String toString() {
-        return "DeviceSearchResponseModel{" +
-                "deviceKey='" + deviceKey + '\'' +
-                ", deviceName='" + deviceName + '\'' +
-                ", deviceGroupName='" + deviceGroupName + '\'' +
-                ", softwareVersion='" + softwareVersion + '\'' +
-                ", ip='" + ip + '\'' +
-                ", alreadyExist=" + alreadyExist +
-                ", hasPassword=" + hasPassword +
-                ", dhcp=" + dhcp +
-                ", legal=" + legal +
-                ", deviceType=" + deviceType +
-                '}';
+        return "DeviceSearchResponseModel{" + "deviceKey='" + deviceKey + '\'' + ", deviceName='" + deviceName + '\''
+                + ", deviceGroupName='" + deviceGroupName + '\'' + ", softwareVersion='" + softwareVersion + '\''
+                + ", ip='" + ip + '\'' + ", alreadyExist=" + alreadyExist + ", hasPassword=" + hasPassword + ", dhcp="
+                + dhcp + ", legal=" + legal + ", deviceType=" + deviceType + '}';
     }
+
 }

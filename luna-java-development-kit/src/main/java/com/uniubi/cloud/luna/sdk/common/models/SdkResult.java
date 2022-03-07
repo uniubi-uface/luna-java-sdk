@@ -28,7 +28,6 @@ public class SdkResult<T> {
      */
     private T data;
 
-
     public boolean isSuccess() {
         return success;
     }
@@ -63,11 +62,8 @@ public class SdkResult<T> {
 
     @Override
     public String toString() {
-        return "SdkResult{" +
-                "success=" + success +
-                ", code='" + code + '\'' +
-                ", msg='" + msg + '\'' +
-                ", data=" + data +
-                '}';
+        return "SdkResult{" + "success=" + success + ", code='" + code + '\'' + ", msg='" + msg + '\'' + ", data="
+                + data + '}';
     }
+
 }

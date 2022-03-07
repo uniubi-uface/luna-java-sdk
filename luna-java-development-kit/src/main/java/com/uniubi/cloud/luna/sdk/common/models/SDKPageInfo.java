@@ -78,12 +78,8 @@ public class SDKPageInfo<T> {
 
     @Override
     public String toString() {
-        return "SDKPageInfo{" +
-                "pageNum=" + pageNum +
-                ", pageSize=" + pageSize +
-                ", pages=" + pages +
-                ", total=" + total +
-                ", list=" + list +
-                '}';
+        return "SDKPageInfo{" + "pageNum=" + pageNum + ", pageSize=" + pageSize + ", pages=" + pages + ", total="
+                + total + ", list=" + list + '}';
     }
+
 }

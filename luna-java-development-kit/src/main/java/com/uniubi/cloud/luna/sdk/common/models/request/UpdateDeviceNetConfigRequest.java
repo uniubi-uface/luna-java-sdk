@@ -50,11 +50,8 @@ public class UpdateDeviceNetConfigRequest extends DeviceOperatorBaseRequest {
 
     @Override
     public String toString() {
-        return "UpdateDeviceNetConfigRequest{" +
-                "DHCP=" + DHCP +
-                ", dNS='" + dNS + '\'' +
-                ", gateway='" + gateway + '\'' +
-                ", ip='" + ip + '\'' +
-                '}';
+        return "UpdateDeviceNetConfigRequest{" + "DHCP=" + DHCP + ", dNS='" + dNS + '\'' + ", gateway='" + gateway
+                + '\'' + ", ip='" + ip + '\'' + '}';
     }
+
 }

@@ -23,8 +23,7 @@ public class ResetDeviceRequest extends DeviceOperatorBaseRequest {
 
     @Override
     public String toString() {
-        return "ResetDeviceRequest{" +
-                "factoryDataReset=" + factoryDataReset +
-                '}';
+        return "ResetDeviceRequest{" + "factoryDataReset=" + factoryDataReset + '}';
     }
+
 }

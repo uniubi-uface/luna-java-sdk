@@ -25,8 +25,7 @@ public class DeviceOperatorBaseRequest {
 
     @Override
     public String toString() {
-        return "DeviceOperatorBaseRequest{" +
-                "deviceKeyList=" + deviceKeyList +
-                '}';
+        return "DeviceOperatorBaseRequest{" + "deviceKeyList=" + deviceKeyList + '}';
     }
+
 }

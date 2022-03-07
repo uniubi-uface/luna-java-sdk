@@ -22,7 +22,6 @@ public class UpdateDeviceWifiConfigRequest extends DeviceOperatorBaseRequest {
 
     private String subnetMask;
 
-
     public String getWifiName() {
         return wifiName;
     }
@@ -81,14 +80,9 @@ public class UpdateDeviceWifiConfigRequest extends DeviceOperatorBaseRequest {
 
     @Override
     public String toString() {
-        return "UpdateDeviceWifiConfigRequest{" +
-                "wifiName='" + wifiName + '\'' +
-                ", wifiPass='" + wifiPass + '\'' +
-                ", dhcp=" + dhcp +
-                ", ip='" + ip + '\'' +
-                ", gateway='" + gateway + '\'' +
-                ", dns='" + dns + '\'' +
-                ", subnetMask='" + subnetMask + '\'' +
-                '}';
+        return "UpdateDeviceWifiConfigRequest{" + "wifiName='" + wifiName + '\'' + ", wifiPass='" + wifiPass + '\''
+                + ", dhcp=" + dhcp + ", ip='" + ip + '\'' + ", gateway='" + gateway + '\'' + ", dns='" + dns + '\''
+                + ", subnetMask='" + subnetMask + '\'' + '}';
     }
+
 }

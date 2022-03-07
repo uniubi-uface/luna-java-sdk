@@ -20,8 +20,7 @@ public class GetDeviceRequest {
 
     @Override
     public String toString() {
-        return "GetDeviceRequest{" +
-                "deviceKey='" + deviceKey + '\'' +
-                '}';
+        return "GetDeviceRequest{" + "deviceKey='" + deviceKey + '\'' + '}';
     }
+
 }

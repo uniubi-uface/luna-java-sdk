@@ -37,7 +37,6 @@ public class AresPersonFaceResponseModel implements Serializable {
      */
     private String failedReason;
 
-
     public String getFaceId() {
         return faceId;
     }
@@ -80,12 +79,9 @@ public class AresPersonFaceResponseModel implements Serializable {
 
     @Override
     public String toString() {
-        return "AresPersonFaceResponseModel{" +
-                "faceId='" + faceId + '\'' +
-                ", photoId='" + photoId + '\'' +
-                ", status=" + status +
-                ", photoUrl='" + photoUrl + '\'' +
-                ", failedReason='" + failedReason + '\'' +
-                '}';
+        return "AresPersonFaceResponseModel{" + "faceId='" + faceId + '\'' + ", photoId='" + photoId + '\''
+                + ", status=" + status + ", photoUrl='" + photoUrl + '\'' + ", failedReason='" + failedReason + '\''
+                + '}';
     }
+
 }

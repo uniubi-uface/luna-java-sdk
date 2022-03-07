@@ -18,7 +18,6 @@ public class SDKBasePageRequest {
      */
     private Integer pageSize = 10;
 
-
     public Integer getPageNum() {
         return pageNum;
     }
@@ -37,9 +36,7 @@ public class SDKBasePageRequest {
 
     @Override
     public String toString() {
-        return "SDKBasePageRequest{" +
-                "pageNum=" + pageNum +
-                ", pageSize=" + pageSize +
-                '}';
+        return "SDKBasePageRequest{" + "pageNum=" + pageNum + ", pageSize=" + pageSize + '}';
     }
+
 }

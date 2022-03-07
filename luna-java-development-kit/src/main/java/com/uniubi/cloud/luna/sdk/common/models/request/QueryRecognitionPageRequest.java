@@ -104,13 +104,8 @@ public class QueryRecognitionPageRequest extends SDKBasePageRequest {
 
     @Override
     public String toString() {
-        return "QueryRecognitionPageRequest{" +
-                "empNos=" + empNos +
-                ", orgId='" + orgId + '\'' +
-                ", recMode=" + recMode +
-                ", startTime=" + startTime +
-                ", endTime=" + endTime +
-                ", statDate='" + statDate + '\'' +
-                '}';
+        return "QueryRecognitionPageRequest{" + "empNos=" + empNos + ", orgId='" + orgId + '\'' + ", recMode=" + recMode
+                + ", startTime=" + startTime + ", endTime=" + endTime + ", statDate='" + statDate + '\'' + '}';
     }
+
 }

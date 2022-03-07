@@ -220,22 +220,11 @@ public class AddPersonRequest {
 
     @Override
     public String toString() {
-        return "AddPersonRequest{" +
-                "empNo='" + empNo + '\'' +
-                ", name='" + name + '\'' +
-                ", phone='" + phone + '\'' +
-                ", workNo='" + workNo + '\'' +
-                ", mail='" + mail + '\'' +
-                ", stageName='" + stageName + '\'' +
-                ", cardNo='" + cardNo + '\'' +
-                ", entryTime=" + entryTime +
-                ", workPlace='" + workPlace + '\'' +
-                ", personTypeId='" + personTypeId + '\'' +
-                ", tel='" + tel + '\'' +
-                ", gender=" + gender +
-                ", idCardNo='" + idCardNo + '\'' +
-                ", roleId='" + roleId + '\'' +
-                ", deptIdList=" + deptIdList +
-                '}';
+        return "AddPersonRequest{" + "empNo='" + empNo + '\'' + ", name='" + name + '\'' + ", phone='" + phone + '\''
+                + ", workNo='" + workNo + '\'' + ", mail='" + mail + '\'' + ", stageName='" + stageName + '\''
+                + ", cardNo='" + cardNo + '\'' + ", entryTime=" + entryTime + ", workPlace='" + workPlace + '\''
+                + ", personTypeId='" + personTypeId + '\'' + ", tel='" + tel + '\'' + ", gender=" + gender
+                + ", idCardNo='" + idCardNo + '\'' + ", roleId='" + roleId + '\'' + ", deptIdList=" + deptIdList + '}';
     }
+
 }

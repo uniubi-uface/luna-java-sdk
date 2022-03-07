@@ -75,12 +75,9 @@ public class AddDeviceRequest {
 
     @Override
     public String toString() {
-        return "AddDeviceRequest{" +
-                "deviceName='" + deviceName + '\'' +
-                ", deviceIp='" + deviceIp + '\'' +
-                ", devicePass='" + devicePass + '\'' +
-                ", deviceGroupId='" + deviceGroupId + '\'' +
-                ", lang='" + lang + '\'' +
-                '}';
+        return "AddDeviceRequest{" + "deviceName='" + deviceName + '\'' + ", deviceIp='" + deviceIp + '\''
+                + ", devicePass='" + devicePass + '\'' + ", deviceGroupId='" + deviceGroupId + '\'' + ", lang='" + lang
+                + '\'' + '}';
     }
+
 }

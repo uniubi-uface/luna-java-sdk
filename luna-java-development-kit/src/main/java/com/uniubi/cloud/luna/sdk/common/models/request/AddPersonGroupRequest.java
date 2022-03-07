@@ -57,10 +57,8 @@ public class AddPersonGroupRequest {
 
     @Override
     public String toString() {
-        return "AddPersonGroupRequest{" +
-                "personGroupName='" + personGroupName + '\'' +
-                ", parentGroupId='" + parentGroupId + '\'' +
-                ", managerIds=" + managerIds +
-                '}';
+        return "AddPersonGroupRequest{" + "personGroupName='" + personGroupName + '\'' + ", parentGroupId='"
+                + parentGroupId + '\'' + ", managerIds=" + managerIds + '}';
     }
+
 }

@@ -27,7 +27,7 @@
 Maven 依赖 Maven依赖GAV:
 
 ```xml
-
+<!-- https://mvnrepository.com/artifact/com.uniubi.cloud/luna-java-development-kit -->
 <dependency>
     <groupId>com.uniubi.cloud</groupId>
     <artifactId>luna-java-development-kit</artifactId>

@@ -32,7 +32,7 @@ The following SDK usage examples are provided:
 Maven dependency GAV:
 
 ```xml
-
+<!-- https://mvnrepository.com/artifact/com.uniubi.cloud/luna-java-development-kit -->
 <dependency>
     <groupId>com.uniubi.cloud</groupId>
     <artifactId>luna-java-development-kit</artifactId>

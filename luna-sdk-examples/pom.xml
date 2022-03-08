@@ -7,7 +7,7 @@
 
     <groupId>com.uniubi.cloud</groupId>
     <artifactId>luna-sdk-examples</artifactId>
-    <version>3.0.0.1-SNAPSHOT</version>
+    <version>3.0.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
 

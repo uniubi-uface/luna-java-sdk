@@ -1,6 +1,6 @@
 package com.uniubi.cloud.luna.sdk.common.constants;
 
-import com.squareup.okhttp.MediaType;
+import okhttp3.MediaType;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -16,42 +16,42 @@ public class SdkConstants {
     /**
      * 宇泛sdk统一请求地址
      */
-    public static final String UNIUBI_SDK_UNIFY_URL;
+    public static final String UNIUBI_SDK_UNIFY_URL = "/develop/sdk/v1";
 
     /**
      * sdk鉴权请求key
      */
-    public static final String SDK_AUTH_REQUEST_KEY;
+    public static final String SDK_AUTH_REQUEST_KEY = "authToken";
 
     /**
      * sdk统一请求key名称
      */
-    public static final String HEADER_REQUEST_KEY_NAME;
+    public static final String HEADER_REQUEST_KEY_NAME = "sdkRequestKey";
 
     /**
      * 请求头部token名称
      */
-    public static final String HEADER_TOKEN_NAME;
+    public static final String HEADER_TOKEN_NAME = "sdkAccessToken";
 
     /**
      * 请求头部语言名称
      */
-    public static final String HEADER_LANG_NAME;
+    public static final String HEADER_LANG_NAME = "lang";
 
     /**
      * 加密口令
      */
-    public static final String HEADER_SECRET_KEY_NAME;
+    public static final String HEADER_SECRET_KEY_NAME = "sdkSecretKey";
 
     /**
      * 空请求体常量
      */
-    public static final Map<String, String> EMPTY_PARAM;
+    public static final Map<String, String> EMPTY_PARAM = new HashMap<>(8);
 
     /**
      * 鉴权成功结果code用来判断鉴权操作是否成功
      */
-    public static final String AUTH_SUCCESS_CODE;
+    public static final String AUTH_SUCCESS_CODE = "DEP_SUS-1000";
 
     /**
      * token校验失败返回码
@@ -61,43 +61,35 @@ public class SdkConstants {
     /**
      * 鉴权时用到的平台短语前缀
      */
-    public static final String SDK_PLATFORM_SHORT_NAME_PREFIX;
+    public static final String SDK_PLATFORM_SHORT_NAME_PREFIX = "uniubi_sdk:";
 
     /**
      * sdk统一contentType
      */
-    public static final MediaType SDK_UNIFY_CONTENT_TYPE;
+    public static final MediaType SDK_UNIFY_CONTENT_TYPE = MediaType.parse("application/json");
 
     /**
      * http协议前缀
      */
-    public static final String HTTP_PROTO_PREFIX;
+    public static final String HTTP_PROTO_PREFIX = "http://";
+
+    /**
+     * https协议前缀
+     */
+    public static final String HTTPS_PROTO_PREFIX = "https://";
 
     /**
      * 统一请求参数名称
      */
-    public static final String REQUEST_DATA_KEY;
+    public static final String REQUEST_DATA_KEY = "requestData";
 
     /**
      * http请求成功code
      */
-    public static final int HTTP_OK_CODE;
+    public static final int HTTP_OK_CODE = 200;
 
     static {
-        SDK_AUTH_REQUEST_KEY = "authToken";
-        UNIUBI_SDK_UNIFY_URL = "/develop/sdk/v1";
-        HEADER_REQUEST_KEY_NAME = "sdkRequestKey";
-        HEADER_SECRET_KEY_NAME = "sdkSecretKey";
-        HEADER_TOKEN_NAME = "sdkAccessToken";
-        HEADER_LANG_NAME = "lang";
-        AUTH_SUCCESS_CODE = "DEP_SUS-1000";
-        SDK_PLATFORM_SHORT_NAME_PREFIX = "uniubi_sdk:";
-        SDK_UNIFY_CONTENT_TYPE = MediaType.parse("application/json");
-        HTTP_PROTO_PREFIX = "http://";
-        REQUEST_DATA_KEY = "requestData";
-        EMPTY_PARAM = new HashMap<>(1);
         EMPTY_PARAM.put(REQUEST_DATA_KEY, "{}");
-        HTTP_OK_CODE = 200;
     }
 
 }

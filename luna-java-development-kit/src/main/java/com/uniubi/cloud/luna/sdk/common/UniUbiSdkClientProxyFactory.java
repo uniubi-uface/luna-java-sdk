@@ -41,10 +41,14 @@ public class UniUbiSdkClientProxyFactory {
     private ClientProxyConfig createClientProxyConfig(String accessKey, String accessSecret,
             RequestConfig requestConfig) {
         ClientProxyConfig clientProxyConfig = new ClientProxyConfig();
-        // 解析requestUrl
+        // 解析requestUrl，补充协议前缀
         if (requestConfig.getEndPoint().startsWith(SdkConstants.HTTP_PROTO_PREFIX)) {
             clientProxyConfig.requestUrl = requestConfig.getEndPoint() + SdkConstants.UNIUBI_SDK_UNIFY_URL;
         }
+        else if (requestConfig.getEndPoint().startsWith(SdkConstants.HTTPS_PROTO_PREFIX)) {
+            clientProxyConfig.requestUrl = requestConfig.getEndPoint() + SdkConstants.UNIUBI_SDK_UNIFY_URL;
+        }
+        // 默认使用HTTP协议（兼容老客户使用的是http）
         else {
             clientProxyConfig.requestUrl = SdkConstants.HTTP_PROTO_PREFIX + requestConfig.getEndPoint()
                     + SdkConstants.UNIUBI_SDK_UNIFY_URL;
@@ -134,6 +138,9 @@ public class UniUbiSdkClientProxyFactory {
             }
             String requestKey = requestMark.name();
             String aesKey = LunaDevelopEncrypt.generateAesKey();
+            if (aesKey == null) {
+                return null;
+            }
             String secretKey = LunaDevelopEncrypt.encrypt(aesKey, publicKey);
             // 获取请求header，将token和请求key都放进header中
             Map<String, String> headers = getHeader(requestKey, secretKey);

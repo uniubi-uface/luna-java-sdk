@@ -59,11 +59,6 @@ public class SdkConstants {
     public static final String TOKEN_FAILED_CODE = "ARES-SDK-008";
 
     /**
-     * 鉴权时用到的平台短语前缀
-     */
-    public static final String SDK_PLATFORM_SHORT_NAME_PREFIX = "uniubi_sdk:";
-
-    /**
      * sdk统一contentType
      */
     public static final MediaType SDK_UNIFY_CONTENT_TYPE = MediaType.parse("application/json");

@@ -1,8 +1,5 @@
 package com.uniubi.cloud.luna.sdk.common.encrypt;
 
-import sun.misc.BASE64Decoder;
-import sun.misc.BASE64Encoder;
-
 import javax.crypto.Cipher;
 import javax.crypto.KeyGenerator;
 import javax.crypto.SecretKey;
@@ -19,17 +16,12 @@ import java.security.interfaces.RSAPublicKey;
 import java.security.spec.PKCS8EncodedKeySpec;
 import java.security.spec.X509EncodedKeySpec;
 import java.util.Base64;
-import java.util.Random;
 
 /**
  * @author jingmu
  */
 
 public class LunaDevelopEncrypt {
-
-    // private static final String IV_PARAMETER = "ares-develop-sdk";
-
-    private static final Random RANDOM = new Random();
 
     /**
      * 随机生成密钥对
@@ -194,7 +186,7 @@ public class LunaDevelopEncrypt {
             IvParameterSpec iv = new IvParameterSpec(getAesIv(key).getBytes());
             cipher.init(Cipher.ENCRYPT_MODE, skeySpec, iv);
             byte[] encrypted = cipher.doFinal(content.getBytes(StandardCharsets.UTF_8));
-            result = new BASE64Encoder().encode(encrypted);
+            result = Base64.getEncoder().encodeToString(encrypted);
         }
         catch (Exception e) {
             return null;
@@ -210,7 +202,8 @@ public class LunaDevelopEncrypt {
             IvParameterSpec iv = new IvParameterSpec(getAesIv(key).getBytes());
             cipher.init(Cipher.DECRYPT_MODE, skeySpec, iv);
             // 先用base64解密
-            byte[] encrypted1 = new BASE64Decoder().decodeBuffer(content);
+            byte[] encrypted1 = Base64.getDecoder().decode(content);
+            /// byte[] encrypted1 = new BASE64Decoder().decodeBuffer(content);
             byte[] original = cipher.doFinal(encrypted1);
             return new String(original, StandardCharsets.UTF_8);
         }

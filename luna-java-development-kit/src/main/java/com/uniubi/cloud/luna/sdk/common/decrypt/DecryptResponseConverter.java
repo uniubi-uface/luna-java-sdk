@@ -5,8 +5,8 @@ import com.uniubi.cloud.luna.sdk.common.encrypt.LunaDevelopEncrypt;
 import com.uniubi.cloud.luna.sdk.common.exceptioins.UniUbiLunaSdkException;
 import com.uniubi.cloud.luna.sdk.common.models.SdkResult;
 import com.uniubi.cloud.luna.sdk.common.type.TypeHandlerRegistry;
+import com.uniubi.cloud.luna.sdk.common.utils.StringUtils;
 import com.uniubi.cloud.luna.sdk.http.defaults.DefaultResponseConverter;
-import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
@@ -56,7 +56,7 @@ public class DecryptResponseConverter extends DefaultResponseConverter {
     /**
      * ContentResult
      */
-    public static class ContentResult extends SdkResult {
+    public static class ContentResult extends SdkResult<Object> {
 
         private String secret;
 
@@ -70,9 +70,11 @@ public class DecryptResponseConverter extends DefaultResponseConverter {
 
         @Override
         public String toString() {
-            return "ContentResult{" + "secret='" + secret + '\'' + '}';
+            return "ContentResult{" +
+                    "secret='" + secret + "'," +
+                    super.toString() +
+                    '}';
         }
-
     }
 
 }

@@ -3,7 +3,7 @@ package com.uniubi.cloud.luna.sdk.common.auth;
 import com.uniubi.cloud.luna.sdk.common.SdkLang;
 import com.uniubi.cloud.luna.sdk.common.TokenLoader;
 import com.uniubi.cloud.luna.sdk.common.constants.SdkConstants;
-import com.uniubi.cloud.luna.sdk.common.exceptioins.UniUbiLunaSdkException;
+import com.uniubi.cloud.luna.sdk.common.exceptions.UniUbiLunaSdkException;
 import com.uniubi.cloud.luna.sdk.common.models.request.AuthRequest;
 import com.uniubi.cloud.luna.sdk.common.models.response.AuthResponseModel;
 import com.uniubi.cloud.luna.sdk.http.UniUbiHttpClient;

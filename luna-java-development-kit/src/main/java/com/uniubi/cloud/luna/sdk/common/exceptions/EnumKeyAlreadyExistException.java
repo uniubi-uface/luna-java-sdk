@@ -1,4 +1,4 @@
-package com.uniubi.cloud.luna.sdk.common.exceptioins;
+package com.uniubi.cloud.luna.sdk.common.exceptions;
 
 import java.text.MessageFormat;
 

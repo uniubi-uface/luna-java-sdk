@@ -1,6 +1,6 @@
 package com.uniubi.cloud.luna.sdk.common;
 
-import com.uniubi.cloud.luna.sdk.common.exceptioins.UniUbiLunaSdkException;
+import com.uniubi.cloud.luna.sdk.common.exceptions.UniUbiLunaSdkException;
 import com.uniubi.cloud.luna.sdk.http.UniUbiHttpClient;
 
 import java.lang.reflect.Method;

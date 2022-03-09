@@ -1,4 +1,4 @@
-package com.uniubi.cloud.luna.sdk.common.exceptioins;
+package com.uniubi.cloud.luna.sdk.common.exceptions;
 
 /**
  * com.uniubi.cloud.aiot.sdk.common.exceptioins.UniUbiLunaSdkException

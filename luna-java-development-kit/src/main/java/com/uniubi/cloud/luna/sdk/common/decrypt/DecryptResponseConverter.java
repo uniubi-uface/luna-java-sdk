@@ -2,7 +2,7 @@ package com.uniubi.cloud.luna.sdk.common.decrypt;
 
 import com.alibaba.fastjson.JSONObject;
 import com.uniubi.cloud.luna.sdk.common.encrypt.LunaDevelopEncrypt;
-import com.uniubi.cloud.luna.sdk.common.exceptioins.UniUbiLunaSdkException;
+import com.uniubi.cloud.luna.sdk.common.exceptions.UniUbiLunaSdkException;
 import com.uniubi.cloud.luna.sdk.common.models.SdkResult;
 import com.uniubi.cloud.luna.sdk.common.type.TypeHandlerRegistry;
 import com.uniubi.cloud.luna.sdk.common.utils.StringUtils;

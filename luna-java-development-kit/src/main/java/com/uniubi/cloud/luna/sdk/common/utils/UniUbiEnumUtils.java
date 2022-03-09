@@ -1,8 +1,8 @@
 package com.uniubi.cloud.luna.sdk.common.utils;
 
 import com.uniubi.cloud.luna.sdk.common.enums.CommonEnum;
-import com.uniubi.cloud.luna.sdk.common.exceptioins.EnumKeyAlreadyExistException;
-import com.uniubi.cloud.luna.sdk.common.exceptioins.EnumKeyNotFoundException;
+import com.uniubi.cloud.luna.sdk.common.exceptions.EnumKeyAlreadyExistException;
+import com.uniubi.cloud.luna.sdk.common.exceptions.EnumKeyNotFoundException;
 
 import java.util.HashMap;
 import java.util.Map;

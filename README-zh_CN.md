@@ -8,7 +8,7 @@
 
 ### Open API Document
 
-* [UStar Open API Document](./docs/UStar%20SDK%20Open%20API-zh_CN.md)
+* [UStar Open API 文档](./docs/UStar%20SDK%20Open%20API-zh_CN.md)
 
   Open API 提供了 http/https 接口，开发者可通过Open API对接UStar，
 

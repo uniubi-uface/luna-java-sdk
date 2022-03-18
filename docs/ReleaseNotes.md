@@ -25,9 +25,9 @@ convenient for developers to connect and communicate.
 
 ### Notes
 
-#### 3.0.0.0 (in development)
+#### 3.0.0.0
 
-* Release time: 03/02/2022
+* Release time: 03/18/2022
 * feature:
     1. Identify record callback add field
     2. Rest report query returns field modification (4.14.3)

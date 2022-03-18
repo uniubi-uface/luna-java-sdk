@@ -31,7 +31,7 @@ public class SimpleTokenLoader extends AbstractTokenLoader implements TokenLoade
      * token刷新任务，每12小时刷新一次
      */
     private void startRefreshTokenTask() {
-        ScheduledThreadPoolExecutor scheduler = new ScheduledThreadPoolExecutor(1, new UniUbiSDKTokenThreadFactory());
+        ScheduledThreadPoolExecutor scheduler = new ScheduledThreadPoolExecutor(1, new UniUbiSdkTokenThreadFactory());
         scheduler.scheduleAtFixedRate(() -> {
             synchronized (LOCK_OBJ) {
                 accessToken = null;
@@ -60,13 +60,13 @@ public class SimpleTokenLoader extends AbstractTokenLoader implements TokenLoade
     }
 
     /**
-     * UniUbiSDKTokenThreadFactory
+     * UniUbiSdkTokenThreadFactory
      */
-    private class UniUbiSDKTokenThreadFactory implements ThreadFactory {
+    private static class UniUbiSdkTokenThreadFactory implements ThreadFactory {
 
         @Override
         public Thread newThread(Runnable r) {
-            Thread thread = new Thread();
+            Thread thread = new Thread(r);
             thread.setName("UNIUBI_SDK_TOKEN_REFRESH_THREAD");
             return thread;
         }

@@ -1,6 +1,6 @@
 package com.uniubi.cloud.luna.sdk.http.defaults;
 
-import com.uniubi.cloud.luna.sdk.http.AresHttpException;
+import com.uniubi.cloud.luna.sdk.http.LunaHttpException;
 import com.uniubi.cloud.luna.sdk.http.ClientConfig;
 import com.uniubi.cloud.luna.sdk.http.RequestConverter;
 import com.uniubi.cloud.luna.sdk.http.ResponseConverter;
@@ -65,10 +65,10 @@ public class DefaultUniUbiHttpClient implements UniUbiHttpClient {
             response = client.newCall(request).execute();
         }
         catch (ConnectException ce) {
-            throw new AresHttpException(HttpErrorCodeEnum.CODE_404.getDesc());
+            throw new LunaHttpException(HttpErrorCodeEnum.CODE_404.getDesc());
         }
         catch (SocketTimeoutException se) {
-            throw new AresHttpException(HttpErrorCodeEnum.CODE_408.getDesc());
+            throw new LunaHttpException(HttpErrorCodeEnum.CODE_408.getDesc());
         }
         // 3. 响应处理
         if (response.code() == HTTP_OK_CODE) {
@@ -82,7 +82,7 @@ public class DefaultUniUbiHttpClient implements UniUbiHttpClient {
         }
         else {
             HttpErrorCodeEnum httpErrorCodeEnum = HttpErrorCodeEnum.getByCode(response.code());
-            throw new AresHttpException(httpErrorCodeEnum.getDesc());
+            throw new LunaHttpException(httpErrorCodeEnum.getDesc());
         }
     }
 

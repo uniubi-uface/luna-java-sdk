@@ -5,7 +5,7 @@
 
     <groupId>com.uniubi.cloud</groupId>
     <artifactId>luna-java-sdk-parent</artifactId>
-    <version>3.0.0.0</version>
+    <version>3.0.0.1-SNAPSHOT</version>
 
     <name>luna-java-sdk-parent</name>
     <packaging>pom</packaging>

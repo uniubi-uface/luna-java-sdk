@@ -11,7 +11,7 @@
 | 2.5.0   | 20/10/2021  | Jingmu | 1.The original java version is organized into a general version<br />2.The face ID is added to the interface returned data for adding faces <br />3. Add attendance report interfaces <br />4. Interface optimization |
 | 2.7.0   | 25/01/2022  | Jingmu   | 1. Add HTTPS description(#1.1) |
 | 3.0.0.0   | 2022/03/02  | 井木   | 1. recognition call back field add<br/> 2.break time report list field update #4.14.3 <br/>3. update request header name to lower camel |
-| 3.0.0.0   | 2022/03/02  | 井木   | 1. add person QR Code API |
+| 3.0.0.0   | 2022/03/02  | 井木   | 1. add person QR Code API #4.4.5 |
 
 <br/><br/>
 

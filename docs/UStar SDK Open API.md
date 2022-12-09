@@ -353,6 +353,17 @@ docking platform page of `UStar`. The `public key` is used to encrypt and decryp
   | empId    | String   | Y        | 人员ID |
   | effectiveTimeType    | integer   | Y        | Type of validity 1: one month, 2: three months, 3: half a year, 4: one year, 5: permanent |
 
+* Response parameter explanation
+
+  | Field Name       | Field Type | Explanation                                                  |
+  | ---------------- | ---------- | :----------------------------------------------------------- |
+  | id               | String     | the QR Code ID                                               |
+  | fileId           | String     | the QR Code file ID, Can be used to download QR code         |
+  | qrCodeCreateTime | String     | QR code creation time yyyy-MM-dd HH:mm:ss                    |
+  | qrCodeEndTime    | String     | Expiration date of QR code yyyy-MM-dd HH:mm:ss               |
+  | effectiveType    | Integer    | QR code valid time type 1: one month, 2: three months, 3: half a year, 4: one year, 5: permanent |
+  | qrCodeData       | String     | QR code content                                              |
+
 ## 4.5 Face API
 
 ### 4.5.1 Add Face
@@ -627,7 +638,7 @@ docking platform page of `UStar`. The `public key` is used to encrypt and decryp
 * Response parameter explanation
 
   | Field Name | Field Type | Explanation |
-  | -------- | -------- | --------------------- |  
+  | -------- | -------- | --------------------- |
   | None | String | device Key 设备序列号 |
 
 ### 4.10.2 Upgrade Device

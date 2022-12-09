@@ -13,7 +13,7 @@
 | 3.0.0.0   | 2022/03/02  | 井木   | 1. 识别记录回调增加字段<br/> 2.休息报表查询返回字段修改 #4.14.3<br/>3.请求头改为小驼峰 |
 | 3.2.2.1   | 2022/12/09  | 井木   | 1. 增加人员二维码 |
 
-<br/><br/>
+<br/>
 
 # 1 请求说明
 
@@ -351,6 +351,18 @@ RSA的公钥和私钥由UStar生成，再UStar的对接平台页面获取RSA公�
   | empId    | String   | Y        | 人员ID |
   | effectiveTimeType    | integer   | Y        | 有效期类型 1：一个月，2：三个月，3：半年，4：一年，5：永久 |
 
+* 响应参数说明
+
+  | 字段名称         | 字段类型 | 说明                                                         |
+  | ---------------- | -------- | :----------------------------------------------------------- |
+  | id               | String   | 二维码ID                                                     |
+  | fileId           | String   | 二维码图片ID，可用来下载二维码                               |
+  | qrCodeCreateTime | String   | 二维码创建时间 yyyy-MM-dd HH:mm:ss                           |
+  | qrCodeEndTime    | String   | 二维码有效期截至时间 yyyy-MM-dd HH:mm:ss                     |
+  | effectiveType    | Integer  | 二维码有效时间类型 1：一个月，2：三个月，3：半年，4：一年，5：永久 |
+  | qrCodeData       | String   | 二维码内容                                                   |
+
+  
 
 ## 4.5 人像相关API
 

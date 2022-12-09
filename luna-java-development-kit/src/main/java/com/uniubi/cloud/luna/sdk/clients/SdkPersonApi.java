@@ -5,15 +5,16 @@ import com.uniubi.cloud.luna.sdk.common.annotation.RequestParam;
 import com.uniubi.cloud.luna.sdk.common.models.SDKPageInfo;
 import com.uniubi.cloud.luna.sdk.common.models.SdkResult;
 import com.uniubi.cloud.luna.sdk.common.models.request.AddPersonRequest;
+import com.uniubi.cloud.luna.sdk.common.models.request.GenerateEmpQrCodeRequest;
 import com.uniubi.cloud.luna.sdk.common.models.request.QueryPersonPageRequest;
 import com.uniubi.cloud.luna.sdk.common.models.request.UpdatePersonRequest;
+import com.uniubi.cloud.luna.sdk.common.models.response.AresEmpQrCodeModel;
 import com.uniubi.cloud.luna.sdk.common.models.response.PersonResponseModel;
 
 /**
  * 人员接口
  * <p>
  * Person(Employee) API
- *
  * @author jingmu
  * @since 2020/5/7
  */
@@ -52,4 +53,9 @@ public interface SdkPersonApi {
     @RequestMark(name = "queryPersonPage", desc = "查询人员分页")
     SdkResult<SDKPageInfo<PersonResponseModel>> queryPersonPage(QueryPersonPageRequest queryPersonPageRequest);
 
+    /**
+     * 生成人员二维码
+     */
+    @RequestMark(name = "generateEmpQrCode", desc = "生成人员二维码")
+    SdkResult<AresEmpQrCodeModel> generateEmpQrCode(GenerateEmpQrCodeRequest request);
 }

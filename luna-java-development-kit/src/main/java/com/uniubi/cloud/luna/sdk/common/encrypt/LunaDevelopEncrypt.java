@@ -1,5 +1,8 @@
 package com.uniubi.cloud.luna.sdk.common.encrypt;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import javax.crypto.Cipher;
 import javax.crypto.KeyGenerator;
 import javax.crypto.SecretKey;
@@ -22,6 +25,8 @@ import java.util.Base64;
  */
 
 public class LunaDevelopEncrypt {
+
+    private static final Logger Logger = LoggerFactory.getLogger(LunaDevelopEncrypt.class);
 
     /**
      * 随机生成密钥对
@@ -56,7 +61,7 @@ public class LunaDevelopEncrypt {
         // base64编码的公钥
         byte[] decoded = Base64.getDecoder().decode(publicKey.getBytes(StandardCharsets.UTF_8));
         RSAPublicKey pubKey = (RSAPublicKey) KeyFactory.getInstance("RSA")
-                .generatePublic(new X509EncodedKeySpec(decoded));
+            .generatePublic(new X509EncodedKeySpec(decoded));
         // RSA加密
         Cipher cipher = Cipher.getInstance("RSA");
         cipher.init(Cipher.ENCRYPT_MODE, pubKey);
@@ -76,7 +81,7 @@ public class LunaDevelopEncrypt {
         // base64编码的私钥
         byte[] decoded = Base64.getDecoder().decode(privateKey);
         RSAPrivateKey priKey = (RSAPrivateKey) KeyFactory.getInstance("RSA")
-                .generatePrivate(new PKCS8EncodedKeySpec(decoded));
+            .generatePrivate(new PKCS8EncodedKeySpec(decoded));
         // RSA解密
         Cipher cipher = Cipher.getInstance("RSA");
         cipher.init(Cipher.DECRYPT_MODE, priKey);
@@ -94,7 +99,7 @@ public class LunaDevelopEncrypt {
         // base64编码的公钥
         byte[] decoded = Base64.getDecoder().decode(privateKey.getBytes(StandardCharsets.UTF_8));
         RSAPrivateKey priKey = (RSAPrivateKey) KeyFactory.getInstance("RSA")
-                .generatePrivate(new PKCS8EncodedKeySpec(decoded));
+            .generatePrivate(new PKCS8EncodedKeySpec(decoded));
         // RSA加密
         Cipher cipher = Cipher.getInstance("RSA");
         cipher.init(Cipher.ENCRYPT_MODE, priKey);
@@ -114,25 +119,13 @@ public class LunaDevelopEncrypt {
         // base64编码的私钥
         byte[] decoded = Base64.getDecoder().decode(publicKey);
         RSAPublicKey pubKey = (RSAPublicKey) KeyFactory.getInstance("RSA")
-                .generatePublic(new X509EncodedKeySpec(decoded));
+            .generatePublic(new X509EncodedKeySpec(decoded));
         // RSA解密
         Cipher cipher = Cipher.getInstance("RSA");
         cipher.init(Cipher.DECRYPT_MODE, pubKey);
         return new String(cipher.doFinal(inputByte));
     }
 
-    /// public static String generateAesKey0() {
-    /// byte[] bytes = new byte[IV_PARAMETER.length()];
-    /// for (int i = 0; i < bytes.length; i++) {
-    /// int num = RANDOM.nextInt(36);
-    /// if (num < 10) {
-    /// bytes[i] = (byte) ('0' + num);
-    /// } else {
-    /// bytes[i] = (byte) ('A' + (num - 10));
-    /// }
-    /// }
-    /// return new String(bytes);
-    /// }
 
     public static String generateAesKey() {
         try {
@@ -142,8 +135,8 @@ public class LunaDevelopEncrypt {
             SecretKey sk = keyGenerator.generateKey();
             byte[] b = sk.getEncoded();
             return byteToHexString(b);
-        }
-        catch (NoSuchAlgorithmException e) {
+        } catch (NoSuchAlgorithmException e) {
+            Logger.error("NoSuchAlgorithmException", e);
             return null;
         }
     }
@@ -154,12 +147,10 @@ public class LunaDevelopEncrypt {
             String strHex = Integer.toHexString(aByte);
             if (strHex.length() > 3) {
                 sb.append(strHex.substring(6));
-            }
-            else {
+            } else {
                 if (strHex.length() < 2) {
                     sb.append("0").append(strHex);
-                }
-                else {
+                } else {
                     sb.append(strHex);
                 }
             }
@@ -187,8 +178,8 @@ public class LunaDevelopEncrypt {
             cipher.init(Cipher.ENCRYPT_MODE, skeySpec, iv);
             byte[] encrypted = cipher.doFinal(content.getBytes(StandardCharsets.UTF_8));
             result = Base64.getEncoder().encodeToString(encrypted);
-        }
-        catch (Exception e) {
+        } catch (Exception e) {
+            Logger.error("Exception", e);
             return null;
         }
         return result;
@@ -202,12 +193,11 @@ public class LunaDevelopEncrypt {
             IvParameterSpec iv = new IvParameterSpec(getAesIv(key).getBytes());
             cipher.init(Cipher.DECRYPT_MODE, skeySpec, iv);
             // 先用base64解密
-            byte[] encrypted1 = Base64.getDecoder().decode(content);
-            /// byte[] encrypted1 = new BASE64Decoder().decodeBuffer(content);
-            byte[] original = cipher.doFinal(encrypted1);
+            byte[] encrypted = Base64.getMimeDecoder().decode(content);
+            byte[] original = cipher.doFinal(encrypted);
             return new String(original, StandardCharsets.UTF_8);
-        }
-        catch (Exception e) {
+        } catch (Exception e) {
+            Logger.error("Exception", e);
             return null;
         }
     }

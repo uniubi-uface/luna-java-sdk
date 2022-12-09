@@ -4,6 +4,8 @@
 
 #### SDK version mapping relationship downloaded from the web page
 
+This version is not recommended.
+
 | SDK Version | UStar Version | Modified Time |
 | ---- | ---- | ---- |
 | ustar-2.5.0 |ustar-2.5.0| 10/19/2021 |
@@ -20,10 +22,19 @@ convenient for developers to connect and communicate.
 | ---- | ---- | ---- |
 | UStar v2.7.1 | 2.7.1.0 | 03/04/2022 |
 | UStar v3.0.0 | 3.0.0.0 | 03/02/2022 |
+| UStar v3.2.2 | 3.2.2.1 | 03/02/2022 |
 
-> Version number description: The first three parts correspond to the USstar version number, and the fourth paragraph is the SDK version number
+> Version number description: The first three parts correspond to the UStar version number, and the fourth paragraph is the SDK version number
 
 ### Notes
+
+### 3.2.2.1
+
+* Release time: 12/12/2022
+* feature:
+    1. add person QR Code API
+    2. optimize decrypt
+    3. optimize log
 
 #### 3.0.0.0
 

@@ -5,7 +5,6 @@ import java.util.List;
 
 /**
  * 添加员工请求
- *
  * @author jingmu
  * @since 2020/5/7
  */
@@ -97,6 +96,19 @@ public class AddPersonRequest {
      * Department Collection id
      */
     private List<String> deptIdList;
+
+    /**
+     * 二维码ID
+     */
+    private String qrCodeId;
+
+    public String getQrCodeId() {
+        return qrCodeId;
+    }
+
+    public void setQrCodeId(String qrCodeId) {
+        this.qrCodeId = qrCodeId;
+    }
 
     public String getEmpNo() {
         return empNo;
@@ -220,11 +232,23 @@ public class AddPersonRequest {
 
     @Override
     public String toString() {
-        return "AddPersonRequest{" + "empNo='" + empNo + '\'' + ", name='" + name + '\'' + ", phone='" + phone + '\''
-                + ", workNo='" + workNo + '\'' + ", mail='" + mail + '\'' + ", stageName='" + stageName + '\''
-                + ", cardNo='" + cardNo + '\'' + ", entryTime=" + entryTime + ", workPlace='" + workPlace + '\''
-                + ", personTypeId='" + personTypeId + '\'' + ", tel='" + tel + '\'' + ", gender=" + gender
-                + ", idCardNo='" + idCardNo + '\'' + ", roleId='" + roleId + '\'' + ", deptIdList=" + deptIdList + '}';
+        return "AddPersonRequest{" +
+            "empNo='" + empNo + '\'' +
+            ", name='" + name + '\'' +
+            ", phone='" + phone + '\'' +
+            ", workNo='" + workNo + '\'' +
+            ", mail='" + mail + '\'' +
+            ", stageName='" + stageName + '\'' +
+            ", cardNo='" + cardNo + '\'' +
+            ", entryTime=" + entryTime +
+            ", workPlace='" + workPlace + '\'' +
+            ", personTypeId='" + personTypeId + '\'' +
+            ", tel='" + tel + '\'' +
+            ", gender=" + gender +
+            ", idCardNo='" + idCardNo + '\'' +
+            ", roleId='" + roleId + '\'' +
+            ", deptIdList=" + deptIdList +
+            ", qrCodeId='" + qrCodeId + '\'' +
+            '}';
     }
-
 }

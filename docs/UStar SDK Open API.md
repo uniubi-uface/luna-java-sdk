@@ -293,7 +293,8 @@ docking platform page of `UStar`. The `public key` is used to encrypt and decryp
   | idCardNo     | String        | N        | ID card number                                               |
   | roleId       | String        | N        | Role ID                                                      |
   | deptIdList   | array(string) | N        | Department collection ID list                                |
-
+  | qrCodeId   | String | N        | QR Code ID, the 4.4.5 API response                     |
+  
 * Response parameter explanation: None
 
 ### 4.4.3 Query Personnel in Paging
@@ -340,6 +341,16 @@ docking platform page of `UStar`. The `public key` is used to encrypt and decryp
   | empId      | String     | Y        | Employee ID |
 
 * Response parameter explanation: None
+
+### 4.4.5 Generate Employee QR Code
+
+* sdkRequestKey : `generateEmpQrCode`
+* Request parameter explanation
+  
+  | Field Name | Field Type | Required | Explanation   |
+  | -------- | -------- | -------- | ------ |
+  | empId    | String   | Y        | 人员ID |
+  | effectiveTimeType    | integer   | Y        | Type of validity 1: one month, 2: three months, 3: half a year, 4: one year, 5: permanent |
 
 ## 4.5 Face API
 

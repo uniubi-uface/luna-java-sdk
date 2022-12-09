@@ -291,6 +291,7 @@ RSA的公钥和私钥由UStar生成，再UStar的对接平台页面获取RSA公�
   | idCardNo     | String        | N        | 身份证号码                               |
   | roleId       | String        | N        | 角色id                                   |
   | deptIdList   | array(string) | N        | 所属部门集合id  list                     |
+  | qrCodeId   | String | N        | 二维码ID 调用4.4.5接口返回的ID                     |
 
 * 响应参数说明: 无
 
@@ -339,6 +340,16 @@ RSA的公钥和私钥由UStar生成，再UStar的对接平台页面获取RSA公�
   | empId    | String   | Y        | 人员ID |
 
 * 响应参数说明: 无
+
+### 4.4.5 生成人员二维码
+
+* sdkRequestKey : `generateEmpQrCode` 
+* 请求参数说明
+  | 字段名称 | 字段类型 | 是否必须 | 说明   |
+  | -------- | -------- | -------- | ------ |
+  | empId    | String   | Y        | 人员ID |
+  | effectiveTimeType    | integer   | Y        | 有效期类型 1：一个月，2：三个月，3：半年，4：一年，5：永久 |
+
 
 ## 4.5 人像相关API
 

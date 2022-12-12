@@ -22,13 +22,13 @@ convenient for developers to connect and communicate.
 | ---- | ---- | ---- |
 | UStar v2.7.1 | 2.7.1.0 | 03/04/2022 |
 | UStar v3.0.0 | 3.0.0.0 | 03/02/2022 |
-| UStar v3.2.2 | 3.2.2.1 | 03/02/2022 |
+| UStar v3.2.2 | 3.2.3.1 | 03/02/2022 |
 
 > Version number description: The first three parts correspond to the UStar version number, and the fourth paragraph is the SDK version number
 
 ### Notes
 
-### 3.2.2.1
+### 3.2.3.1
 
 * Release time: 12/12/2022
 * feature:

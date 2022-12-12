@@ -7,7 +7,7 @@
 
     <groupId>com.uniubi.cloud</groupId>
     <artifactId>luna-java-development-kit</artifactId>
-    <version>3.2.2.1-SNAPSHOT</version>
+    <version>3.2.2.1.RELEASE</version>
     <name>${project.artifactId}</name>
 
     <description>UStar open API SDK</description>

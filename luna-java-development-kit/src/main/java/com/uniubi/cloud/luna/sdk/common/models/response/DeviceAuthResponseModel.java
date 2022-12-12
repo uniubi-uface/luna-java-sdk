@@ -8,7 +8,6 @@ import java.util.List;
 
 /**
  * com.uniubi.medusa.ares.develop.models.response.DeviceAuthResponseModel
- *
  * @author jingmu
  * @since 2020/5/18
  */
@@ -96,8 +95,8 @@ public class DeviceAuthResponseModel {
     @Override
     public String toString() {
         return "DeviceAuthResponseModel{" + "empNo='" + empNo + '\'' + ", deviceKey='" + deviceKey + '\''
-                + ", recModeTypes=" + recModeTypes + ", faces=" + faces + ", permissionTime=" + permissionTime
-                + ", createTime=" + createTime + '}';
+            + ", recModeTypes=" + recModeTypes + ", faces=" + faces + ", permissionTime=" + permissionTime
+            + ", createTime=" + createTime + '}';
     }
 
 }

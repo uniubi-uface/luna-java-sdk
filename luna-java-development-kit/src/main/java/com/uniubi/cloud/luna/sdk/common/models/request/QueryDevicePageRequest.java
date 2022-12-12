@@ -6,7 +6,6 @@ import java.util.List;
 
 /**
  * com.uniubi.medusa.ares.develop.models.request.QueryDevicePageRequest
- *
  * @author jingmu
  * @since 2020/5/18
  */
@@ -107,8 +106,8 @@ public class QueryDevicePageRequest extends SDKBasePageRequest {
     @Override
     public String toString() {
         return "QueryDevicePageRequest{" + "deviceKey='" + deviceKey + '\'' + ", deviceName='" + deviceName + '\''
-                + ", deviceIp='" + deviceIp + '\'' + ", deviceGroupId='" + deviceGroupId + '\'' + ", status=" + status
-                + ", recognitionModes=" + recognitionModes + ", cardSupport=" + cardSupport + '}';
+            + ", deviceIp='" + deviceIp + '\'' + ", deviceGroupId='" + deviceGroupId + '\'' + ", status=" + status
+            + ", recognitionModes=" + recognitionModes + ", cardSupport=" + cardSupport + '}';
     }
 
 }

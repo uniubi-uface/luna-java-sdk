@@ -4,7 +4,6 @@ import java.util.List;
 
 /**
  * com.uniubi.medusa.ares.develop.models.response.DeviceGroupResponseModel
- *
  * @author jingmu
  * @since 2020/5/18
  */
@@ -78,8 +77,8 @@ public class DeviceGroupResponseModel {
     @Override
     public String toString() {
         return "DeviceGroupResponseModel{" + "deviceGroupId='" + deviceGroupId + '\'' + ", deviceGroupName='"
-                + deviceGroupName + '\'' + ", deviceNum=" + deviceNum + ", remark='" + remark + '\''
-                + ", deviceKeyList=" + deviceKeyList + '}';
+            + deviceGroupName + '\'' + ", deviceNum=" + deviceNum + ", remark='" + remark + '\''
+            + ", deviceKeyList=" + deviceKeyList + '}';
     }
 
 }

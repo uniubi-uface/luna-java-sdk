@@ -4,7 +4,6 @@ import java.util.List;
 
 /**
  * com.uniubi.medusa.ares.develop.models.response.PersonGroupResponseModel
- *
  * @author jingmu
  * @since 2020/5/15
  */
@@ -73,8 +72,8 @@ public class PersonGroupResponseModel {
     @Override
     public String toString() {
         return "PersonGroupResponseModel{" + "personGroupId='" + personGroupId + '\'' + ", personGroupName='"
-                + personGroupName + '\'' + ", parentGroupId='" + parentGroupId + '\'' + ", managerNos=" + managerNos
-                + '}';
+            + personGroupName + '\'' + ", parentGroupId='" + parentGroupId + '\'' + ", managerNos=" + managerNos
+            + '}';
     }
 
 }

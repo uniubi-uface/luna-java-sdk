@@ -13,7 +13,6 @@ import com.uniubi.cloud.luna.sdk.common.models.response.DeviceResponseModel;
  * 设备相关API
  * <p>
  * Device API.
- *
  * @author jingmu
  * @since 2020/5/18
  */

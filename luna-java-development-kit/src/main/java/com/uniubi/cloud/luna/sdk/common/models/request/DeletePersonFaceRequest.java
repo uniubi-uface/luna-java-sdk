@@ -2,7 +2,6 @@ package com.uniubi.cloud.luna.sdk.common.models.request;
 
 /**
  * com.uniubi.medusa.ares.develop.common.models.request.DeletePersonFaceRequest
- *
  * @author jingmu
  * @since 2020/6/18
  */

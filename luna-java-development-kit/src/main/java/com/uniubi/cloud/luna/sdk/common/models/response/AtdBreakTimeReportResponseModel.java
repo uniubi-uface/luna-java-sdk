@@ -213,11 +213,11 @@ public class AtdBreakTimeReportResponseModel implements Serializable {
     @Override
     public String toString() {
         return "AtdBreakTimeReportResponseModel{" + "personId='" + personId + '\'' + ", personNo='" + personNo + '\''
-                + ", name='" + name + '\'' + ", depNames=" + depNames + ", roleNames=" + roleNames + ", atDate="
-                + atDate + ", timeIntervalName='" + timeIntervalName + '\'' + ", breaktimeName='" + breaktimeName + '\''
-                + ", planBreakTimeDuration=" + planBreakTimeDuration + ", realBreakTimeStart=" + realBreakTimeStart
-                + ", realBreakTimeEnd=" + realBreakTimeEnd + ", realBreakTimeDuration=" + realBreakTimeDuration
-                + ", breakStatus=" + breakStatus + '}';
+            + ", name='" + name + '\'' + ", depNames=" + depNames + ", roleNames=" + roleNames + ", atDate="
+            + atDate + ", timeIntervalName='" + timeIntervalName + '\'' + ", breaktimeName='" + breaktimeName + '\''
+            + ", planBreakTimeDuration=" + planBreakTimeDuration + ", realBreakTimeStart=" + realBreakTimeStart
+            + ", realBreakTimeEnd=" + realBreakTimeEnd + ", realBreakTimeDuration=" + realBreakTimeDuration
+            + ", breakStatus=" + breakStatus + '}';
     }
 
 }

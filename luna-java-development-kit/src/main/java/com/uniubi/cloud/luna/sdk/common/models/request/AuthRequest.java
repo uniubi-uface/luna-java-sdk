@@ -2,7 +2,6 @@ package com.uniubi.cloud.luna.sdk.common.models.request;
 
 /**
  * 鉴权请求对象
- *
  * @author jingmu
  * @since 2020/3/26
  */

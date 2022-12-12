@@ -5,7 +5,6 @@ import java.util.List;
 
 /**
  * UpdateDeviceAuthRequest
- *
  * @author 阿秋@niancheng
  * @since 2020/6/19
  */
@@ -92,8 +91,8 @@ public class UpdateDeviceAuthRequest {
     @Override
     public String toString() {
         return "UpdateDeviceAuthRequest{" + "empNo='" + empNo + '\'' + ", deviceKey='" + deviceKey + '\''
-                + ", permissionStartTime=" + permissionStartTime + ", permissionEndTime=" + permissionEndTime
-                + ", permissionTimeEntries=" + permissionTimeEntries + ", recognitionTypes=" + recognitionTypes + '}';
+            + ", permissionStartTime=" + permissionStartTime + ", permissionEndTime=" + permissionEndTime
+            + ", permissionTimeEntries=" + permissionTimeEntries + ", recognitionTypes=" + recognitionTypes + '}';
     }
 
 }

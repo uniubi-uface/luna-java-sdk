@@ -5,7 +5,6 @@ import java.util.List;
 
 /**
  * com.uniubi.medusa.ares.develop.models.response.DeviceAuthTaskResponseModel
- *
  * @author jingmu
  * @since 2020/5/18
  */
@@ -84,9 +83,9 @@ public class DeviceAuthTaskResponseModel {
     @Override
     public String toString() {
         return "DeviceAuthTaskResponseModel{" + "finished=" + finished + ", totalSubTaskNum=" + totalSubTaskNum
-                + ", finishedSubTaskNum=" + finishedSubTaskNum + ", taskState=" + taskState + ", taskResult="
-                + taskResult + ", taskStartDate=" + taskStartDate + ", finishedTaskInfoList=" + finishedTaskInfoList
-                + '}';
+            + ", finishedSubTaskNum=" + finishedSubTaskNum + ", taskState=" + taskState + ", taskResult="
+            + taskResult + ", taskStartDate=" + taskStartDate + ", finishedTaskInfoList=" + finishedTaskInfoList
+            + '}';
     }
 
 }

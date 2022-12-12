@@ -2,7 +2,6 @@ package com.uniubi.cloud.luna.sdk.common.models.request;
 
 /**
  * DeleteDeviceAuthRequest
- *
  * @author 阿秋@niancheng description default
  * @since 2020/6/19
  */

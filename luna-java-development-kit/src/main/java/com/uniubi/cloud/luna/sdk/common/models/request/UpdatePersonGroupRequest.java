@@ -4,7 +4,6 @@ import java.util.List;
 
 /**
  * 更新人员分组（部门）请求
- *
  * @author jingmu
  * @since 2020/5/15
  */
@@ -73,8 +72,8 @@ public class UpdatePersonGroupRequest {
     @Override
     public String toString() {
         return "UpdatePersonGroupRequest{" + "personGroupId='" + personGroupId + '\'' + ", personGroupName='"
-                + personGroupName + '\'' + ", parentGroupId='" + parentGroupId + '\'' + ", managerNos=" + managerNos
-                + '}';
+            + personGroupName + '\'' + ", parentGroupId='" + parentGroupId + '\'' + ", managerNos=" + managerNos
+            + '}';
     }
 
 }

@@ -2,7 +2,6 @@ package com.uniubi.cloud.luna.sdk.common.models.response;
 
 /**
  * com.uniubi.medusa.ares.develop.models.response.PersonTaskInfoResponseModel
- *
  * @author jingmu
  * @since 2020/5/18
  */
@@ -81,8 +80,8 @@ public class PersonTaskInfoResponseModel {
     @Override
     public String toString() {
         return "PersonTaskInfoResponseModel{" + "empNo='" + empNo + '\'' + ", empName='" + empName + '\'' + ", faceId='"
-                + faceId + '\'' + ", deviceName='" + deviceName + '\'' + ", deviceKey='" + deviceKey + '\''
-                + ", success=" + success + ", failedReason='" + failedReason + '\'' + '}';
+            + faceId + '\'' + ", deviceName='" + deviceName + '\'' + ", deviceKey='" + deviceKey + '\''
+            + ", success=" + success + ", failedReason='" + failedReason + '\'' + '}';
     }
 
 }

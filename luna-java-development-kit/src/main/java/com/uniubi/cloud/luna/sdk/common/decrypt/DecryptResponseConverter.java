@@ -13,7 +13,6 @@ import java.lang.reflect.Type;
 
 /**
  * 公钥解密响应处理器
- *
  * @author jingmu
  * @since 2020/6/9
  */
@@ -47,8 +46,7 @@ public class DecryptResponseConverter extends DefaultResponseConverter {
             contentResult.setData(result);
             contentResult.setSecret(null);
             return (T) contentResult;
-        }
-        catch (Exception e) {
+        } catch (Exception e) {
             throw new UniUbiLunaSdkException(e);
         }
     }

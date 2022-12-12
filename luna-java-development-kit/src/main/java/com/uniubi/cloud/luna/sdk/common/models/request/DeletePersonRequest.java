@@ -2,7 +2,6 @@ package com.uniubi.cloud.luna.sdk.common.models.request;
 
 /**
  * 删除人员请求
- *
  * @author jingmu
  * @since 2020/5/7
  */

@@ -4,7 +4,6 @@ import java.io.Serializable;
 
 /**
  * com.uniubi.medusa.ares.develop.models.response.AresPersonFaceResponseModel
- *
  * @author jingmu
  * @since 2020/5/18
  */
@@ -80,8 +79,8 @@ public class AresPersonFaceResponseModel implements Serializable {
     @Override
     public String toString() {
         return "AresPersonFaceResponseModel{" + "faceId='" + faceId + '\'' + ", photoId='" + photoId + '\''
-                + ", status=" + status + ", photoUrl='" + photoUrl + '\'' + ", failedReason='" + failedReason + '\''
-                + '}';
+            + ", status=" + status + ", photoUrl='" + photoUrl + '\'' + ", failedReason='" + failedReason + '\''
+            + '}';
     }
 
 }

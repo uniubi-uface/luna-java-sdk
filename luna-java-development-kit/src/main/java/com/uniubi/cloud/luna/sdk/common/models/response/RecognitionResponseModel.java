@@ -4,7 +4,6 @@ import java.time.LocalDateTime;
 
 /**
  * com.uniubi.medusa.ares.develop.models.response.RecognitionResponseModel
- *
  * @author jingmu
  * @since 2020/5/18
  */
@@ -235,11 +234,11 @@ public class RecognitionResponseModel {
     @Override
     public String toString() {
         return "RecognitionResponseModel{" + "empNo='" + empNo + '\'' + ", recMode=" + recMode + ", deviceKey='"
-                + deviceKey + '\'' + ", deviceName='" + deviceName + '\'' + ", recTime=" + recTime + ", orgId='" + orgId
-                + '\'' + ", imageId='" + imageId + '\'' + ", identifyType=" + identifyType + ", temperature="
-                + temperature + ", temperatureState=" + temperatureState + ", temperatureUnit=" + temperatureUnit
-                + ", aliveBody=" + aliveBody + ", permissionTimeType=" + permissionTimeType + ", passTimeType="
-                + passTimeType + '}';
+            + deviceKey + '\'' + ", deviceName='" + deviceName + '\'' + ", recTime=" + recTime + ", orgId='" + orgId
+            + '\'' + ", imageId='" + imageId + '\'' + ", identifyType=" + identifyType + ", temperature="
+            + temperature + ", temperatureState=" + temperatureState + ", temperatureUnit=" + temperatureUnit
+            + ", aliveBody=" + aliveBody + ", permissionTimeType=" + permissionTimeType + ", passTimeType="
+            + passTimeType + '}';
     }
 
 }

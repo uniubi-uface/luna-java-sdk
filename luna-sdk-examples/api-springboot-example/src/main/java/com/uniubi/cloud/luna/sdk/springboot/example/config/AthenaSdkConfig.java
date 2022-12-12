@@ -23,7 +23,6 @@ import org.springframework.context.annotation.Configuration;
 
 /**
  * create api client bean
- *
  * @author 井木
  * @since 2022/02/24
  */

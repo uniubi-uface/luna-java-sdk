@@ -4,7 +4,6 @@ import com.uniubi.cloud.luna.sdk.common.models.SDKBasePageRequest;
 
 /**
  * com.uniubi.medusa.ares.develop.models.request.DeviceAuthQueryPageRequest
- *
  * @author jingmu
  * @since 2020/5/18
  */
@@ -143,9 +142,9 @@ public class DeviceAuthQueryPageRequest extends SDKBasePageRequest {
     @Override
     public String toString() {
         return "DeviceAuthQueryPageRequest{" + "departmentId='" + departmentId + '\'' + ", empId='" + empId + '\''
-                + ", idNo='" + idNo + '\'' + ", empTypeId='" + empTypeId + '\'' + ", empNo='" + empNo + '\''
-                + ", empName='" + empName + '\'' + ", cardNum='" + cardNum + '\'' + ", deviceGroupId='" + deviceGroupId
-                + '\'' + ", deviceKey='" + deviceKey + '\'' + ", deviceName='" + deviceName + '\'' + '}';
+            + ", idNo='" + idNo + '\'' + ", empTypeId='" + empTypeId + '\'' + ", empNo='" + empNo + '\''
+            + ", empName='" + empName + '\'' + ", cardNum='" + cardNum + '\'' + ", deviceGroupId='" + deviceGroupId
+            + '\'' + ", deviceKey='" + deviceKey + '\'' + ", deviceName='" + deviceName + '\'' + '}';
     }
 
 }

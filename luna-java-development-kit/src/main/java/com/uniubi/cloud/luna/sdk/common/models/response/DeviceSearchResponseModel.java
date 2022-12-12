@@ -2,7 +2,6 @@ package com.uniubi.cloud.luna.sdk.common.models.response;
 
 /**
  * com.uniubi.medusa.ares.develop.models.response.DeviceSearchResponseModel
- *
  * @author jingmu
  * @since 2020/5/18
  */
@@ -117,9 +116,9 @@ public class DeviceSearchResponseModel {
     @Override
     public String toString() {
         return "DeviceSearchResponseModel{" + "deviceKey='" + deviceKey + '\'' + ", deviceName='" + deviceName + '\''
-                + ", deviceGroupName='" + deviceGroupName + '\'' + ", softwareVersion='" + softwareVersion + '\''
-                + ", ip='" + ip + '\'' + ", alreadyExist=" + alreadyExist + ", hasPassword=" + hasPassword + ", dhcp="
-                + dhcp + ", legal=" + legal + ", deviceType=" + deviceType + '}';
+            + ", deviceGroupName='" + deviceGroupName + '\'' + ", softwareVersion='" + softwareVersion + '\''
+            + ", ip='" + ip + '\'' + ", alreadyExist=" + alreadyExist + ", hasPassword=" + hasPassword + ", dhcp="
+            + dhcp + ", legal=" + legal + ", deviceType=" + deviceType + '}';
     }
 
 }

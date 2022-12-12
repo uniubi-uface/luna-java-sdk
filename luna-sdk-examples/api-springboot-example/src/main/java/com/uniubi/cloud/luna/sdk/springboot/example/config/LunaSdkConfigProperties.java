@@ -4,7 +4,6 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 
 /**
  * athena config properties
- *
  * @author 井木
  * @since 2022/02/24
  */
@@ -92,8 +91,8 @@ public class LunaSdkConfigProperties {
     @Override
     public String toString() {
         return "LunaSdkConfigProperties{" + "publicKey='" + publicKey + '\'' + ", accessKey='" + accessKey + '\''
-                + ", accessSecret='" + accessSecret + '\'' + ", connectionTimeoutMills=" + connectionTimeoutMills
-                + ", readTimeoutMills=" + readTimeoutMills + ", writeTimeoutMills=" + writeTimeoutMills + '}';
+            + ", accessSecret='" + accessSecret + '\'' + ", connectionTimeoutMills=" + connectionTimeoutMills
+            + ", readTimeoutMills=" + readTimeoutMills + ", writeTimeoutMills=" + writeTimeoutMills + '}';
     }
 
 }

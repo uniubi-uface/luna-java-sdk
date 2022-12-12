@@ -46,11 +46,11 @@ The parameter to the interface is the value of the json object requestData, name
 
 ```json
    {
-  "requestData": {
-    "pageSize": 10,
-    "empNo": "58693",
-    "pageNum": 1
-  }
+    "requestData": {
+        "pageSize": 10,
+        "empNo": "58693",
+        "pageNum": 1
+    }
 }
 ```
 
@@ -71,10 +71,10 @@ Unencrypted Interface: directly take the interface parameter as the value of the
 ```json
   {
     "requestData": {
-      "accessKey": "1dc8908e728b445d91c4d133ef40c92a",
-      "accessSecret": "09555323806d4e809eee1617082ea6b1"
+        "accessKey": "1dc8908e728b445d91c4d133ef40c92a",
+        "accessSecret": "09555323806d4e809eee1617082ea6b1"
     }
-  }
+}
 ```
 
 The above json string serves as a request body
@@ -208,7 +208,7 @@ docking platform page of `UStar`. The `public key` is used to encrypt and decryp
 * Response parameter explanation：
 
   | Field Name | Field Type | Explanation                               |
-  | ---------- | ---------- | ----------------------------------------- |
+    | ---------- | ---------- | ----------------------------------------- |
   | None       | String     | Hello, this is the offline client service |
 
 ## 4.3 Authentication API
@@ -220,7 +220,7 @@ docking platform page of `UStar`. The `public key` is used to encrypt and decryp
 * Request parameter explanation
 
   | Field Name   | Field Type | Required | Explanation                                       |
-  | ------------ | ---------- | -------- | ------------------------------------------------- |
+    | ------------ | ---------- | -------- | ------------------------------------------------- |
   | accessKey    | String     | Y        | Developer accesses to the platform page to obtain |
   | accessSecret | String     | Y        | Developer accesses to the platform page to obtain |
 
@@ -236,7 +236,7 @@ docking platform page of `UStar`. The `public key` is used to encrypt and decryp
 * Response parameter explanation
 
   | Field Name | Field Type | Explanation                                                  |
-  | ---------- | ---------- | ------------------------------------------------------------ |
+    | ---------- | ---------- | ------------------------------------------------------------ |
   | None       | String     | The returned string is the credential that requests other interface and is placed in the request header `SDK _ACCESS_TOKEN` |
 
   > **Note: token is not encrypted and is valid for 1 day. After USTAR is restarted, it will be invalid.**
@@ -250,7 +250,7 @@ docking platform page of `UStar`. The `public key` is used to encrypt and decryp
 * Request parameter explanation
 
   | Field Name   | Field Type    | Required | Explanation                                                  |
-  | ------------ | ------------- | -------- | ------------------------------------------------------------ |
+    | ------------ | ------------- | -------- | ------------------------------------------------------------ |
   | empNo        | String        | Y        | Employee No, unique value, only letters and numbers, length 32 |
   | name         | String        | Y        | Developer accesses to the platform page to obtain            |
   | phone        | String        | N        | Phone number                                                 |
@@ -269,7 +269,7 @@ docking platform page of `UStar`. The `public key` is used to encrypt and decryp
 * Response parameter explanation
 
   | Field Name | Field Type | Explanation                  |
-  | ---------- | ---------- | ---------------------------- |
+    | ---------- | ---------- | ---------------------------- |
   | 无         | String     | Employee id, not Employee No |
 
 ### 4.4.2 Update Personnel
@@ -279,7 +279,7 @@ docking platform page of `UStar`. The `public key` is used to encrypt and decryp
 * Request parameter explanation
 
   | Field Name   | Field Type    | Required | Explanation                                                  |
-  | ------------ | ------------- | -------- | ------------------------------------------------------------ |
+    | ------------ | ------------- | -------- | ------------------------------------------------------------ |
   | empNo        | String        | Y        | Employee No, unique value, only letters and numbers, length 32 |
   | name         | String        | Y        | Developer accesses platform page to obtain                   |
   | phone        | String        | N        | Phone number                                                 |
@@ -295,7 +295,7 @@ docking platform page of `UStar`. The `public key` is used to encrypt and decryp
   | roleId       | String        | N        | Role ID                                                      |
   | deptIdList   | array(string) | N        | Department collection ID list                                |
   | qrCodeId   | String | N        | QR Code ID, the 4.4.5 API response                     |
-  
+
 * Response parameter explanation: None
 
 ### 4.4.3 Query Personnel in Paging
@@ -305,7 +305,7 @@ docking platform page of `UStar`. The `public key` is used to encrypt and decryp
 * Request parameter explanation
 
   | Field Name | Field Type    | Required | Explanation                       |
-  | ---------- | ------------- | -------- | --------------------------------- |
+    | ---------- | ------------- | -------- | --------------------------------- |
   | empNo      | String        | Y        | Employee No                       |
   | name       | String        | Y        | Employee name, full-word matching |
   | deptIdList | array(string) | N        | Department array ID list          |
@@ -313,7 +313,7 @@ docking platform page of `UStar`. The `public key` is used to encrypt and decryp
 * Response parameter explanation
 
   | Field Name   | Field Type    | Explanation                                                  |
-  | ------------ | ------------- | ------------------------------------------------------------ |
+    | ------------ | ------------- | ------------------------------------------------------------ |
   | empId        | String        | Employee ID                                                  |
   | empNo        | String        | Employee No, unique value, only letters and numbers, length 32 |
   | name         | String        | Developer accesses to the platform page to obtain            |
@@ -338,7 +338,7 @@ docking platform page of `UStar`. The `public key` is used to encrypt and decryp
 * Request parameter explanation
 
   | Field Name | Field Type | Required | Explanation |
-  | ---------- | ---------- | -------- | ----------- |
+    | ---------- | ---------- | -------- | ----------- |
   | empId      | String     | Y        | Employee ID |
 
 * Response parameter explanation: None
@@ -347,16 +347,16 @@ docking platform page of `UStar`. The `public key` is used to encrypt and decryp
 
 * sdkRequestKey : `generateEmpQrCode`
 * Request parameter explanation
-  
+
   | Field Name | Field Type | Required | Explanation   |
-  | -------- | -------- | -------- | ------ |
+    | -------- | -------- | -------- | ------ |
   | empId    | String   | Y        | 人员ID |
   | effectiveTimeType    | integer   | Y        | Type of validity 1: one month, 2: three months, 3: half a year, 4: one year, 5: permanent |
 
 * Response parameter explanation
 
   | Field Name       | Field Type | Explanation                                                  |
-  | ---------------- | ---------- | :----------------------------------------------------------- |
+    | ---------------- | ---------- | :----------------------------------------------------------- |
   | id               | String     | the QR Code ID                                               |
   | fileId           | String     | the QR Code file ID, Can be used to download QR code         |
   | qrCodeCreateTime | String     | QR code creation time yyyy-MM-dd HH:mm:ss                    |
@@ -373,14 +373,14 @@ docking platform page of `UStar`. The `public key` is used to encrypt and decryp
 * Request parameter explanation
 
   | Field Name | Field Type | Required | Explanation     |
-  | ---------- | ---------- | -------- | --------------- |
+    | ---------- | ---------- | -------- | --------------- |
   | empNo      | String     | Y        | Employee No     |
   | faceData   | byte[]     | Y        | Face byte array |
 
 * Response parameter explanation
 
   | Field Name | Field Type | Explanation  |
-  | ---------- | ---------- | ------------ |
+    | ---------- | ---------- | ------------ |
   | None       | String     | the photo Id |
 
 ### 4.5.2 Delete Face
@@ -390,7 +390,7 @@ docking platform page of `UStar`. The `public key` is used to encrypt and decryp
 * Request parameter explanation
 
   | Field Name | Field Type | Required | Explanation |
-  | ---------- | ---------- | -------- | ----------- |
+    | ---------- | ---------- | -------- | ----------- |
   | empNo      | String     | Y        | Employee No |
   | photoId    | String     | Y        | Face ID     |
 
@@ -405,13 +405,13 @@ docking platform page of `UStar`. The `public key` is used to encrypt and decryp
 * Request parameter explanation
 
   | Field Name | Field Type | Required | Explanation |
-  | ---------- | ---------- | -------- | ----------- |
+    | ---------- | ---------- | -------- | ----------- |
   | faceId     | String     | Y        | Face ID     |
 
 * Response parameter explanation
 
   | Field Name | Field Type | Explanation     |
-  | ---------- | ---------- | --------------- |
+    | ---------- | ---------- | --------------- |
   | content    | byte[]     | Face byte array |
 
 ### 4.6.2 Obtain Image
@@ -421,13 +421,13 @@ docking platform page of `UStar`. The `public key` is used to encrypt and decryp
 * Request parameter explanation
 
   | Field Name | Field Type | Required | Explanation |
-  | ---------- | ---------- | -------- | ----------- |
+    | ---------- | ---------- | -------- | ----------- |
   | imageId    | String     | Y        | Image ID    |
 
 * Response parameter explanation
 
   | Field Name | Field Type | Explanation      |
-  | ---------- | ---------- | ---------------- |
+    | ---------- | ---------- | ---------------- |
   | content    | byte[]     | Image byte array |
 
 ## 4.7 Department API
@@ -441,7 +441,7 @@ docking platform page of `UStar`. The `public key` is used to encrypt and decryp
 * Request parameter explanation
 
   | Field Name      | Field Type   | Required | Explanation                                                  |
-  | --------------- | ------------ | -------- | ------------------------------------------------------------ |
+    | --------------- | ------------ | -------- | ------------------------------------------------------------ |
   | personGroupName | String       | Y        | Department name                                              |
   | parentGroupId   | String       | Y        | Department ID <br />If the parent department ID is empty, this department will be added to the system as the root department;<br />If the parent department ID is not empty and does not exist in the system (wrong ID), the Department will be set as the root department |
   | managerNos      | String array | Y        | Manager person NO array string list                          |
@@ -449,7 +449,7 @@ docking platform page of `UStar`. The `public key` is used to encrypt and decryp
 * Response parameter explanation
 
   | Field Name | Field Type | Explanation   |
-  | ---------- | ---------- | ------------- |
+    | ---------- | ---------- | ------------- |
   | None       | String     | Department ID |
 
 ### 4.7.2 Update Department
@@ -459,7 +459,7 @@ docking platform page of `UStar`. The `public key` is used to encrypt and decryp
 * Request parameter explanation
 
   | Field Name      | Field Type   | Required | Explanation                                                  |
-  | --------------- | ------------ | -------- | ------------------------------------------------------------ |
+    | --------------- | ------------ | -------- | ------------------------------------------------------------ |
   | personGroupId   | String       | Y        | Department ID                                                |
   | personGroupName | String       | Y        | Department name                                              |
   | parentGroupId   | String       | N        | Department ID <br />If the parent department ID is empty, this department will be added to the system as the root department;<br />If the parent department ID is not empty and does not exist in the system (wrong ID), the Department will be set as the root department |
@@ -474,13 +474,13 @@ docking platform page of `UStar`. The `public key` is used to encrypt and decryp
 * Request parameter explanation
 
   | Field Name    | Field Type | Required | Explanation   |
-  | ------------- | ---------- | -------- | ------------- |
+    | ------------- | ---------- | -------- | ------------- |
   | personGroupId | String     | Y        | Department ID |
 
 * Response parameter explanation
 
   | Field Name      | Field Type   | Explanation            |
-  | --------------- | ------------ | ---------------------- |
+    | --------------- | ------------ | ---------------------- |
   | personGroupId   | String       | Department ID          |
   | personGroupName | String       | Department name        |
   | parentGroupId   | String       | Parent department ID   |
@@ -493,7 +493,7 @@ docking platform page of `UStar`. The `public key` is used to encrypt and decryp
 * Request parameter explanation
 
   | Field Name    | Field Type | Required | Explanation   |
-  | ------------- | ---------- | -------- | ------------- |
+    | ------------- | ---------- | -------- | ------------- |
   | personGroupId | String     | Y        | Department ID |
 
 * Response parameter explanation：None
@@ -509,13 +509,13 @@ docking platform page of `UStar`. The `public key` is used to encrypt and decryp
 * Request parameter explanation
 
   | Field Name | Field Type | Required | Explanation |
-  | ---------- | ---------- | -------- | ----------- |
+    | ---------- | ---------- | -------- | ----------- |
   | roleName   | String     | Y        | Role name   |
 
 * Response parameter explanation
 
   | Field Name | Field Type | Explanation |
-  | ---------- | ---------- | ----------- |
+    | ---------- | ---------- | ----------- |
   | 无         | String     | Role ID     |
 
 ### 4.8.2 Update Role
@@ -525,7 +525,7 @@ docking platform page of `UStar`. The `public key` is used to encrypt and decryp
 * Request parameter explanation
 
   | Field Name | Field Type | Required | Explanation |
-  | ---------- | ---------- | -------- | ----------- |
+    | ---------- | ---------- | -------- | ----------- |
   | roleId     | String     | Y        | Role ID     |
   | roleName   | String     | Y        | Role name   |
 
@@ -538,7 +538,7 @@ docking platform page of `UStar`. The `public key` is used to encrypt and decryp
 * Request parameter explanation
 
   | Field Name | Field Type | Required | Explanation |
-  | ---------- | ---------- | -------- | ----------- |
+    | ---------- | ---------- | -------- | ----------- |
   | roleId     | String     | Y        | Role ID     |
 
 * Response parameter explanation: 无
@@ -550,7 +550,7 @@ docking platform page of `UStar`. The `public key` is used to encrypt and decryp
 * Request parameter explanation
 
   | Field Name | Field Type | Required | Explanation |
-  | ---------- | ---------- | -------- | ----------- |
+    | ---------- | ---------- | -------- | ----------- |
   | roleId     | String     | Y        | Role ID     |
   | roleName   | String     | Y        | Role name   |
 
@@ -558,7 +558,7 @@ docking platform page of `UStar`. The `public key` is used to encrypt and decryp
 * Response parameter explanation
 
   | Field Name | Field Type | Explanation |
-  | ---------- | ---------- | ----------- |
+    | ---------- | ---------- | ----------- |
   | roleId     | String     | Role ID     |
   | roleName   | String     | Role name   |
 
@@ -571,13 +571,13 @@ docking platform page of `UStar`. The `public key` is used to encrypt and decryp
 * Request parameter explanation
 
   | Field Name | Field Type | Required | Explanation |
-  | ---------- | ---------- | -------- | ----------- |
+    | ---------- | ---------- | -------- | ----------- |
   | typeName   | String     | Y        | Type Name   |
 
 * Response parameter explanation
 
   | Field Name | Field Type | Explanation |
-  | ---------- | ---------- | ----------- |
+    | ---------- | ---------- | ----------- |
   | 无         | String     | Type ID     |
 
 ### 4.9.2 Delete Personnel Type
@@ -587,7 +587,7 @@ docking platform page of `UStar`. The `public key` is used to encrypt and decryp
 * Request parameter explanation
 
   | Field Name | Field Type | Required | Explanation |
-  | ---------- | ---------- | -------- | ----------- |
+    | ---------- | ---------- | -------- | ----------- |
   | typeId     | String     | Y        | Type ID     |
 
 * Response parameter explanation：无
@@ -599,7 +599,7 @@ docking platform page of `UStar`. The `public key` is used to encrypt and decryp
 * Request parameter explanation
 
   | Field Name | Field Type | Required | Explanation |
-  | ---------- | ---------- | -------- | ----------- |
+    | ---------- | ---------- | -------- | ----------- |
   | typeId     | String     | Y        | Role ID     |
   | typeName   | String     | Y        | Role name   |
 
@@ -614,7 +614,7 @@ docking platform page of `UStar`. The `public key` is used to encrypt and decryp
 * Response parameter explanation
 
 * | Field Name | Field Type | Explanation         |
-  | ---------- | ---------- | ------------------- |
+    | ---------- | ---------- | ------------------- |
   | typeId     | String     | Personnel type ID   |
   | typeName   | String     | Personnel type name |
 
@@ -627,7 +627,7 @@ docking platform page of `UStar`. The `public key` is used to encrypt and decryp
 * Request parameter explanation
 
   | Field Name    | Field Type | Required | Explanation                                       |
-  | ------------- | ---------- | -------- | ------------------------------------------------- |
+    | ------------- | ---------- | -------- | ------------------------------------------------- |
   | deviceName    | String     | Y        | Role ID                                           |
   | deviceIp      | String     | Y        | Role name                                         |
   | devicePass    | String     | Y        | Device password                                   |
@@ -638,7 +638,7 @@ docking platform page of `UStar`. The `public key` is used to encrypt and decryp
 * Response parameter explanation
 
   | Field Name | Field Type | Explanation |
-  | -------- | -------- | --------------------- |
+    | -------- | -------- | --------------------- |
   | None | String | device Key 设备序列号 |
 
 ### 4.10.2 Upgrade Device
@@ -648,7 +648,7 @@ docking platform page of `UStar`. The `public key` is used to encrypt and decryp
 * Request parameter explanation
 
   | Field Name    | Field Type | Required | Explanation                                       |
-  | ------------- | ---------- | -------- | ------------------------------------------------- |
+    | ------------- | ---------- | -------- | ------------------------------------------------- |
   | deviceName    | String     | Y        | Role ID                                           |
   | deviceIp      | String     | Y        | Role name                                         |
   | devicePass    | String     | Y        | Device password                                   |
@@ -666,7 +666,7 @@ docking platform page of `UStar`. The `public key` is used to encrypt and decryp
 * Request parameter explanation
 
   | Field Name | Field Type | Required | Explanation      |
-  | ---------- | ---------- | -------- | ---------------- |
+    | ---------- | ---------- | -------- | ---------------- |
   | deviceKey  | String     | Y        | Device serial No |
 
 * Response parameter explanation：None
@@ -678,7 +678,7 @@ docking platform page of `UStar`. The `public key` is used to encrypt and decryp
 * Request parameter explanation
 
   | Field Name       | Field Type   | Required | Explanation                                                  |
-  | ---------------- | ------------ | -------- | ------------------------------------------------------------ |
+    | ---------------- | ------------ | -------- | ------------------------------------------------------------ |
   | pageNum          | Integer      | Y        | Page number                                                  |
   | pageSize         | Integer      | Y        | Page size                                                    |
   | deviceKey        | String       | N        | Device serial No.                                            |
@@ -692,7 +692,7 @@ docking platform page of `UStar`. The `public key` is used to encrypt and decryp
 * Response parameter explanation
 
   | Field Name      | Field Type   | Explanation                                |
-  | --------------- | ------------ | ------------------------------------------ |
+    | --------------- | ------------ | ------------------------------------------ |
   | deviceKey       | String       | Device serial No.                          |
   | deviceName      | String       | Device name                                |
   | status          | number       | Device status, dictionary data [3.6](#3.6) |
@@ -717,14 +717,14 @@ docking platform page of `UStar`. The `public key` is used to encrypt and decryp
 * Request parameter explanation
 
   | Field Name | Field Type | Required | Explanation       |
-  | ---------- | ---------- | -------- | ----------------- |
+    | ---------- | ---------- | -------- | ----------------- |
   | deviceKey  | String     | Y        | Device serial No. |
 
 
 * Response parameter explanation
 
   | Field Name      | Field Type   | Explanation                                |
-  | --------------- | ------------ | ------------------------------------------ |
+    | --------------- | ------------ | ------------------------------------------ |
   | deviceKey       | String       | Device serial No.                          |
   | deviceName      | String       | Device name                                |
   | status          | number       | Device status, refer to Dictionary Data    |
@@ -751,7 +751,7 @@ docking platform page of `UStar`. The `public key` is used to encrypt and decryp
 * Request parameter explanation
 
   | Field Name      | Field Type   | Required | Explanation       |
-  | --------------- | ------------ | -------- | ----------------- |
+    | --------------- | ------------ | -------- | ----------------- |
   | deviceGroupName | String       | Y        | Device group name |
   | remark          | String       | N        | remark            |
   | deviceKeyList   | String array | N        | Device serial No. |
@@ -759,7 +759,7 @@ docking platform page of `UStar`. The `public key` is used to encrypt and decryp
 * Response parameter explanation
 
   | Field Name | Field Type | Explanation        |
-  | ---------- | ---------- | ------------------ |
+    | ---------- | ---------- | ------------------ |
   | None       | String     | Device Grouping ID |
 
 ### 4.11.2 Delete Device Grouping
@@ -769,7 +769,7 @@ docking platform page of `UStar`. The `public key` is used to encrypt and decryp
 * Request parameter explanation
 
   | Field Name    | Field Type | Required | Explanation     |
-  | ------------- | ---------- | -------- | --------------- |
+    | ------------- | ---------- | -------- | --------------- |
   | deviceGroupId | String     | Y        | Device group ID |
 
 * Response parameter explanation: None
@@ -781,7 +781,7 @@ docking platform page of `UStar`. The `public key` is used to encrypt and decryp
 * Request parameter explanation
 
   | Field Name      | Field Type   | Required | Explanation       |
-  | --------------- | ------------ | -------- | ----------------- |
+    | --------------- | ------------ | -------- | ----------------- |
   | deviceGroupId   | String       | Y        | Device group id   |
   | deviceGroupName | String       | Y        | Device group name |
   | remark          | String       | N        | remark            |
@@ -798,7 +798,7 @@ docking platform page of `UStar`. The `public key` is used to encrypt and decryp
 * Response parameter explanation
 
   | Field Name      | Field Type   | Explanation            |
-  | --------------- | ------------ | ---------------------- |
+    | --------------- | ------------ | ---------------------- |
   | deviceGroupId   | String       | Device grouping ID     |
   | deviceGroupName | String       | Name                   |
   | remark          | Integer      | Remark                 |
@@ -814,7 +814,7 @@ docking platform page of `UStar`. The `public key` is used to encrypt and decryp
 * Request parameter explanation
 
   | Field Name            | Field Type   | Required | Explanation                                                  |
-  | --------------------- | ------------ | -------- | ------------------------------------------------------------ |
+    | --------------------- | ------------ | -------- | ------------------------------------------------------------ |
   | empNo                 | String       | Y        | Employee No.                                                 |
   | deviceKey             | String       | Y        | Device serial No.                                            |
   | imgStoreDevice        | Boolean      | Y        | Whether to store the original image                          |
@@ -834,7 +834,7 @@ docking platform page of `UStar`. The `public key` is used to encrypt and decryp
 * Request parameter explanation
 
   | Field Name            | Field Type   | Required | Explanation                                            |
-  | --------------------- | ------------ | -------- | ------------------------------------------------------ |
+    | --------------------- | ------------ | -------- | ------------------------------------------------------ |
   | empNo                 | String       | Y        | Employee No.                                           |
   | deviceKey             | String       | Y        | Device serial No.                                      |
   | imgStoreDevice        | Boolean      | Y        | Whether to store the original image                    |
@@ -854,7 +854,7 @@ docking platform page of `UStar`. The `public key` is used to encrypt and decryp
 * Request parameter explanation
 
   | Field Name | Field Type | Required | Explanation          |
-  | ---------- | ---------- | -------- | -------------------- |
+    | ---------- | ---------- | -------- | -------------------- |
   | empNo      | String     | Y        | Employee No          |
   | deviceKey  | String     | Y        | Device serial number |
 
@@ -867,7 +867,7 @@ docking platform page of `UStar`. The `public key` is used to encrypt and decryp
 * Request parameter explanation
 
   | Field Name    | Field Type | Required | Explanation             |
-  | ------------- | ---------- | -------- | ----------------------- |
+    | ------------- | ---------- | -------- | ----------------------- |
   | pageNum       | Integer    | Y        | Page No.                |
   | pageSize      | Integer    | Y        | Page Size               |
   | departmentId  | String     | N        | Department ID           |
@@ -883,7 +883,7 @@ docking platform page of `UStar`. The `public key` is used to encrypt and decryp
 * Response parameter explanation
 
   | Field Name               | Field Type   | Explanation                                                  |
-  | ------------------------ | ------------ | ------------------------------------------------------------ |
+    | ------------------------ | ------------ | ------------------------------------------------------------ |
   | empNo                    | String       | Employee No.                                                 |
   | deviceKey                | String       | Device Serial No.                                            |
   | recModeTypes             | number array | Employee Permission Type                                     |
@@ -919,7 +919,7 @@ docking platform page of `UStar`. The `public key` is used to encrypt and decryp
 * ![img](file:///C:\Users\jingmu\AppData\Local\Temp\ksohtml\wpsBF1B.tmp.png)Response parameter explanation
 
   | Field Name      | Field Type | Explanation                                        |
-  | --------------- | ---------- | -------------------------------------------------- |
+    | --------------- | ---------- | -------------------------------------------------- |
   | deviceKey       | String     | Device serial No.                                  |
   | deviceName      | String     | Device name                                        |
   | deviceGroupName | String     | Device grouping name                               |
@@ -938,7 +938,7 @@ docking platform page of `UStar`. The `public key` is used to encrypt and decryp
 * Request parameter explanation
 
   | Field Name | Field Type | Required | Explanation                    |
-  | ---------- | ---------- | -------- | ------------------------------ |
+    | ---------- | ---------- | -------- | ------------------------------ |
   | pageNum    | Integer    | Y        | Page number                    |
   | pageSize   | Integer    | Y        | Limit number of items per page |
   | deptId     | String     | N        | Department ID                  |
@@ -949,7 +949,7 @@ docking platform page of `UStar`. The `public key` is used to encrypt and decryp
 * Response parameter explanation
 
   | Field Name             | Field Type   | Explanation                                                  |
-  | ---------------------- | ------------ | ------------------------------------------------------------ |
+    | ---------------------- | ------------ | ------------------------------------------------------------ |
   | personId               | String       | Personnel ID                                                 |
   | personNo               | String       | Employee No                                                  |
   | name                   | String       | Employee Name                                                |
@@ -983,7 +983,7 @@ docking platform page of `UStar`. The `public key` is used to encrypt and decryp
 * Request parameter explanation
 
   | Field Name | Field Type | Required | Explanation                    |
-  | ---------- | ---------- | -------- | ------------------------------ |
+    | ---------- | ---------- | -------- | ------------------------------ |
   | pageNum    | Integer    | Y        | Page Number                    |
   | pageSize   | Integer    | Y        | Limit number of items per page |
   | deptId     | String     | N        | Department ID                  |
@@ -994,7 +994,7 @@ docking platform page of `UStar`. The `public key` is used to encrypt and decryp
 * Response parameter explanation
 
   | Field Name            | Field Type   | Explanation                                     |
-  | --------------------- | ------------ | ----------------------------------------------- |
+    | --------------------- | ------------ | ----------------------------------------------- |
   | personId              | String       | Employee ID                                     |
   | personNo              | String       | Employee No                                     |
   | name                  | String       | Employee Name                                   |
@@ -1013,7 +1013,7 @@ docking platform page of `UStar`. The `public key` is used to encrypt and decryp
 * Request parameter explanation
 
   | Field Name | Field Type | Required | Explanation                    |
-  | ---------- | ---------- | -------- | ------------------------------ |
+    | ---------- | ---------- | -------- | ------------------------------ |
   | pageNum    | Integer    | Y        | Page Number                    |
   | pageSize   | Integer    | Y        | Limit number of items per page |
   | deptId     | String     | N        | Department ID                  |
@@ -1024,7 +1024,7 @@ docking platform page of `UStar`. The `public key` is used to encrypt and decryp
 * Response parameter explanation
 
   | Field Name            | Field Type   | Explanation                                         |
-  | --------------------- | ------------ | --------------------------------------------------- |
+    | --------------------- | ------------ | --------------------------------------------------- |
   | personId              | String       | Employee ID                                         |
   | personNo              | String       | Employee No                                         |
   | name                  | String       | Employee Name                                       |
@@ -1046,7 +1046,7 @@ docking platform page of `UStar`. The `public key` is used to encrypt and decryp
 * Request parameter explanation
 
   | Field Name | Field Type | Required | Explanation                    |
-  | ---------- | ---------- | -------- | ------------------------------ |
+    | ---------- | ---------- | -------- | ------------------------------ |
   | pageNum    | Integer    | Y        | Page Number                    |
   | pageSize   | Integer    | Y        | Limit number of items per page |
   | deptId     | String     | N        | Department ID                  |
@@ -1057,7 +1057,7 @@ docking platform page of `UStar`. The `public key` is used to encrypt and decryp
 * Response parameter explanation
 
   | Field Name      | Field Type   | Explanation                        |
-  | --------------- | ------------ | ---------------------------------- |
+    | --------------- | ------------ | ---------------------------------- |
   | personId        | String       | Employee ID                        |
   | personNo        | String       | Employee No                        |
   | name            | String       | Employee Name                      |
@@ -1086,7 +1086,7 @@ docking platform page of `UStar`. The `public key` is used to encrypt and decryp
 * Request Body：
 
   | Field Name | Field Type   | Explanation                                                  |
-  | ---------- | ------------ | ------------------------------------------------------------ |
+    | ---------- | ------------ | ------------------------------------------------------------ |
   | msgId      | String       | Message id                                                   |
   | type       | number(byte) | java byte typeMessage type, refer to the data dictionary for detailsjava byte [3.4](#3.4) |
   | content    | String       | The message content is json string of the event callback content |
@@ -1094,7 +1094,7 @@ docking platform page of `UStar`. The `public key` is used to encrypt and decryp
 * Response body content:
 
   | Field Name | Field Type | Explanation                                                  |
-  | ---------- | ---------- | ------------------------------------------------------------ |
+    | ---------- | ---------- | ------------------------------------------------------------ |
   | success    | boolean    | Whether received successfully<br />If `true` is returned, the system will no longer process the message<br />If `false` is returned, the system will retry after 5 minutes |
 
 > **Note 1：The response data is required to be returned in JSON format**
@@ -1114,7 +1114,7 @@ docking platform page of `UStar`. The `public key` is used to encrypt and decryp
 * Event callback content:
 
   | Field Name         | Field Type    | Explanation                                                  |
-  | ------------------ | ------------- | ------------------------------------------------------------ |
+    | ------------------ | ------------- | ------------------------------------------------------------ |
   | recordId           | String        | Recognition record id                                        |
   | empNo              | String        | Recognition Employee No                                      |
   | recMode            | number        | Recognition mode, refer to Dictionary Data [3.3](#3.3)       |
@@ -1139,7 +1139,7 @@ docking platform page of `UStar`. The `public key` is used to encrypt and decryp
 * Event callback content
 
   | Field Name    | Field Type   | Explanation                                   |
-  | ------------- | ------------ | --------------------------------------------- |
+    | ------------- | ------------ | --------------------------------------------- |
   | empId         | String       | Employee id                                   |
   | empNo         | String       | Employee No                                   |
   | name          | String       | Employee  name                                |
@@ -1165,7 +1165,7 @@ docking platform page of `UStar`. The `public key` is used to encrypt and decryp
 * Event callback content:
 
   | Field Name    | Field Type   | Explanation                                  |
-  | ------------- | ------------ | -------------------------------------------- |
+    | ------------- | ------------ | -------------------------------------------- |
   | empId         | String       | Employee id                                  |
   | empNo         | String       | Employee No                                  |
   | name          | String       | Employee name                                |
@@ -1190,7 +1190,7 @@ docking platform page of `UStar`. The `public key` is used to encrypt and decryp
 * Event callback content:
 
   | Field Name  | Field Type   | Explanation                |
-  | ----------- | ------------ | -------------------------- |
+    | ----------- | ------------ | -------------------------- |
   | orgId       | String       | Company id                 |
   | employeeNos | String array | Deleted Employee No. array |
 
@@ -1201,7 +1201,7 @@ docking platform page of `UStar`. The `public key` is used to encrypt and decryp
 * Event callback content:
 
   | Field Name  | Field Type   | Explanation                  |
-  | ----------- | ------------ | ---------------------------- |
+    | ----------- | ------------ | ---------------------------- |
   | depId       | String array | Face array id                |
   | depName     | String array | Department array id          |
   | parentDepId | String       | Parent Department ID         |
@@ -1217,7 +1217,7 @@ docking platform page of `UStar`. The `public key` is used to encrypt and decryp
 * Event callback content
 
   | Field Name  | Field Type   | Explanation                  |
-  | ----------- | ------------ | ---------------------------- |
+    | ----------- | ------------ | ---------------------------- |
   | depId       | String array | Face array id                |
   | depName     | String array | Department array id          |
   | parentDepId | String       | Parent department ID         |
@@ -1233,5 +1233,5 @@ docking platform page of `UStar`. The `public key` is used to encrypt and decryp
 * Event callback content:
 
   | Field Name | Field Type   | Explanation                 |
-  | ---------- | ------------ | --------------------------- |
+    | ---------- | ------------ | --------------------------- |
   | deptIdList | String array | Deleted Department ID array |

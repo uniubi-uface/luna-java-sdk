@@ -7,7 +7,6 @@ import java.time.Duration;
 
 /**
  * Okhttp 客户端单例
- *
  * @author 井木
  * @since 2022/03/08
  */
@@ -21,11 +20,10 @@ public final class OkHttpClientHolder {
                 if (instance == null) {
                     if (clientConfig != null) {
                         instance = new OkHttpClient.Builder()
-                                .connectTimeout(Duration.ofMillis(clientConfig.getConnectionTimeoutMills()))
-                                .writeTimeout(Duration.ofMillis(clientConfig.getWriteTimeoutMills()))
-                                .readTimeout(Duration.ofMillis(clientConfig.getReadTimeoutMills())).build();
-                    }
-                    else {
+                            .connectTimeout(Duration.ofMillis(clientConfig.getConnectionTimeoutMills()))
+                            .writeTimeout(Duration.ofMillis(clientConfig.getWriteTimeoutMills()))
+                            .readTimeout(Duration.ofMillis(clientConfig.getReadTimeoutMills())).build();
+                    } else {
                         instance = new OkHttpClient.Builder().build();
                     }
                 }

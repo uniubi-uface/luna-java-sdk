@@ -23,7 +23,6 @@ import java.util.Map;
 
 /**
  * sdk客户端代理工厂 用来创建接口的动态代理对象 该类的createProxy()方法会将传入的接口进行处理： 把该接口标注有RequestMark注解的方法代理处理
- *
  * @author jingmu
  * @see RequestMark 请求方法标注
  * @see RequestParam 请求方法简单参数标注
@@ -39,46 +38,42 @@ public class UniUbiSdkClientProxyFactory {
     }
 
     private ClientProxyConfig createClientProxyConfig(String accessKey, String accessSecret,
-            RequestConfig requestConfig) {
+                                                      RequestConfig requestConfig) {
         ClientProxyConfig clientProxyConfig = new ClientProxyConfig();
         // 解析requestUrl，补充协议前缀
         if (requestConfig.getEndPoint().startsWith(SdkConstants.HTTP_PROTO_PREFIX)) {
             clientProxyConfig.requestUrl = requestConfig.getEndPoint() + SdkConstants.UNIUBI_SDK_UNIFY_URL;
-        }
-        else if (requestConfig.getEndPoint().startsWith(SdkConstants.HTTPS_PROTO_PREFIX)) {
+        } else if (requestConfig.getEndPoint().startsWith(SdkConstants.HTTPS_PROTO_PREFIX)) {
             clientProxyConfig.requestUrl = requestConfig.getEndPoint() + SdkConstants.UNIUBI_SDK_UNIFY_URL;
         }
         // 默认使用HTTP协议（兼容老客户使用的是http）
         else {
             clientProxyConfig.requestUrl = SdkConstants.HTTP_PROTO_PREFIX + requestConfig.getEndPoint()
-                    + SdkConstants.UNIUBI_SDK_UNIFY_URL;
+                + SdkConstants.UNIUBI_SDK_UNIFY_URL;
         }
         // 获取客户端配置
         ClientConfig clientConfig = getClientConfig(requestConfig);
         // 创建http请求client
         clientProxyConfig.defaultRequestConverter = new DefaultRequestConverter();
         clientProxyConfig.uniUbiHttpClient = new DefaultUniUbiHttpClient(clientProxyConfig.defaultRequestConverter,
-                new DecryptResponseConverter(requestConfig.getPublicKey()), clientConfig);
+            new DecryptResponseConverter(requestConfig.getPublicKey()), clientConfig);
         // 获取语言
         if (requestConfig.getSdkLang() == null) {
             clientProxyConfig.sdkLang = SdkLang.CN;
-        }
-        else {
+        } else {
             clientProxyConfig.sdkLang = requestConfig.getSdkLang();
         }
         // 获取tokenLoader
         if (requestConfig.getTokenLoader() != null) {
             clientProxyConfig.tokenLoader = requestConfig.getTokenLoader();
-        }
-        else {
+        } else {
             clientProxyConfig.tokenLoader = new SimpleTokenLoader(clientProxyConfig.uniUbiHttpClient,
-                    clientProxyConfig.requestUrl, accessKey, accessSecret, clientProxyConfig.sdkLang);
+                clientProxyConfig.requestUrl, accessKey, accessSecret, clientProxyConfig.sdkLang);
         }
         // 获取方法拦截器
         if (requestConfig.getRpcMethodInterceptor() != null) {
             clientProxyConfig.rpcMethodInterceptor = requestConfig.getRpcMethodInterceptor();
-        }
-        else {
+        } else {
             clientProxyConfig.rpcMethodInterceptor = new RpcMethodReAuthInterceptor();
         }
         clientProxyConfig.publicKey = requestConfig.getPublicKey();
@@ -89,7 +84,7 @@ public class UniUbiSdkClientProxyFactory {
     public <T> T createProxy(Class<T> sdkClientType) {
         ClientProxy clientProxy = new ClientProxy(clientProxyConfig);
         return (T) Proxy.newProxyInstance(UniUbiSdkClientProxyFactory.class.getClassLoader(),
-                new Class[] { sdkClientType }, clientProxy);
+            new Class[] { sdkClientType }, clientProxy);
     }
 
     private ClientConfig getClientConfig(RequestConfig requestConfig) {
@@ -180,8 +175,7 @@ public class UniUbiSdkClientProxyFactory {
                 if (requestParam != null) {
                     requestBody = Collections.singletonMap(requestParam.value(), args[0]);
                 }
-            }
-            else {
+            } else {
                 requestBody = null;
             }
             return requestBody;

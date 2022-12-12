@@ -7,7 +7,6 @@ import java.util.List;
 
 /**
  * com.uniubi.medusa.ares.develop.models.request.DeviceAuthPermissionTime
- *
  * @author jingmu
  * @since 2020/5/18
  */
@@ -57,7 +56,7 @@ public class DeviceAuthPermissionTime {
     @Override
     public String toString() {
         return "DeviceAuthPermissionTime{" + "permissionStartTime=" + permissionStartTime + ", permissionEndTime="
-                + permissionEndTime + ", permissionTimeEntries=" + permissionTimeEntries + '}';
+            + permissionEndTime + ", permissionTimeEntries=" + permissionTimeEntries + '}';
     }
 
 }

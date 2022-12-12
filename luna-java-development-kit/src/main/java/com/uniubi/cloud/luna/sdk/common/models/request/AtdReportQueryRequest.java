@@ -72,7 +72,7 @@ public class AtdReportQueryRequest extends SDKBasePageRequest {
     @Override
     public String toString() {
         return "AtdReportQueryRequest{" + "deptId='" + deptId + '\'' + ", empName='" + empName + '\'' + ", startDate="
-                + startDate + ", endDate=" + endDate + '}';
+            + startDate + ", endDate=" + endDate + '}';
     }
 
 }

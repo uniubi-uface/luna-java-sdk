@@ -2,7 +2,6 @@ package com.uniubi.cloud.luna.sdk.common.models.response;
 
 /**
  * com.uniubi.medusa.ares.develop.models.response.FinishTaskResponseModel
- *
  * @author jingmu
  * @since 2020/5/18
  */
@@ -41,7 +40,7 @@ public class FinishTaskResponseModel {
     @Override
     public String toString() {
         return "FinishTaskResponseModel{" + "success=" + success + ", failedReason='" + failedReason + '\''
-                + ", taskInfo=" + taskInfo + '}';
+            + ", taskInfo=" + taskInfo + '}';
     }
 
 }

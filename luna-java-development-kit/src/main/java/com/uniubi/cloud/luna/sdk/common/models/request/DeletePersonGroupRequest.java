@@ -2,7 +2,6 @@ package com.uniubi.cloud.luna.sdk.common.models.request;
 
 /**
  * com.uniubi.medusa.ares.develop.models.request.DeletePersonGroupRequest
- *
  * @author jingmu
  * @since 2020/5/18
  */

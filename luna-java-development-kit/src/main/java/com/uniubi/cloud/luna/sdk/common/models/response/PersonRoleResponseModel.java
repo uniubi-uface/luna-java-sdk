@@ -2,7 +2,6 @@ package com.uniubi.cloud.luna.sdk.common.models.response;
 
 /**
  * com.uniubi.medusa.ares.develop.models.response.PersonRoleResponseModel
- *
  * @author jingmu
  * @since 2020/5/18
  */

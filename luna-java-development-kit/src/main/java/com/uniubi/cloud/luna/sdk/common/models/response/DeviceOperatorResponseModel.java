@@ -2,7 +2,6 @@ package com.uniubi.cloud.luna.sdk.common.models.response;
 
 /**
  * com.uniubi.medusa.ares.develop.models.response.DeviceOperatorResponseModel
- *
  * @author jingmu
  * @since 2020/5/19
  */
@@ -63,7 +62,7 @@ public class DeviceOperatorResponseModel {
     @Override
     public String toString() {
         return "DeviceOperatorResponseModel{" + "deviceKey='" + deviceKey + '\'' + ", deviceName='" + deviceName + '\''
-                + ", success=" + success + ", reason='" + reason + '\'' + '}';
+            + ", success=" + success + ", reason='" + reason + '\'' + '}';
     }
 
 }

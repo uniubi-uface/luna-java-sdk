@@ -2,7 +2,6 @@ package com.uniubi.cloud.luna.sdk.common.models.request;
 
 /**
  * com.uniubi.medusa.ares.develop.models.request.UpdateDeviceWifiConfigRequest
- *
  * @author jingmu
  * @since 2020/5/19
  */
@@ -81,8 +80,8 @@ public class UpdateDeviceWifiConfigRequest extends DeviceOperatorBaseRequest {
     @Override
     public String toString() {
         return "UpdateDeviceWifiConfigRequest{" + "wifiName='" + wifiName + '\'' + ", wifiPass='" + wifiPass + '\''
-                + ", dhcp=" + dhcp + ", ip='" + ip + '\'' + ", gateway='" + gateway + '\'' + ", dns='" + dns + '\''
-                + ", subnetMask='" + subnetMask + '\'' + '}';
+            + ", dhcp=" + dhcp + ", ip='" + ip + '\'' + ", gateway='" + gateway + '\'' + ", dns='" + dns + '\''
+            + ", subnetMask='" + subnetMask + '\'' + '}';
     }
 
 }

@@ -2,7 +2,6 @@ package com.uniubi.cloud.luna.sdk.common.models.request;
 
 /**
  * com.uniubi.medusa.ares.develop.models.request.UpdateDeviceConfigRequest
- *
  * @author jingmu
  * @since 2020/5/19
  */
@@ -1135,60 +1134,60 @@ public class UpdateDeviceConfigRequest extends DeviceOperatorBaseRequest {
     @Override
     public String toString() {
         return "UpdateDeviceConfigRequest{" + "recModeCardEnable=" + recModeCardEnable + ", cardEnable=" + cardEnable
-                + ", recModeCardFaceEnable=" + recModeCardFaceEnable + ", cardFaceEnable=" + cardFaceEnable
-                + ", recModeCardFaceHardware=" + recModeCardFaceHardware + ", cardFaceHardware=" + cardFaceHardware
-                + ", recModeCardFaceIntf=" + recModeCardFaceIntf + ", cardFaceIntf=" + cardFaceIntf
-                + ", recDoubleValue=" + recDoubleValue + ", cardFaceScore=" + cardFaceScore + ", recModeCardHardware="
-                + recModeCardHardware + ", cardHardware=" + cardHardware + ", recModeCardIntf=" + recModeCardIntf
-                + ", cardInf=" + cardInf + ", identifyDistance=" + identifyDistance + ", comRecDistModeType="
-                + comRecDistModeType + ", recRank=" + recRank + ", comRecRank=" + comRecRank + ", saveIdentifyTime="
-                + saveIdentifyTime + ", comRecTimeWindow=" + comRecTimeWindow + ", delayTimeForCloseDoor="
-                + delayTimeForCloseDoor + ", comRelayTime=" + comRelayTime + ", multiplayerDetection="
-                + multiplayerDetection + ", faceDetectionType=" + faceDetectionType + ", recModeFaceEnable="
-                + recModeFaceEnable + ", faceEnable=" + faceEnable + ", identifyScores=" + identifyScores
-                + ", faceScore=" + faceScore + ", recModeIdcardFaceEnable=" + recModeIdcardFaceEnable
-                + ", idCardFaceEnable=" + idCardFaceEnable + ", recModeIdcardFaceHardware=" + recModeIdcardFaceHardware
-                + ", idCardFaceHardware=" + idCardFaceHardware + ", recModeIdcardFaceIntf=" + recModeIdcardFaceIntf
-                + ", idCardFaceIntf=" + idCardFaceIntf + ", recCardFaceValue=" + recCardFaceValue + ", idCardFaceScore="
-                + idCardFaceScore + ", showDeviceKey=" + showDeviceKey + ", isShowDeviceKey=" + isShowDeviceKey
-                + ", showIp=" + showIp + ", isShowIP=" + isShowIP + ", showPeopleNum=" + showPeopleNum
-                + ", isShowPersonCount=" + isShowPersonCount + ", serialOutContent='" + serialOutContent + '\''
-                + ", recFailComModeContent='" + recFailComModeContent + '\'' + ", serialOutMode=" + serialOutMode
-                + ", recFailComModeType=" + recFailComModeType + ", displayModStrangerContent='"
-                + displayModStrangerContent + '\'' + ", recFailDisplayTextContent='" + recFailDisplayTextContent + '\''
-                + ", displayModStrangerType=" + displayModStrangerType + ", recFailDisplayTextType="
-                + recFailDisplayTextType + ", recStrangerType=" + recStrangerType + ", recFailEnable=" + recFailEnable
-                + ", relaySwitch=" + relaySwitch + ", recFailRelayType=" + recFailRelayType
-                + ", recStrangerTimesThreshold=" + recStrangerTimesThreshold + ", recFailTimesThreshold="
-                + recFailTimesThreshold + ", ttsModStrangerContent='" + ttsModStrangerContent + '\''
-                + ", recFailTtsModeContent='" + recFailTtsModeContent + '\'' + ", ttsModStrangerType="
-                + ttsModStrangerType + ", recFailTtsModeType=" + recFailTtsModeType + ", weigenContent='"
-                + weigenContent + '\'' + ", recFailWiegandContent='" + recFailWiegandContent + '\''
-                + ", recFailWiegandType=" + recFailWiegandType + ", recNoPerComModeContent='" + recNoPerComModeContent
-                + '\'' + ", recNoPerComModeType=" + recNoPerComModeType + ", recNoPerDisplayText1Content='"
-                + recNoPerDisplayText1Content + '\'' + ", recNoPerDisplayText1Type=" + recNoPerDisplayText1Type
-                + ", recNoPerDisplayText2Content='" + recNoPerDisplayText2Content + '\'' + ", recNoPerDisplayText2Type="
-                + recNoPerDisplayText2Type + ", recNoPerRelayType=" + recNoPerRelayType + ", recNoPerTtsModeContent='"
-                + recNoPerTtsModeContent + '\'' + ", recNoPerTtsModeType=" + recNoPerTtsModeType
-                + ", recNoPerWiegandContent='" + recNoPerWiegandContent + '\'' + ", recNoPerWiegandType="
-                + recNoPerWiegandType + ", comModContent='" + comModContent + '\'' + ", recSucComModeContent='"
-                + recSucComModeContent + '\'' + ", comModType=" + comModType + ", recSucComModeType="
-                + recSucComModeType + ", displayModContent='" + displayModContent + '\''
-                + ", recSucDisplayText1Content='" + recSucDisplayText1Content + '\'' + ", displayModType="
-                + displayModType + ", recSucDisplayText1Type=" + recSucDisplayText1Type
-                + ", recSucDisplayText2Content='" + recSucDisplayText2Content + '\'' + ", recSucDisplayText2Type="
-                + recSucDisplayText2Type + ", isOpenRelay=" + isOpenRelay + ", recSucRelayType=" + recSucRelayType
-                + ", ttsModType=" + ttsModType + ", recSucTtsModeType=" + recSucTtsModeType + ", ttsModContent='"
-                + ttsModContent + '\'' + ", recSucTtsModeContent='" + recSucTtsModeContent + '\'' + ", wg='" + wg + '\''
-                + ", recSucWiegandContent='" + recSucWiegandContent + '\'' + ", recSucWiegandType=" + recSucWiegandType
-                + ", scrDisplayText1Content='" + scrDisplayText1Content + '\'' + ", scrDisplayText1Type="
-                + scrDisplayText1Type + ", companyName='" + companyName + '\'' + ", scrDisplayText2Content='"
-                + scrDisplayText2Content + '\'' + ", scrDisplayText2Type=" + scrDisplayText2Type + ", orientation="
-                + orientation + ", scrOrntType=" + scrOrntType + ", slogan='" + slogan + '\'' + ", intro='" + intro
-                + '\'' + ", whitelist=" + whitelist + ", recModeCardPhoto=" + recModeCardPhoto + ", scrImage1Url='"
-                + scrImage1Url + '\'' + ", scrImage2Url='" + scrImage2Url + '\'' + ", scrDisableUrl='" + scrDisableUrl
-                + '\'' + ", bigScrUrl='" + bigScrUrl + '\'' + ", screenMode=" + screenMode + ", applicationName='"
-                + applicationName + '\'' + '}';
+            + ", recModeCardFaceEnable=" + recModeCardFaceEnable + ", cardFaceEnable=" + cardFaceEnable
+            + ", recModeCardFaceHardware=" + recModeCardFaceHardware + ", cardFaceHardware=" + cardFaceHardware
+            + ", recModeCardFaceIntf=" + recModeCardFaceIntf + ", cardFaceIntf=" + cardFaceIntf
+            + ", recDoubleValue=" + recDoubleValue + ", cardFaceScore=" + cardFaceScore + ", recModeCardHardware="
+            + recModeCardHardware + ", cardHardware=" + cardHardware + ", recModeCardIntf=" + recModeCardIntf
+            + ", cardInf=" + cardInf + ", identifyDistance=" + identifyDistance + ", comRecDistModeType="
+            + comRecDistModeType + ", recRank=" + recRank + ", comRecRank=" + comRecRank + ", saveIdentifyTime="
+            + saveIdentifyTime + ", comRecTimeWindow=" + comRecTimeWindow + ", delayTimeForCloseDoor="
+            + delayTimeForCloseDoor + ", comRelayTime=" + comRelayTime + ", multiplayerDetection="
+            + multiplayerDetection + ", faceDetectionType=" + faceDetectionType + ", recModeFaceEnable="
+            + recModeFaceEnable + ", faceEnable=" + faceEnable + ", identifyScores=" + identifyScores
+            + ", faceScore=" + faceScore + ", recModeIdcardFaceEnable=" + recModeIdcardFaceEnable
+            + ", idCardFaceEnable=" + idCardFaceEnable + ", recModeIdcardFaceHardware=" + recModeIdcardFaceHardware
+            + ", idCardFaceHardware=" + idCardFaceHardware + ", recModeIdcardFaceIntf=" + recModeIdcardFaceIntf
+            + ", idCardFaceIntf=" + idCardFaceIntf + ", recCardFaceValue=" + recCardFaceValue + ", idCardFaceScore="
+            + idCardFaceScore + ", showDeviceKey=" + showDeviceKey + ", isShowDeviceKey=" + isShowDeviceKey
+            + ", showIp=" + showIp + ", isShowIP=" + isShowIP + ", showPeopleNum=" + showPeopleNum
+            + ", isShowPersonCount=" + isShowPersonCount + ", serialOutContent='" + serialOutContent + '\''
+            + ", recFailComModeContent='" + recFailComModeContent + '\'' + ", serialOutMode=" + serialOutMode
+            + ", recFailComModeType=" + recFailComModeType + ", displayModStrangerContent='"
+            + displayModStrangerContent + '\'' + ", recFailDisplayTextContent='" + recFailDisplayTextContent + '\''
+            + ", displayModStrangerType=" + displayModStrangerType + ", recFailDisplayTextType="
+            + recFailDisplayTextType + ", recStrangerType=" + recStrangerType + ", recFailEnable=" + recFailEnable
+            + ", relaySwitch=" + relaySwitch + ", recFailRelayType=" + recFailRelayType
+            + ", recStrangerTimesThreshold=" + recStrangerTimesThreshold + ", recFailTimesThreshold="
+            + recFailTimesThreshold + ", ttsModStrangerContent='" + ttsModStrangerContent + '\''
+            + ", recFailTtsModeContent='" + recFailTtsModeContent + '\'' + ", ttsModStrangerType="
+            + ttsModStrangerType + ", recFailTtsModeType=" + recFailTtsModeType + ", weigenContent='"
+            + weigenContent + '\'' + ", recFailWiegandContent='" + recFailWiegandContent + '\''
+            + ", recFailWiegandType=" + recFailWiegandType + ", recNoPerComModeContent='" + recNoPerComModeContent
+            + '\'' + ", recNoPerComModeType=" + recNoPerComModeType + ", recNoPerDisplayText1Content='"
+            + recNoPerDisplayText1Content + '\'' + ", recNoPerDisplayText1Type=" + recNoPerDisplayText1Type
+            + ", recNoPerDisplayText2Content='" + recNoPerDisplayText2Content + '\'' + ", recNoPerDisplayText2Type="
+            + recNoPerDisplayText2Type + ", recNoPerRelayType=" + recNoPerRelayType + ", recNoPerTtsModeContent='"
+            + recNoPerTtsModeContent + '\'' + ", recNoPerTtsModeType=" + recNoPerTtsModeType
+            + ", recNoPerWiegandContent='" + recNoPerWiegandContent + '\'' + ", recNoPerWiegandType="
+            + recNoPerWiegandType + ", comModContent='" + comModContent + '\'' + ", recSucComModeContent='"
+            + recSucComModeContent + '\'' + ", comModType=" + comModType + ", recSucComModeType="
+            + recSucComModeType + ", displayModContent='" + displayModContent + '\''
+            + ", recSucDisplayText1Content='" + recSucDisplayText1Content + '\'' + ", displayModType="
+            + displayModType + ", recSucDisplayText1Type=" + recSucDisplayText1Type
+            + ", recSucDisplayText2Content='" + recSucDisplayText2Content + '\'' + ", recSucDisplayText2Type="
+            + recSucDisplayText2Type + ", isOpenRelay=" + isOpenRelay + ", recSucRelayType=" + recSucRelayType
+            + ", ttsModType=" + ttsModType + ", recSucTtsModeType=" + recSucTtsModeType + ", ttsModContent='"
+            + ttsModContent + '\'' + ", recSucTtsModeContent='" + recSucTtsModeContent + '\'' + ", wg='" + wg + '\''
+            + ", recSucWiegandContent='" + recSucWiegandContent + '\'' + ", recSucWiegandType=" + recSucWiegandType
+            + ", scrDisplayText1Content='" + scrDisplayText1Content + '\'' + ", scrDisplayText1Type="
+            + scrDisplayText1Type + ", companyName='" + companyName + '\'' + ", scrDisplayText2Content='"
+            + scrDisplayText2Content + '\'' + ", scrDisplayText2Type=" + scrDisplayText2Type + ", orientation="
+            + orientation + ", scrOrntType=" + scrOrntType + ", slogan='" + slogan + '\'' + ", intro='" + intro
+            + '\'' + ", whitelist=" + whitelist + ", recModeCardPhoto=" + recModeCardPhoto + ", scrImage1Url='"
+            + scrImage1Url + '\'' + ", scrImage2Url='" + scrImage2Url + '\'' + ", scrDisableUrl='" + scrDisableUrl
+            + '\'' + ", bigScrUrl='" + bigScrUrl + '\'' + ", screenMode=" + screenMode + ", applicationName='"
+            + applicationName + '\'' + '}';
     }
 
 }

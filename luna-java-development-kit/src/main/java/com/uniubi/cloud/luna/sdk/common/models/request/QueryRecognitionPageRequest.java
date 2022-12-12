@@ -6,7 +6,6 @@ import java.util.List;
 
 /**
  * com.uniubi.medusa.ares.develop.models.request.QueryRecognitionPageRequest
- *
  * @author jingmu
  * @since 2020/5/18
  */
@@ -105,7 +104,7 @@ public class QueryRecognitionPageRequest extends SDKBasePageRequest {
     @Override
     public String toString() {
         return "QueryRecognitionPageRequest{" + "empNos=" + empNos + ", orgId='" + orgId + '\'' + ", recMode=" + recMode
-                + ", startTime=" + startTime + ", endTime=" + endTime + ", statDate='" + statDate + '\'' + '}';
+            + ", startTime=" + startTime + ", endTime=" + endTime + ", statDate='" + statDate + '\'' + '}';
     }
 
 }

@@ -5,7 +5,6 @@ import java.util.List;
 
 /**
  * com.uniubi.medusa.ares.develop.models.response.DeviceResponseModel
- *
  * @author jingmu
  * @since 2020/5/18
  */
@@ -285,13 +284,13 @@ public class DeviceResponseModel {
     @Override
     public String toString() {
         return "DeviceResponseModel{" + "deviceKey='" + deviceKey + '\'' + ", deviceName='" + deviceName + '\''
-                + ", status=" + status + ", enable=" + enable + ", expType=" + expType + ", orgId='" + orgId + '\''
-                + ", softwareVersion='" + softwareVersion + '\'' + ", sdkVersion='" + sdkVersion + '\''
-                + ", versionCompatibility=" + versionCompatibility + ", deviceIp='" + deviceIp + '\''
-                + ", recognitionMode=" + recognitionMode + ", deviceGroupId='" + deviceGroupId + '\''
-                + ", deviceGroupName='" + deviceGroupName + '\'' + ", lang='" + lang + '\'' + ", createTime="
-                + createTime + ", modifyTime=" + modifyTime + ", faceNum=" + faceNum + ", personNum=" + personNum
-                + ", cardSupport=" + cardSupport + '}';
+            + ", status=" + status + ", enable=" + enable + ", expType=" + expType + ", orgId='" + orgId + '\''
+            + ", softwareVersion='" + softwareVersion + '\'' + ", sdkVersion='" + sdkVersion + '\''
+            + ", versionCompatibility=" + versionCompatibility + ", deviceIp='" + deviceIp + '\''
+            + ", recognitionMode=" + recognitionMode + ", deviceGroupId='" + deviceGroupId + '\''
+            + ", deviceGroupName='" + deviceGroupName + '\'' + ", lang='" + lang + '\'' + ", createTime="
+            + createTime + ", modifyTime=" + modifyTime + ", faceNum=" + faceNum + ", personNum=" + personNum
+            + ", cardSupport=" + cardSupport + '}';
     }
 
 }

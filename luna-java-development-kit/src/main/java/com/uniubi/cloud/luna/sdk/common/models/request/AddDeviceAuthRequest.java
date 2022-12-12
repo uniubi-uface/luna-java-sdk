@@ -7,7 +7,6 @@ import java.util.List;
 
 /**
  * AddDeviceAuthRequest
- *
  * @author 阿秋@niancheng
  * @since 2020/6/19
  */
@@ -112,9 +111,9 @@ public class AddDeviceAuthRequest {
     @Override
     public String toString() {
         return "AddDeviceAuthRequest{" + "empNo='" + empNo + '\'' + ", deviceKey='" + deviceKey + '\''
-                + ", imgStoreDevice=" + imgStoreDevice + ", permissionStartTime=" + permissionStartTime
-                + ", permissionEndTime=" + permissionEndTime + ", permissionTimeEntries=" + permissionTimeEntries
-                + ", recognitionTypes=" + recognitionTypes + '}';
+            + ", imgStoreDevice=" + imgStoreDevice + ", permissionStartTime=" + permissionStartTime
+            + ", permissionEndTime=" + permissionEndTime + ", permissionTimeEntries=" + permissionTimeEntries
+            + ", recognitionTypes=" + recognitionTypes + '}';
     }
 
 }

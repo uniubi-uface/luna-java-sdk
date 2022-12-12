@@ -8,7 +8,6 @@ import com.uniubi.cloud.luna.sdk.common.models.response.RecognitionResponseModel
 
 /**
  * Device Recognition API
- *
  * @author jingmu
  * @since 2020/5/18
  */
@@ -21,6 +20,6 @@ public interface SdkRecognitionApi {
      */
     @RequestMark(name = "queryRecognitionPage", desc = "分页查询识别记录")
     SdkResult<SDKPageInfo<RecognitionResponseModel>> queryRecognitionPage(
-            QueryRecognitionPageRequest queryRecognitionPageRequest);
+        QueryRecognitionPageRequest queryRecognitionPageRequest);
 
 }

@@ -2,7 +2,6 @@ package com.uniubi.cloud.luna.sdk.common.models.request;
 
 /**
  * com.uniubi.medusa.ares.develop.models.request.UpdateDeviceRequest
- *
  * @author jingmu
  * @since 2020/5/18
  */
@@ -76,8 +75,8 @@ public class UpdateDeviceRequest {
     @Override
     public String toString() {
         return "UpdateDeviceRequest{" + "deviceKey='" + deviceKey + '\'' + ", deviceName='" + deviceName + '\''
-                + ", devicePass='" + devicePass + '\'' + ", deviceGroupId='" + deviceGroupId + '\'' + ", lang='" + lang
-                + '\'' + '}';
+            + ", devicePass='" + devicePass + '\'' + ", deviceGroupId='" + deviceGroupId + '\'' + ", lang='" + lang
+            + '\'' + '}';
     }
 
 }

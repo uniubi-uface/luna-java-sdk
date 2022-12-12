@@ -26,7 +26,8 @@ public enum SdkLang {
     /**
      * 西班牙
      */
-    ES("es"),;
+    ES("es"),
+    ;
 
     private final String value;
 

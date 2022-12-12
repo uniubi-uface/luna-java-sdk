@@ -6,7 +6,6 @@ import java.util.List;
 
 /**
  * 查询员工分页请求
- *
  * @author jingmu
  * @since 2020/5/7
  */
@@ -58,7 +57,7 @@ public class QueryPersonPageRequest extends SDKBasePageRequest {
     @Override
     public String toString() {
         return "QueryPersonPageRequest{" + "empNo='" + empNo + '\'' + ", name='" + name + '\'' + ", deptIdList="
-                + deptIdList + '}';
+            + deptIdList + '}';
     }
 
 }

@@ -4,7 +4,6 @@ import java.util.List;
 
 /**
  * 添加员工分组请求
- *
  * @author jingmu
  * @since 2020/5/15
  */
@@ -58,7 +57,7 @@ public class AddPersonGroupRequest {
     @Override
     public String toString() {
         return "AddPersonGroupRequest{" + "personGroupName='" + personGroupName + '\'' + ", parentGroupId='"
-                + parentGroupId + '\'' + ", managerIds=" + managerIds + '}';
+            + parentGroupId + '\'' + ", managerIds=" + managerIds + '}';
     }
 
 }

@@ -4,7 +4,6 @@ import java.util.List;
 
 /**
  * com.uniubi.medusa.ares.develop.models.request.AddDeviceGroupRequest
- *
  * @author jingmu
  * @since 2020/5/18
  */
@@ -52,7 +51,7 @@ public class AddDeviceGroupRequest {
     @Override
     public String toString() {
         return "AddDeviceGroupRequest{" + "deviceGroupName='" + deviceGroupName + '\'' + ", remark='" + remark + '\''
-                + ", deviceKeyList=" + deviceKeyList + '}';
+            + ", deviceKeyList=" + deviceKeyList + '}';
     }
 
 }

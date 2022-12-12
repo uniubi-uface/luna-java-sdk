@@ -4,7 +4,6 @@ import java.util.List;
 
 /**
  * com.uniubi.medusa.ares.develop.models.request.StartDeviceAuthTaskRequest
- *
  * @author jingmu
  * @since 2020/5/18
  */
@@ -103,10 +102,10 @@ public class StartDeviceAuthTaskRequest {
     @Override
     public String toString() {
         return "StartDeviceAuthTaskRequest{" + "empNoList=" + empNoList + ", depIdList=" + depIdList
-                + ", deviceKeyList=" + deviceKeyList + ", enablePassTime=" + enablePassTime + ", permissionTime="
-                + permissionTime + ", imgStoreDevice=" + imgStoreDevice + ", stopAuthWhenNotCompatibility="
-                + stopAuthWhenNotCompatibility + ", recognitionTypes=" + recognitionTypes + ", orgId='" + orgId + '\''
-                + '}';
+            + ", deviceKeyList=" + deviceKeyList + ", enablePassTime=" + enablePassTime + ", permissionTime="
+            + permissionTime + ", imgStoreDevice=" + imgStoreDevice + ", stopAuthWhenNotCompatibility="
+            + stopAuthWhenNotCompatibility + ", recognitionTypes=" + recognitionTypes + ", orgId='" + orgId + '\''
+            + '}';
     }
 
 }

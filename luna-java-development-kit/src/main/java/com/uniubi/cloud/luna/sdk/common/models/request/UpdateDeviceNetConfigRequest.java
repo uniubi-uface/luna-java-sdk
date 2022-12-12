@@ -2,7 +2,6 @@ package com.uniubi.cloud.luna.sdk.common.models.request;
 
 /**
  * com.uniubi.medusa.ares.develop.models.request.UpdateDeviceNetConfigRequest
- *
  * @author jingmu
  * @since 2020/5/19
  */
@@ -51,7 +50,7 @@ public class UpdateDeviceNetConfigRequest extends DeviceOperatorBaseRequest {
     @Override
     public String toString() {
         return "UpdateDeviceNetConfigRequest{" + "DHCP=" + DHCP + ", dNS='" + dNS + '\'' + ", gateway='" + gateway
-                + '\'' + ", ip='" + ip + '\'' + '}';
+            + '\'' + ", ip='" + ip + '\'' + '}';
     }
 
 }

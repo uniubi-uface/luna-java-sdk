@@ -4,7 +4,6 @@ import java.util.List;
 
 /**
  * com.uniubi.medusa.ares.develop.models.SDKPageInfo
- *
  * @author jingmu
  * @since 2020/5/7
  */
@@ -79,7 +78,7 @@ public class SDKPageInfo<T> {
     @Override
     public String toString() {
         return "SDKPageInfo{" + "pageNum=" + pageNum + ", pageSize=" + pageSize + ", pages=" + pages + ", total="
-                + total + ", list=" + list + '}';
+            + total + ", list=" + list + '}';
     }
 
 }

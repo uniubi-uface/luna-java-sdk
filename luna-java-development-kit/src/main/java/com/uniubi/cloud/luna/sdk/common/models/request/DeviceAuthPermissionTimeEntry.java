@@ -2,7 +2,6 @@ package com.uniubi.cloud.luna.sdk.common.models.request;
 
 /**
  * com.uniubi.medusa.ares.develop.models.request.DeviceAuthPermissionTimeEntry
- *
  * @author jingmu
  * @since 2020/5/18
  */
@@ -37,7 +36,7 @@ public class DeviceAuthPermissionTimeEntry {
     @Override
     public String toString() {
         return "DeviceAuthPermissionTimeEntry{" + "startTime='" + startTime + '\'' + ", endTime='" + endTime + '\''
-                + '}';
+            + '}';
     }
 
 }

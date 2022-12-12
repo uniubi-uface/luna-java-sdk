@@ -5,7 +5,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
  * Api StringBoot Application demo
- *
  * @author 井木
  * @since 2022/02/24
  */

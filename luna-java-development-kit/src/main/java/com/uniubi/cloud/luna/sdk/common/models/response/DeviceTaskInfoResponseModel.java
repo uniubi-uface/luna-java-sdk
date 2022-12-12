@@ -4,7 +4,6 @@ import java.util.List;
 
 /**
  * com.uniubi.medusa.ares.develop.models.response.DeviceTaskInfoResponseModel
- *
  * @author jingmu
  * @since 2020/5/18
  */
@@ -63,8 +62,8 @@ public class DeviceTaskInfoResponseModel {
     @Override
     public String toString() {
         return "DeviceTaskInfoResponseModel{" + "deviceKey='" + deviceKey + '\'' + ", deviceName='" + deviceName + '\''
-                + ", taskStatus=" + taskStatus + ", authStatus=" + authStatus + ", personSubTaskInfoList="
-                + personSubTaskInfoList + '}';
+            + ", taskStatus=" + taskStatus + ", authStatus=" + authStatus + ", personSubTaskInfoList="
+            + personSubTaskInfoList + '}';
     }
 
 }

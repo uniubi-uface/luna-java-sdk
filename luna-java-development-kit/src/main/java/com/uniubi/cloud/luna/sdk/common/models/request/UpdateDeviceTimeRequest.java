@@ -4,7 +4,6 @@ import java.time.LocalDateTime;
 
 /**
  * com.uniubi.medusa.ares.develop.models.request.UpdateDeviceTimeRequest
- *
  * @author jingmu
  * @since 2020/5/19
  */

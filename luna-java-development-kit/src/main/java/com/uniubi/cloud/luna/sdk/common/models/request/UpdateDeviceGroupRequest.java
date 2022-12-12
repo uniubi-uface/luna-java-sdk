@@ -4,7 +4,6 @@ import java.util.List;
 
 /**
  * com.uniubi.medusa.ares.develop.models.request.UpdateDeviceGroupRequest
- *
  * @author jingmu
  * @since 2020/5/18
  */
@@ -65,7 +64,7 @@ public class UpdateDeviceGroupRequest {
     @Override
     public String toString() {
         return "UpdateDeviceGroupRequest{" + "deviceGroupId='" + deviceGroupId + '\'' + ", deviceGroupName='"
-                + deviceGroupName + '\'' + ", deviceKeyList=" + deviceKeyList + ", remark='" + remark + '\'' + '}';
+            + deviceGroupName + '\'' + ", deviceKeyList=" + deviceKeyList + ", remark='" + remark + '\'' + '}';
     }
 
 }

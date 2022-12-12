@@ -15,7 +15,6 @@ import java.util.List;
 
 /**
  * com.uniubi.medusa.ares.develop.api.clients.SdkDeviceCommandApi
- *
  * @author jingmu
  * @since 2020/5/18
  * @deprecated No longer maintain this API
@@ -41,28 +40,28 @@ public interface SdkDeviceCommandApi {
     @RequestMark(name = "updateDeviceConfig", desc = "更新设备配置")
     @Deprecated
     SdkResult<List<DeviceOperatorResponseModel>> updateDeviceConfig(
-            UpdateDeviceConfigRequest updateDeviceConfigRequest);
+        UpdateDeviceConfigRequest updateDeviceConfigRequest);
 
     @RequestMark(name = "setDeviceDefaultConfig", desc = "恢复设备默认配置")
     @Deprecated
     SdkResult<List<DeviceOperatorResponseModel>> setDeviceDefaultConfig(
-            DeviceOperatorBaseRequest deviceOperatorBaseRequest);
+        DeviceOperatorBaseRequest deviceOperatorBaseRequest);
 
     @RequestMark(name = "updateDeviceNetConfig", desc = "更新设备网络配置（有线）")
     @Deprecated
     SdkResult<List<DeviceOperatorResponseModel>> updateDeviceNetConfig(
-            UpdateDeviceNetConfigRequest updateDeviceNetConfigRequest);
+        UpdateDeviceNetConfigRequest updateDeviceNetConfigRequest);
 
     @RequestMark(name = "updateDeviceWifiConfig", desc = "更新设备wifi网络配置")
     @Deprecated
     SdkResult<List<DeviceOperatorResponseModel>> updateDeviceWifiConfig(
-            UpdateDeviceWifiConfigRequest updateDeviceWifiConfigRequest);
+        UpdateDeviceWifiConfigRequest updateDeviceWifiConfigRequest);
 
     @RequestMark(name = "setDeviceTime", desc = "设置设备时间")
     SdkResult<List<DeviceOperatorResponseModel>> setDeviceTime(UpdateDeviceTimeRequest updateDeviceTimeRequest);
 
     @RequestMark(name = "updateDeviceLanguage", desc = "设置设备语言")
     SdkResult<List<DeviceOperatorResponseModel>> updateDeviceLanguage(
-            UpdateDeviceLanguageRequest updateDeviceLanguageRequest);
+        UpdateDeviceLanguageRequest updateDeviceLanguageRequest);
 
 }

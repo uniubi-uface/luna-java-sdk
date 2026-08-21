@@ -807,7 +807,7 @@ docking platform page of `UStar`. The `public key` is used to encrypt and decryp
 
 ## 4.12 Device Authorization API
 
-### 4.12.1 Add Authorization
+### 4.12.1 Add Authorization (Deprecated, does not support scheduleId-based time schedules)
 
 * sdkRequestKey : `addDeviceAuth`
 

@@ -802,7 +802,7 @@ RSA的公钥和私钥由UStar生成，再UStar的对接平台页面获取RSA公�
 
 ## 4.12 设备授权相关API
 
-### 4.12.1 添加授权
+### 4.12.1 添加授权（已废弃，不支持通行计划）
 
 * sdkRequestKey : `addDeviceAuth`
 

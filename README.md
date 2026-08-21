@@ -2,6 +2,9 @@
 
 [中文文档](./README-zh_CN.md)
 
+
+## The open interface is no longer available. If you have any needs, please contact technical support
+
 ## Release Notes
 
 * [ReleaseNotes](./docs/ReleaseNotes.md)

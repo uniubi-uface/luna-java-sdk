@@ -2,6 +2,8 @@
 
 [English Document](./README.md)
 
+## 开放接口已无法使用，有需求，请联系技术支持
+
 ## 版本发布日志
 
 * [版本发布日志](./docs/ReleaseNotes-zh_CN.md)
